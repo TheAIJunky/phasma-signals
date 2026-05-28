@@ -3,135 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phasma Signals — Free Daily Trading Signals</title>
-<meta name="description" content="Free daily stock and crypto swing trading signals. Automated technical analysis with confluence scoring. No signup required.">
-<meta name="keywords" content="trading signals, crypto signals, stock scanner, swing trading, technical analysis, free signals">
-<meta property="og:title" content="Phasma Signals — Free Daily Trading Signals">
-<meta property="og:description" content="Automated swing trading signals for stocks and crypto. Updated daily.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+<title>Phasma Signals</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #0a0a0f; color: #e0e0e0; font-family: 'SF Pro', -apple-system, system-ui, sans-serif; line-height: 1.6; }
-.container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
-header { text-align: center; padding: 3rem 0 2rem; }
-h1 { font-size: 2.5rem; background: linear-gradient(135deg, #a855f7, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
-.subtitle { color: #888; font-size: 1.1rem; margin-bottom: 2rem; }
-.badge { display: inline-block; background: #1a1a2e; border: 1px solid #333; border-radius: 20px; padding: 0.4rem 1rem; font-size: 0.85rem; margin: 0.3rem; }
-.badge.green { border-color: #22c55e; color: #22c55e; }
-.badge.blue { border-color: #3b82f6; color: #3b82f6; }
-.section { background: #111118; border: 1px solid #1e1e2e; border-radius: 12px; padding: 2rem; margin: 1.5rem 0; }
-.section h2 { color: #c084fc; margin-bottom: 1rem; font-size: 1.3rem; }
-.link-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
-@media (max-width: 600px) { .link-grid { grid-template-columns: 1fr; } }
-.link-card { background: #0d0d15; border: 1px solid #2a2a3e; border-radius: 8px; padding: 1.5rem; text-decoration: none; color: #e0e0e0; transition: all 0.2s; display: block; }
-.link-card:hover { border-color: #a855f7; transform: translateY(-2px); }
-.link-card .icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
-.link-card .title { font-weight: 600; margin-bottom: 0.3rem; }
-.link-card .desc { font-size: 0.85rem; color: #888; }
-.btc-box { background: #1a1500; border: 1px solid #f7931a33; border-radius: 12px; padding: 1.5rem; text-align: center; margin: 2rem 0; }
-.btc-box h3 { color: #f7931a; margin-bottom: 0.5rem; }
-.btc-address { font-family: monospace; color: #f7931a; word-break: break-all; font-size: 0.85rem; background: #0d0a00; padding: 0.8rem; border-radius: 6px; margin: 0.8rem 0; }
-.disclaimer { color: #555; font-size: 0.75rem; text-align: center; margin-top: 3rem; padding: 1rem; border-top: 1px solid #1e1e2e; }
-.features { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
-@media (max-width: 600px) { .features { grid-template-columns: 1fr; } }
-.feature { text-align: center; padding: 1rem; }
-.feature .emoji { font-size: 2rem; margin-bottom: 0.5rem; }
-.feature .label { font-size: 0.85rem; color: #aaa; }
-.updated { color: #555; font-size: 0.8rem; text-align: center; margin-top: 1rem; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans-serif; min-height:100vh; }
+.header { background:linear-gradient(135deg,#1a0030,#0a0a2e); padding:2rem 1rem; text-align:center; border-bottom:1px solid #2a1a4a; }
+.header h1 { font-size:2rem; color:#b388ff; }
+.header p { color:#888; margin-top:0.5rem; }
+.header .btc { background:#111; border:1px solid #333; border-radius:8px; padding:0.5rem 1rem; display:inline-block; margin-top:1rem; font-family:monospace; font-size:0.8rem; color:#ffa726; word-break:break-all; }
+.container { max-width:900px; margin:0 auto; padding:1rem; }
+.section { margin:2rem 0; }
+.section h2 { color:#b388ff; border-bottom:1px solid #2a1a4a; padding-bottom:0.5rem; margin-bottom:1rem; }
+.card { background:#111; border:1px solid #222; border-radius:12px; padding:1rem; margin:0.5rem 0; }
+.card .ticker { font-size:1.4rem; font-weight:bold; color:#b388ff; }
+.card .score { float:right; background:#2a1a4a; color:#e040fb; padding:0.2rem 0.8rem; border-radius:20px; font-weight:bold; }
+.card .detail { color:#888; font-size:0.9rem; margin-top:0.5rem; }
+.premium-box { background:linear-gradient(135deg,#1a0030,#2a0a3e); border:1px solid #b388ff; border-radius:12px; padding:2rem; text-align:center; margin:2rem 0; }
+.premium-box h3 { color:#e040fb; font-size:1.5rem; }
+.premium-box .price { color:#b388ff; font-size:1.2rem; margin:1rem 0; }
+.premium-box .steps { text-align:left; max-width:400px; margin:1rem auto; color:#ccc; line-height:1.8; }
+.footer { text-align:center; padding:2rem; color:#444; font-size:0.8rem; border-top:1px solid #1a1a2e; }
+.tag { display:inline-block; background:#1a1a2e; color:#b388ff; padding:0.2rem 0.6rem; border-radius:4px; margin:0.2rem; font-size:0.8rem; }
 </style>
 </head>
 <body>
+<div class="header">
+<h1>&#x1F52E; Phasma Signals</h1>
+<p>Daily trading signals &mdash; stocks &amp; crypto</p>
+<p style="color:#666;font-size:0.8rem;">Updated: 2026-05-28 22:35 UTC</p>
+<div class="btc">&#9749; bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx</div>
+</div>
 <div class="container">
-<header>
-<h1>🔮 Phasma Signals</h1>
-<p class="subtitle">Free daily trading signals — stocks & crypto</p>
-<span class="badge green">✓ No signup</span>
-<span class="badge blue">✓ Daily updates</span>
-<span class="badge green">✓ Automated</span>
-<span class="badge blue">✓ Transparent scoring</span>
-</header>
-
-<div class="features">
-<div class="feature"><div class="emoji">📊</div><div class="label">S&P 500 + Crypto<br>Confluence Scoring</div></div>
-<div class="feature"><div class="emoji">⚡</div><div class="label">EMA Stacks, RSI<br>Volume Breakouts</div></div>
-<div class="feature"><div class="emoji">🤖</div><div class="label">Fully Automated<br>Runs at market open</div></div>
-</div>
 
 <div class="section">
-<h2>📋 Today's Reports</h2>
-<div class="link-grid">
-<a href="reports/market_scan_latest.html" class="link-card">
-<div class="icon">📊</div>
-<div class="title">Stock Scan</div>
-<div class="desc">S&P 500 swing setups ranked by confluence score</div>
-</a>
-<a href="reports/crypto_scan_latest.html" class="link-card">
-<div class="icon">₿</div>
-<div class="title">Crypto Scan</div>
-<div class="desc">37 pairs across 6 sectors — DeFi, L1s, AI, RWA</div>
-</a>
-<a href="reports/market_scan_latest.txt" class="link-card">
-<div class="icon">📝</div>
-<div class="title">Stock Text</div>
-<div class="desc">Plain text format for quick reading</div>
-</a>
-<a href="reports/crypto_scan_latest.txt" class="link-card">
-<div class="icon">📝</div>
-<div class="title">Crypto Text</div>
-<div class="desc">Plain text format for quick reading</div>
-</a>
+<h2>&#x1F4CA; Stock Setups (5 signals)</h2>
+
+<div class="card">
+<span class="ticker">LIN</span>
+<span class="score">Score 9</span>
+<div class="detail">Entry: $507.87 | Stop: $- | Target: $-<br>Trend: -</div>
+</div>
+<div class="card">
+<span class="ticker">PM</span>
+<span class="score">Score 9</span>
+<div class="detail">Entry: $182.04 | Stop: $- | Target: $-<br>Trend: -</div>
+</div>
+<div class="card">
+<span class="ticker">CI</span>
+<span class="score">Score 9</span>
+<div class="detail">Entry: $285.75 | Stop: $- | Target: $-<br>Trend: -</div>
+</div>
+<div class="card">
+<span class="ticker">SO</span>
+<span class="score">Score 9</span>
+<div class="detail">Entry: $93.74 | Stop: $- | Target: $-<br>Trend: -</div>
+</div>
+<div class="card">
+<span class="ticker">EQIX</span>
+<span class="score">Score 9</span>
+<div class="detail">Entry: $1070.22 | Stop: $- | Target: $-<br>Trend: -</div>
 </div>
 </div>
 
 <div class="section">
-<h2>🔬 How It Works</h2>
-<p style="color: #aaa; font-size: 0.95rem;">
-Every morning, our scanner analyzes 100+ stocks and 37 crypto pairs using technical analysis:
+<h2>&#x20BF; Crypto Signals (5 picks)</h2>
+
+<div class="card">
+<span class="ticker">SEI</span>
+<span class="score">Score 7</span>
+<div class="detail">Price: $0.0688 | 24h: ?%</div>
+</div>
+<div class="card">
+<span class="ticker">MKR</span>
+<span class="score">Score 6</span>
+<div class="detail">Price: $1527.2317 | 24h: ?%</div>
+</div>
+<div class="card">
+<span class="ticker">RIO</span>
+<span class="score">Score 6</span>
+<div class="detail">Price: $0.0687 | 24h: ?%</div>
+</div>
+<div class="card">
+<span class="ticker">SHIB</span>
+<span class="score">Score 5</span>
+<div class="detail">Price: $0.0 | 24h: ?%</div>
+</div>
+<div class="card">
+<span class="ticker">FET</span>
+<span class="score">Score 5</span>
+<div class="detail">Price: $0.2255 | 24h: ?%</div>
+</div>
+</div>
+
+<div class="premium-box">
+<h3>&#x1F52E; Premium Access</h3>
+<p style="color:#ccc;margin:1rem 0;">Deep analysis with entry, stop, target, R:R, position sizing &mdash; delivered via encrypted Nostr DM</p>
+<div class="price">&#x1F48E; Monthly &mdash; 50,000 sats (~$50/mo)<br>&#x1F4C4; Single &mdash; 15,000 sats (~$15/report)</div>
+<div class="steps">
+1. Send sats to the tip address above<br>
+2. DM us your txid on Nostr<br>
+3. Receive premium reports via encrypted DM
+</div>
+<p style="margin-top:1rem;">
+<span class="tag">#phasma</span>
+<span class="tag">#signals</span>
+<span class="tag">#premium</span>
+<span class="tag">#nostr</span>
 </p>
-<ul style="color: #888; font-size: 0.9rem; margin: 1rem 0 0 1.5rem;">
-<li><strong style="color:#e0e0e0">EMA Stack</strong> — Golden Stack (20>50>200) = bullish trend confirmation</li>
-<li><strong style="color:#e0e0e0">RSI Extremes</strong> — Oversold in uptrend = buy-the-dip opportunity</li>
-<li><strong style="color:#e0e0e0">Volume Surges</strong> — 2x+ average volume = institutional activity</li>
-<li><strong style="color:#e0e0e0">Swing Pivots</strong> — W/S structure for entry/exit timing</li>
-<li><strong style="color:#e0e0e0">Crypto-specific</strong> — Golden Cross, Volatility Squeeze, Deep RSI</li>
-</ul>
-<p style="color: #aaa; font-size: 0.95rem; margin-top: 1rem;">
-Each signal gets a <strong style="color:#a855f7">confluence score</strong> (higher = more indicators agree). 
-Scores ≥5 = strong setup, 3-4 = good, 1-2 = watchlist.
-</p>
 </div>
 
-<div class="btc-box">
-<h3>☕ Support Independent Signals</h3>
-<p style="color: #aaa; font-size: 0.9rem; margin-bottom: 0.5rem;">If these signals help you profit, consider tipping:</p>
-<div class="btc-address">bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx</div>
-<p style="color: #666; font-size: 0.8rem;">Bitcoin on-chain • Any amount appreciated</p>
 </div>
-
-<div class="section">
-<h2>📡 Follow Us</h2>
-<p style="color: #aaa; font-size: 0.9rem;">
-Get signals delivered to you daily:
-</p>
-<ul style="color: #888; font-size: 0.9rem; margin: 1rem 0 0 1.5rem;">
-<li>📱 <strong>Telegram</strong> — @phasma_signals (coming soon)</li>
-<li>🟣 <strong>Nostr</strong> — Follow our pubkey for censorship-free signals</li>
-<li>🌐 <strong>This site</strong> — Bookmark and check daily</li>
-</ul>
+<div class="footer">
+Phasma Signals &mdash; Independent trading research<br>
+&#9888;&#65039; Not financial advice. Do your own research.
 </div>
-
-<div class="disclaimer">
-<p>⚠️ Not financial advice. All signals are for educational purposes. Do your own research. Trading involves risk of loss.</p>
-<p style="margin-top: 0.5rem;">Phasma Signals © 2026 — Automated by Hermes Agent</p>
-</div>
-
-<p class="updated" id="timestamp"></p>
-</div>
-
-<script>
-const el = document.getElementById('timestamp');
-if (el) el.textContent = 'Last updated: 2026-05-28 11:43 UTC';
-</script>
 </body>
 </html>
