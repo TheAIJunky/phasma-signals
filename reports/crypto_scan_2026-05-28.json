@@ -1,0 +1,519 @@
+{
+  "timestamp": "2026-05-28 07:25",
+  "total_scanned": 37,
+  "buys": [
+    {
+      "symbol": "MKR",
+      "category": "defi",
+      "price": 1523.2026,
+      "change_1d": -9.89,
+      "rsi": 24.8,
+      "volume_ratio": 1.65,
+      "atr_pct": 4.2,
+      "ema9": 1665.7289,
+      "ema21": 1707.9631,
+      "ema50": 1740.9473,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udd0a Above-Avg Volume (1.6x)",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+      ],
+      "score": 7,
+      "action": "\ud83d\udfe2 STRONG BUY"
+    },
+    {
+      "symbol": "SEI",
+      "category": "l1s",
+      "price": 0.0669,
+      "change_1d": 1.57,
+      "rsi": 50.3,
+      "volume_ratio": 2.7,
+      "atr_pct": 4.86,
+      "ema9": 0.0636,
+      "ema21": 0.0632,
+      "ema50": 0.0622,
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross",
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udd0a High Volume (2.7x)"
+      ],
+      "score": 7,
+      "action": "\ud83d\udfe2 STRONG BUY"
+    },
+    {
+      "symbol": "RIO",
+      "category": "rwa",
+      "price": 0.0675,
+      "change_1d": -5.49,
+      "rsi": 15.2,
+      "volume_ratio": 0.79,
+      "atr_pct": 13.66,
+      "ema9": 0.0777,
+      "ema21": 0.0855,
+      "ema50": 0.0817,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+      ],
+      "score": 6,
+      "action": "\ud83d\udfe2 STRONG BUY"
+    },
+    {
+      "symbol": "FET",
+      "category": "ai",
+      "price": 0.2186,
+      "change_1d": -13.05,
+      "rsi": 51.9,
+      "volume_ratio": 1.06,
+      "atr_pct": 7.54,
+      "ema9": 0.2171,
+      "ema21": 0.213,
+      "ema50": 0.212,
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross",
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)"
+      ],
+      "score": 5,
+      "action": "\ud83d\udfe2 STRONG BUY"
+    },
+    {
+      "symbol": "ETH",
+      "category": "majors",
+      "price": 1975.5,
+      "change_1d": -4.6,
+      "rsi": 22.0,
+      "volume_ratio": 1.18,
+      "atr_pct": 3.9,
+      "ema9": 2089.3353,
+      "ema21": 2156.603,
+      "ema50": 2194.7944,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "BNB",
+      "category": "majors",
+      "price": 633.01,
+      "change_1d": -3.45,
+      "rsi": 33.0,
+      "volume_ratio": 0.96,
+      "atr_pct": 2.58,
+      "ema9": 650.8448,
+      "ema21": 649.6654,
+      "ema50": 641.3642,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udfe1 RSI Oversold (<35)",
+        "\ud83c\udfaf Pullback to EMA21",
+        "\ud83d\udd3b Breakdown below EMA50"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "AAVE",
+      "category": "defi",
+      "price": 80.41,
+      "change_1d": -6.15,
+      "rsi": 17.6,
+      "volume_ratio": 1.08,
+      "atr_pct": 4.87,
+      "ema9": 86.0228,
+      "ema21": 89.3096,
+      "ema50": 93.7225,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "LDO",
+      "category": "defi",
+      "price": 0.314,
+      "change_1d": -8.15,
+      "rsi": 21.6,
+      "volume_ratio": 1.03,
+      "atr_pct": 6.07,
+      "ema9": 0.343,
+      "ema21": 0.3568,
+      "ema50": 0.3583,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "OP",
+      "category": "defi",
+      "price": 0.116,
+      "change_1d": -9.21,
+      "rsi": 24.9,
+      "volume_ratio": 1.02,
+      "atr_pct": 6.62,
+      "ema9": 0.1272,
+      "ema21": 0.1311,
+      "ema50": 0.1295,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "ADA",
+      "category": "l1s",
+      "price": 0.2286,
+      "change_1d": -4.67,
+      "rsi": 20.3,
+      "volume_ratio": 1.17,
+      "atr_pct": 4.17,
+      "ema9": 0.2429,
+      "ema21": 0.2496,
+      "ema50": 0.2537,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "ATOM",
+      "category": "l1s",
+      "price": 2.079,
+      "change_1d": -5.9,
+      "rsi": 52.2,
+      "volume_ratio": 0.92,
+      "atr_pct": 5.49,
+      "ema9": 2.0912,
+      "ema21": 2.0417,
+      "ema50": 1.9624,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83c\udfaf Pullback to EMA21"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "DOGE",
+      "category": "meme",
+      "price": 0.0972,
+      "change_1d": -3.66,
+      "rsi": 21.6,
+      "volume_ratio": 0.84,
+      "atr_pct": 4.47,
+      "ema9": 0.1023,
+      "ema21": 0.1044,
+      "ema50": 0.1028,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "AGIX",
+      "category": "ai",
+      "price": 0.0967,
+      "change_1d": -11.41,
+      "rsi": 53.0,
+      "volume_ratio": 0.48,
+      "atr_pct": 5.76,
+      "ema9": 0.0946,
+      "ema21": 0.0928,
+      "ema50": 0.0933,
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY"
+    },
+    {
+      "symbol": "RENDER",
+      "category": "ai",
+      "price": 1.995,
+      "change_1d": -13.0,
+      "rsi": 55.5,
+      "volume_ratio": 1.58,
+      "atr_pct": 8.24,
+      "ema9": 2.0235,
+      "ema21": 1.954,
+      "ema50": 1.878,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udd0a Above-Avg Volume (1.6x)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY"
+    }
+  ],
+  "watches": [
+    {
+      "symbol": "BTC",
+      "category": "majors",
+      "price": 72897.9922,
+      "change_1d": -3.86,
+      "rsi": 28.9,
+      "volume_ratio": 1.32,
+      "atr_pct": 2.79,
+      "ema9": 76182.675,
+      "ema21": 77206.4413,
+      "ema50": 76324.7334,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "SOL",
+      "category": "majors",
+      "price": 80.44,
+      "change_1d": -3.76,
+      "rsi": 25.4,
+      "volume_ratio": 1.01,
+      "atr_pct": 3.91,
+      "ema9": 84.5042,
+      "ema21": 86.0992,
+      "ema50": 86.4143,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "XRP",
+      "category": "majors",
+      "price": 1.2789,
+      "change_1d": -3.67,
+      "rsi": 27.9,
+      "volume_ratio": 1.14,
+      "atr_pct": 3.73,
+      "ema9": 1.3433,
+      "ema21": 1.3725,
+      "ema50": 1.3869,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "CRV",
+      "category": "defi",
+      "price": 0.2085,
+      "change_1d": -4.71,
+      "rsi": 26.0,
+      "volume_ratio": 0.96,
+      "atr_pct": 6.87,
+      "ema9": 0.2262,
+      "ema21": 0.2345,
+      "ema50": 0.2358,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "AVAX",
+      "category": "l1s",
+      "price": 8.74,
+      "change_1d": -4.27,
+      "rsi": 31.7,
+      "volume_ratio": 1.28,
+      "atr_pct": 4.37,
+      "ema9": 9.175,
+      "ema21": 9.3148,
+      "ema50": 9.3532,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "DOT",
+      "category": "l1s",
+      "price": 1.178,
+      "change_1d": -5.64,
+      "rsi": 33.4,
+      "volume_ratio": 1.36,
+      "atr_pct": 5.83,
+      "ema9": 1.2469,
+      "ema21": 1.2658,
+      "ema50": 1.2925,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "NEAR",
+      "category": "l1s",
+      "price": 2.389,
+      "change_1d": -6.07,
+      "rsi": 71.2,
+      "volume_ratio": 1.77,
+      "atr_pct": 9.05,
+      "ema9": 2.257,
+      "ema21": 1.9474,
+      "ema50": 1.6616,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udd0a Above-Avg Volume (1.8x)",
+        "\ud83d\udfe0 RSI High Zone (65-75)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "ALGO",
+      "category": "l1s",
+      "price": 0.1035,
+      "change_1d": -4.57,
+      "rsi": 33.4,
+      "volume_ratio": 0.94,
+      "atr_pct": 5.66,
+      "ema9": 0.1107,
+      "ema21": 0.1131,
+      "ema50": 0.1111,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "WIF",
+      "category": "meme",
+      "price": 0.175,
+      "change_1d": -9.82,
+      "rsi": 27.3,
+      "volume_ratio": 1.16,
+      "atr_pct": 7.01,
+      "ema9": 0.1907,
+      "ema21": 0.1961,
+      "ema50": 0.1961,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "FLOKI",
+      "category": "meme",
+      "price": 0.0,
+      "change_1d": -6.9,
+      "rsi": 26.7,
+      "volume_ratio": 1.2,
+      "atr_pct": 6.08,
+      "ema9": 0.0,
+      "ema21": 0.0,
+      "ema50": 0.0,
+      "signals": [
+        "\ud83d\udfe1 RSI Oversold (<35)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "ONDO",
+      "category": "rwa",
+      "price": 0.3563,
+      "change_1d": -12.12,
+      "rsi": 45.4,
+      "volume_ratio": 1.02,
+      "atr_pct": 11.26,
+      "ema9": 0.3966,
+      "ema21": 0.3804,
+      "ema50": 0.341,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "ARB",
+      "category": "defi",
+      "price": 0.0008,
+      "change_1d": 0.01,
+      "rsi": 100.0,
+      "volume_ratio": 20.0,
+      "atr_pct": 0.0,
+      "ema9": 0.0008,
+      "ema21": 0.0008,
+      "ema50": 0.0008,
+      "signals": [
+        "\ud83d\udd0a Massive Volume (20.0x)",
+        "\u26a0\ufe0f RSI Overbought (>75)"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "SHIB",
+      "category": "meme",
+      "price": 0.0,
+      "change_1d": -12.5,
+      "rsi": 0.0,
+      "volume_ratio": 1.51,
+      "atr_pct": 3.74,
+      "ema9": 0.0,
+      "ema21": 0.0,
+      "ema50": 0.0,
+      "signals": [
+        "\ud83d\udd0a Above-Avg Volume (1.5x)"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH"
+    },
+    {
+      "symbol": "POLYX",
+      "category": "rwa",
+      "price": 0.0475,
+      "change_1d": -13.1,
+      "rsi": 41.3,
+      "volume_ratio": 0.42,
+      "atr_pct": 10.29,
+      "ema9": 0.0533,
+      "ema21": 0.0531,
+      "ema50": 0.0514,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udd35 RSI Low Zone (35-45)",
+        "\ud83d\udd3b Breakdown below EMA50"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH"
+    }
+  ],
+  "avoids": [
+    {
+      "symbol": "PEPE24478",
+      "category": "meme",
+      "price": 0.0,
+      "change_1d": -17.5,
+      "rsi": 0.0,
+      "volume_ratio": 1.05,
+      "atr_pct": 5.82,
+      "ema9": 0.0,
+      "ema21": 0.0,
+      "ema50": 0.0,
+      "signals": [
+        "\ud83d\udc80 EMA9/21 Death Cross"
+      ],
+      "score": -3,
+      "action": "\ud83d\udd34 AVOID"
+    }
+  ]
+}

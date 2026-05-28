@@ -1,0 +1,50 @@
+🔮 CRYPTO OPPORTUNITY SCAN — 2026-05-28 07:25
+=============================================
+Scanned: 37 pairs
+Buy signals: 14 | Watch: 14 | Avoid: 1
+
+🟢 BUY SIGNALS:
+       MKR $1523.2026  RSI: 24.8 Vol:1.65x  Score:7
+           🔥 RSI Deeply Oversold (<25) | 🔊 Above-Avg Volume (1.6x) | 💨 Volatility Squeeze (breakout imminent)
+       SEI $0.0669     RSI: 50.3 Vol:2.7x  Score:7
+           ⚡ EMA9/21 Golden Cross | 📈 EMA Stack Bullish (9>21>50) | 🔊 High Volume (2.7x)
+       RIO $0.0675     RSI: 15.2 Vol:0.79x  Score:6
+           🔥 RSI Deeply Oversold (<25) | 💨 Volatility Squeeze (breakout imminent)
+       FET $0.2186     RSI: 51.9 Vol:1.06x  Score:5
+           ⚡ EMA9/21 Golden Cross | 📈 EMA Stack Bullish (9>21>50)
+       ETH $1975.5     RSI: 22.0 Vol:1.18x  Score:4
+           🔥 RSI Deeply Oversold (<25)
+       BNB $633.01     RSI: 33.0 Vol:0.96x  Score:4
+           📈 EMA Stack Bullish (9>21>50) | 🟡 RSI Oversold (<35) | 🎯 Pullback to EMA21
+      AAVE $80.41      RSI: 17.6 Vol:1.08x  Score:4
+           🔥 RSI Deeply Oversold (<25)
+       LDO $0.314      RSI: 21.6 Vol:1.03x  Score:4
+           🔥 RSI Deeply Oversold (<25)
+        OP $0.116      RSI: 24.9 Vol:1.02x  Score:4
+           🔥 RSI Deeply Oversold (<25)
+       ADA $0.2286     RSI: 20.3 Vol:1.17x  Score:4
+           🔥 RSI Deeply Oversold (<25)
+      ATOM $2.079      RSI: 52.2 Vol:0.92x  Score:4
+           📈 EMA Stack Bullish (9>21>50) | 🎯 Pullback to EMA21
+      DOGE $0.0972     RSI: 21.6 Vol:0.84x  Score:4
+           🔥 RSI Deeply Oversold (<25)
+      AGIX $0.0967     RSI: 53.0 Vol:0.48x  Score:3
+           ⚡ EMA9/21 Golden Cross
+    RENDER $1.995      RSI: 55.5 Vol:1.58x  Score:3
+           📈 EMA Stack Bullish (9>21>50) | 🔊 Above-Avg Volume (1.6x)
+
+🔵 WATCHLIST:
+       BTC $72897.9922 Score:2  🟡 RSI Oversold (<35)
+       SOL $80.44      Score:2  🟡 RSI Oversold (<35)
+       XRP $1.2789     Score:2  🟡 RSI Oversold (<35)
+       CRV $0.2085     Score:2  🟡 RSI Oversold (<35)
+      AVAX $8.74       Score:2  🟡 RSI Oversold (<35)
+       DOT $1.178      Score:2  🟡 RSI Oversold (<35)
+      NEAR $2.389      Score:2  📈 EMA Stack Bullish (9>21>50)
+      ALGO $0.1035     Score:2  🟡 RSI Oversold (<35)
+
+🔴 AVOID:
+  PEPE24478 $0.0        Score:-3  💀 EMA9/21 Death Cross
+
+☕ Support: bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx
+⚠️ Not financial advice. DYOR. Manage risk.
