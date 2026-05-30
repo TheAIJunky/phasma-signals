@@ -38,6 +38,16 @@ try:
         data = json.load(f)
     # Merge bullish + watchlist, enriched items first
     all_stocks = data.get("bullish", []) + data.get("watchlist", [])
+    # ── Validation: remove crypto contamination, zero prices, low scores ──
+    import sys, logging; sys.path.insert(0, os.path.expanduser("~"))
+    logging.getLogger("phasma_validation").setLevel(logging.ERROR)
+    from phasma_validation import validate_scan_data, is_crypto_ticker
+    # Filter out crypto tickers that leaked into stock section
+    all_stocks = [s for s in all_stocks if not is_crypto_ticker(s.get("ticker", ""))]
+    stock_data_v = {"bullish": [s for s in all_stocks if s.get("score", 0) >= 3],
+                    "watchlist": [s for s in all_stocks if 1 <= s.get("score", 0) < 3]}
+    cleaned, rejected, _ = validate_scan_data(stock_data_v, "stock")
+    all_stocks = cleaned.get("bullish", []) + cleaned.get("watchlist", [])
     # Sort: enriched items (have trade_table or scorecard) first
     all_stocks.sort(key=lambda x: bool(x.get("trade_table") or x.get("scorecard_total") or x.get("vwap_levels")), reverse=True)
     stocks = all_stocks[:8]
@@ -48,6 +58,12 @@ try:
         data = json.load(f)
     # Merge buys + watches, enriched items first
     all_crypto = data.get("buys", []) + data.get("watches", []) + data.get("avoids", [])
+    # ── Validation: reject zero prices, impossible RSI ──
+    crypto_data_v = {"buys": [s for s in all_crypto if s.get("score", 0) >= 3],
+                     "watches": [s for s in all_crypto if 1 <= s.get("score", 0) < 3],
+                     "avoids": []}
+    cleaned, rejected, _ = validate_scan_data(crypto_data_v, "crypto")
+    all_crypto = cleaned.get("buys", []) + cleaned.get("watches", [])
     # Sort: enriched items first
     all_crypto.sort(key=lambda x: bool(x.get("trade_table") or x.get("volume_profile") or x.get("vwap_levels")), reverse=True)
     crypto = all_crypto[:8]
