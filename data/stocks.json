@@ -73,7 +73,29 @@
         "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 9
+      "score": 9,
+      "scorecard_total": 5,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$1,068",
+          "entry": 1068.04,
+          "stop": 1036.04,
+          "t1": 1100.04,
+          "t2": 1121.37,
+          "t3": 1153.36,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "NVDA",
@@ -90,7 +112,29 @@
         "\ud83c\udfaf Pullback to EMA20 support",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 8
+      "score": 8,
+      "scorecard_total": 6,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$214",
+          "entry": 211.14,
+          "stop": 197.67,
+          "t1": 224.61,
+          "t2": 233.58,
+          "t3": 247.05,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "GOOGL",
@@ -108,7 +152,29 @@
         "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 8
+      "score": 8,
+      "scorecard_total": 6,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$383",
+          "entry": 380.34,
+          "stop": 362.76,
+          "t1": 397.92,
+          "t2": 409.64,
+          "t3": 427.21,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "LIN",
@@ -194,7 +260,29 @@
         "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 7
+      "score": 7,
+      "scorecard_total": 6,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$266",
+          "entry": 270.64,
+          "stop": 259.8,
+          "t1": 281.48,
+          "t2": 288.71,
+          "t3": 299.56,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "UNH",
@@ -211,7 +299,29 @@
         "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 7
+      "score": 7,
+      "scorecard_total": 6,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$377",
+          "entry": 380.31,
+          "stop": 363.75,
+          "t1": 396.87,
+          "t2": 407.91,
+          "t3": 424.46,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "MRK",
@@ -229,7 +339,29 @@
         "\ud83d\udd04 Double Bottom (W pattern)",
         "\ud83d\udfe0 RSI Near Overbought (60-70)"
       ],
-      "score": 7
+      "score": 7,
+      "scorecard_total": 6,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$116",
+          "entry": 118.72,
+          "stop": 113.92,
+          "t1": 123.52,
+          "t2": 126.72,
+          "t3": 131.52,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "AVGO",
@@ -246,7 +378,29 @@
         "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 7
+      "score": 7,
+      "scorecard_total": 5,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$419",
+          "entry": 446.77,
+          "stop": 420.75,
+          "t1": 472.79,
+          "t2": 490.14,
+          "t3": 516.16,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "MDLZ",
@@ -282,7 +436,29 @@
         "\ud83d\udcc9 Death Stack (EMA20<50<200)",
         "\ud83d\udfe0 RSI Near Overbought (60-70)"
       ],
-      "score": 2
+      "score": 2,
+      "scorecard_total": 6,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$621",
+          "entry": 632.51,
+          "stop": 607.97,
+          "t1": 657.05,
+          "t2": 673.41,
+          "t3": 697.95,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "PG",
