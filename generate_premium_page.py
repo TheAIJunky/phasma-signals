@@ -266,16 +266,16 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 <div class="step">
 <div class="num">1</div>
 <div class="text">
-<h3>Send sats via Lightning</h3>
-<p>Zap to our Lightning address or scan any QR on this page.</p>
+<h3>Zap ⚡ to subscribe</h3>
+<p>Zap 50,000 sats for monthly or 120,000 sats for quarterly. Zaps are auto-detected — no extra steps needed.</p>
 <span class="code">⚡ {LIGHTNING_ADDR}</span>
 </div>
 </div>
 <div class="step">
 <div class="num">2</div>
 <div class="text">
-<h3>Message us on Nostr</h3>
-<p>Send us a DM with your payment txid. We'll verify and add you.</p>
+<h3>Manual Lightning payment</h3>
+<p>No wallet with zap support? Send the exact amount (15k / 50k / 120k sats) to our Lightning address, then DM us the txid on Nostr.</p>
 <span class="code">📬 {NOSTR_NPUB}</span>
 </div>
 </div>
@@ -293,7 +293,7 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 <h2>🔮 Ready to Trade with a Plan?</h2>
 <p>Stop guessing. Start getting institutional-grade analysis delivered to your Nostr DM every market day.</p>
 <a href="lightning:{LIGHTNING_ADDR}" class="zap-btn">⚡ Subscribe Now — 50,000 sats/mo</a>
-<p class="alt">Or send any amount to <strong style="color:#b388ff;">{LIGHTNING_ADDR}</strong> and DM us your txid.</p>
+<p class="alt">No zap support? Send exact amount (15k / 50k / 120k sats) to <strong style="color:#b388ff;">{LIGHTNING_ADDR}</strong> then DM your txid on Nostr.</p>
 </div>
 
 <div class="social-proof">
