@@ -173,6 +173,16 @@ for s in stocks:
     stop = esc(s.get("stop", "-"))
     target = esc(s.get("target", s.get("t1", "-")))
     trend = esc(s.get("trend", s.get("trend_label", "-")))
+    # Fill stop/target/trend from bridge trade table if missing
+    tt = s.get("trade_table", [])
+    if tt and (stop == "-" or target == "-" or trend == "-"):
+        t0 = tt[0]
+        if stop == "-" and t0.get("stop"):
+            stop = fmt_price(t0["stop"])
+        if target == "-" and t0.get("t1"):
+            target = fmt_price(t0["t1"])
+        if trend == "-" and s.get("trend_label"):
+            trend = esc(s["trend_label"])
     extras = render_trade_table_card(s)
     stock_cards += f"""
 <div class="card">
