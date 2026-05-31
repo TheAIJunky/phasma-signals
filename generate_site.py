@@ -284,7 +284,7 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 <body>
 <div class="nav">
 <a href="/" class="active">🔮 Signals</a>
-<a href="/premium.html">💎 Premium</a>
+<a href="/phasma-signals/premium.html">💎 Premium</a>
 </div>
 <div class="header">
 <h1>&#x1F52E; Phasma Signals</h1>
@@ -310,7 +310,7 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 </div>
 
 <div class="premium-box">
-<h3>&#x1F48E; <a href="/premium.html" style="color:#e040fb;text-decoration:none;">Premium Access</a></h3>
+<h3>&#x1F48E; <a href="/phasma-signals/premium.html" style="color:#e040fb;text-decoration:none;">Premium Access</a></h3>
 <p style="color:#ccc;margin:1rem 0;">Deep analysis with entry, stop, target, R:R, position sizing &mdash; delivered via encrypted Nostr DM</p>
 <div class="price">&#x1F48E; Monthly &mdash; 50,000 sats (~$50/mo)<br>&#x1F4C4; Single &mdash; 15,000 sats (~$15/report)<br>&#x1F4B0; Quarterly &mdash; 120,000 sats (~$120/3mo)</div>
 <div class="steps">

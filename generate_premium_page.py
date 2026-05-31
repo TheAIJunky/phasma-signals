@@ -160,8 +160,8 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 <body>
 
 <div class="nav">
-<a href="/">🔮 Signals</a>
-<a href="/premium.html" class="active">💎 Premium</a>
+<a href="/phasma-signals/">🔮 Signals</a>
+<a href="/phasma-signals/premium.html" class="active">💎 Premium</a>
 </div>
 
 <div class="hero">
