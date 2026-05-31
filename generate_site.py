@@ -250,6 +250,10 @@ html = f"""<!DOCTYPE html>
 <style>
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans-serif; min-height:100vh; }}
+.nav {{ display:flex; justify-content:center; gap:2rem; padding:0.8rem; background:#0a0a0f; border-bottom:1px solid #1a1a2e; }}
+.nav a {{ color:#888; text-decoration:none; font-size:0.9rem; }}
+.nav a:hover {{ color:#b388ff; }}
+.nav a.active {{ color:#e040fb; font-weight:bold; }}
 .header {{ background:linear-gradient(135deg,#1a0030,#0a0a2e); padding:2rem 1rem; text-align:center; border-bottom:1px solid #2a1a4a; }}
 .header h1 {{ font-size:2rem; color:#b388ff; }}
 .header p {{ color:#888; margin-top:0.5rem; }}
@@ -278,6 +282,10 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 </style>
 </head>
 <body>
+<div class="nav">
+<a href="/" class="active">🔮 Signals</a>
+<a href="/premium.html">💎 Premium</a>
+</div>
 <div class="header">
 <h1>&#x1F52E; Phasma Signals</h1>
 <p>Daily trading signals &mdash; stocks &amp; crypto</p>
@@ -302,15 +310,16 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 </div>
 
 <div class="premium-box">
-<h3>&#x1F52E; Premium Access</h3>
+<h3>&#x1F48E; <a href="/premium.html" style="color:#e040fb;text-decoration:none;">Premium Access</a></h3>
 <p style="color:#ccc;margin:1rem 0;">Deep analysis with entry, stop, target, R:R, position sizing &mdash; delivered via encrypted Nostr DM</p>
-<div class="price">&#x1F48E; Monthly &mdash; 50,000 sats (~$50/mo)<br>&#x1F4C4; Single &mdash; 15,000 sats (~$15/report)</div>
+<div class="price">&#x1F48E; Monthly &mdash; 50,000 sats (~$50/mo)<br>&#x1F4C4; Single &mdash; 15,000 sats (~$15/report)<br>&#x1F4B0; Quarterly &mdash; 120,000 sats (~$120/3mo)</div>
 <div class="steps">
-1. Zap this post or send sats to the address above<br>
-2. DM us your txid on Nostr<br>
+1. Zap to <strong style="color:#b388ff;">antsyopen378@walletofsatoshi.com</strong><br>
+2. DM your txid on Nostr<br>
 3. Receive premium reports via encrypted DM
 </div>
-<p style="margin-top:1rem;">
+<p style="margin-top:1rem;"><a href="/premium.html" style="color:#e040fb;font-weight:bold;">→ See full premium details &amp; pricing</a></p>
+<p style="margin-top:0.5rem;">
 <span class="tag">#phasma</span>
 <span class="tag">#signals</span>
 <span class="tag">#premium</span>

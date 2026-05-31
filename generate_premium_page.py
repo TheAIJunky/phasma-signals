@@ -1,0 +1,359 @@
+#!/usr/bin/env python3
+"""Generate Phasma Signals Premium landing page."""
+import json, os, sys
+
+SITE_DIR = os.path.expanduser("~/phasma-signals-site")
+REPORTS_DIR = "/sdcard/Documents/Projets_Termux"
+
+BTC_ADDRESS = "bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx"
+LIGHTNING_ADDR = "antsyopen378@walletofsatoshi.com"
+NOSTR_NPUB = "npub14a68c64d2hq6t5589pdcpwe9gqcxnefxw8v9waq3hm8n5gq5wnqsuu6ee5"
+
+# Count today's signals for social proof
+n_stocks = n_crypto = 0
+try:
+    with open(os.path.join(REPORTS_DIR, "market_scan_latest.json")) as f:
+        data = json.load(f)
+    n_stocks = len(data.get("bullish", [])) + len(data.get("watchlist", []))
+except:
+    pass
+try:
+    with open(os.path.join(REPORTS_DIR, "crypto_scan_latest.json")) as f:
+        data = json.load(f)
+    n_crypto = len(data.get("buys", [])) + len(data.get("watches", []))
+except:
+    pass
+
+total_signals = n_stocks + n_crypto
+
+html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phasma Signals — Premium</title>
+<meta name="description" content="Premium trading signals with precise entry, stop, targets, position sizing, and risk management. Delivered daily via encrypted Nostr DM.">
+<meta property="og:title" content="Phasma Signals — Premium Trading Research">
+<meta property="og:description" content="Daily stock & crypto signals with trade plans, scorecards, and risk management. Lightning payments.">
+<meta property="og:url" content="https://theaijunky.github.io/phasma-signals/premium.html">
+<meta property="og:image" content="https://theaijunky.github.io/phasma-signals/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://theaijunky.github.io/phasma-signals/premium.html">
+<style>
+* {{ margin:0; padding:0; box-sizing:border-box; }}
+body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-apple-system,sans-serif; min-height:100vh; }}
+
+/* Nav */
+.nav {{ display:flex; justify-content:center; gap:2rem; padding:1rem; background:#0a0a0f; border-bottom:1px solid #1a1a2e; position:sticky; top:0; z-index:10; }}
+.nav a {{ color:#888; text-decoration:none; font-size:0.9rem; transition:color 0.2s; }}
+.nav a:hover {{ color:#b388ff; }}
+.nav a.active {{ color:#e040fb; font-weight:bold; }}
+
+/* Hero */
+.hero {{ background:linear-gradient(135deg,#1a0030 0%,#2a0a3e 50%,#0a0a2e 100%); padding:4rem 1rem; text-align:center; position:relative; overflow:hidden; }}
+.hero::before {{ content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(ellipse,rgba(179,136,255,0.08) 0%,transparent 60%); animation:pulse 8s ease-in-out infinite; }}
+@keyframes pulse {{ 0%,100%{{opacity:0.5;transform:scale(1)}} 50%{{opacity:1;transform:scale(1.1)}} }}
+.hero h1 {{ font-size:2.5rem; color:#e040fb; position:relative; }}
+.hero .subtitle {{ color:#b388ff; font-size:1.2rem; margin-top:0.5rem; position:relative; }}
+.hero .stats {{ display:flex; justify-content:center; gap:2rem; margin-top:2rem; position:relative; }}
+.hero .stat {{ text-align:center; }}
+.hero .stat .num {{ font-size:2rem; font-weight:bold; color:#e040fb; }}
+.hero .stat .label {{ font-size:0.8rem; color:#888; }}
+
+.container {{ max-width:800px; margin:0 auto; padding:1rem; }}
+
+/* Problem / Hook */
+.hook {{ margin:3rem 0; padding:2rem; border-left:3px solid #e040fb; background:rgba(224,64,251,0.05); border-radius:0 12px 12px 0; }}
+.hook h2 {{ color:#e040fb; margin-bottom:1rem; font-size:1.5rem; }}
+.hook p {{ color:#ccc; line-height:1.8; margin-bottom:0.5rem; }}
+.hook .pain {{ color:#f0883e; }}
+
+/* Comparison Table */
+.compare {{ margin:3rem 0; }}
+.compare h2 {{ color:#b388ff; text-align:center; margin-bottom:1.5rem; font-size:1.5rem; }}
+.compare table {{ width:100%; border-collapse:collapse; background:#111; border-radius:12px; overflow:hidden; }}
+.compare th {{ background:#1a1a2e; padding:1rem; text-align:left; color:#b388ff; }}
+.compare th:last-child {{ color:#e040fb; }}
+.compare td {{ padding:0.8rem 1rem; border-top:1px solid #1a1a2e; color:#888; }}
+.compare td:first-child {{ color:#c9d1d9; font-weight:500; }}
+.compare td:last-child {{ color:#3fb950; font-weight:500; }}
+.compare td .check {{ color:#3fb950; }}
+.compare td .cross {{ color:#f85149; }}
+.compare tr:hover {{ background:rgba(179,136,255,0.03); }}
+
+/* Features */
+.features {{ margin:3rem 0; }}
+.features h2 {{ color:#b388ff; text-align:center; margin-bottom:1.5rem; font-size:1.5rem; }}
+.feature-grid {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }}
+.feature-card {{ background:#111; border:1px solid #222; border-radius:12px; padding:1.5rem; transition:border-color 0.3s,transform 0.3s; }}
+.feature-card:hover {{ border-color:#b388ff; transform:translateY(-2px); }}
+.feature-card .icon {{ font-size:2rem; margin-bottom:0.5rem; }}
+.feature-card h3 {{ color:#e040fb; font-size:1rem; margin-bottom:0.3rem; }}
+.feature-card p {{ color:#888; font-size:0.85rem; line-height:1.5; }}
+
+/* Pricing */
+.pricing {{ margin:3rem 0; text-align:center; }}
+.pricing h2 {{ color:#b388ff; margin-bottom:1.5rem; font-size:1.5rem; }}
+.pricing-cards {{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }}
+.price-card {{ background:#111; border:1px solid #222; border-radius:16px; padding:2rem; min-width:250px; flex:1; max-width:350px; transition:border-color 0.3s,transform 0.3s; }}
+.price-card:hover {{ border-color:#b388ff; transform:translateY(-3px); }}
+.price-card.featured {{ border-color:#e040fb; background:linear-gradient(135deg,#1a0030,#2a0a3e); position:relative; }}
+.price-card.featured::before {{ content:'⭐ POPULAR'; position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#e040fb; color:#0a0a0f; padding:0.2rem 1rem; border-radius:20px; font-size:0.75rem; font-weight:bold; }}
+.price-card .tier {{ color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; }}
+.price-card .amount {{ font-size:2.5rem; font-weight:bold; color:#e040fb; margin:0.5rem 0; }}
+.price-card .sats {{ color:#b388ff; font-size:0.9rem; }}
+.price-card .period {{ color:#888; font-size:0.85rem; margin-bottom:1.5rem; }}
+.price-card ul {{ list-style:none; text-align:left; margin:1rem 0; }}
+.price-card li {{ color:#ccc; padding:0.4rem 0; font-size:0.9rem; border-bottom:1px solid #1a1a2e; }}
+.price-card li:last-child {{ border:none; }}
+.price-card li::before {{ content:'✓ '; color:#3fb950; font-weight:bold; }}
+
+/* How it works */
+.howto {{ margin:3rem 0; }}
+.howto h2 {{ color:#b388ff; text-align:center; margin-bottom:1.5rem; font-size:1.5rem; }}
+.steps {{ max-width:500px; margin:0 auto; }}
+.step {{ display:flex; gap:1rem; margin-bottom:1.5rem; align-items:flex-start; }}
+.step .num {{ background:#e040fb; color:#0a0a0f; width:2rem; height:2rem; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0; }}
+.step .text h3 {{ color:#c9d1d9; font-size:1rem; margin-bottom:0.2rem; }}
+.step .text p {{ color:#888; font-size:0.85rem; line-height:1.5; }}
+.step .text .code {{ background:#1a1a2e; color:#b388ff; padding:0.3rem 0.6rem; border-radius:6px; font-family:monospace; font-size:0.8rem; display:inline-block; margin-top:0.3rem; word-break:break-all; }}
+
+/* CTA */
+.cta {{ background:linear-gradient(135deg,#2a0a3e,#1a0030); border:2px solid #e040fb; border-radius:16px; padding:3rem 2rem; text-align:center; margin:3rem 0; }}
+.cta h2 {{ color:#e040fb; font-size:1.8rem; margin-bottom:0.5rem; }}
+.cta p {{ color:#ccc; margin-bottom:1.5rem; }}
+.cta .zap-btn {{ display:inline-block; background:#e040fb; color:#0a0a0f; padding:1rem 2rem; border-radius:12px; font-size:1.1rem; font-weight:bold; text-decoration:none; transition:transform 0.2s,box-shadow 0.2s; }}
+.cta .zap-btn:hover {{ transform:scale(1.05); box-shadow:0 0 30px rgba(224,64,251,0.4); }}
+.cta .alt {{ color:#888; font-size:0.85rem; margin-top:1rem; }}
+
+/* Social proof / Testimonial placeholder */
+.social-proof {{ margin:3rem 0; text-align:center; }}
+.social-proof h2 {{ color:#b388ff; margin-bottom:1rem; }}
+.social-proof .proof-cards {{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }}
+.proof-card {{ background:#111; border:1px solid #222; border-radius:12px; padding:1.5rem; max-width:350px; }}
+.proof-card .quote {{ color:#ccc; font-style:italic; line-height:1.6; margin-bottom:0.5rem; }}
+.proof-card .attr {{ color:#888; font-size:0.8rem; }}
+
+/* FAQ */
+.faq {{ margin:3rem 0; }}
+.faq h2 {{ color:#b388ff; text-align:center; margin-bottom:1.5rem; }}
+.faq-item {{ background:#111; border:1px solid #222; border-radius:12px; margin-bottom:0.5rem; overflow:hidden; }}
+.faq-q {{ padding:1rem; cursor:pointer; color:#c9d1d9; font-weight:500; display:flex; justify-content:space-between; align-items:center; }}
+.faq-q:hover {{ color:#e040fb; }}
+.faq-q .arrow {{ transition:transform 0.3s; color:#b388ff; }}
+.faq-a {{ padding:0 1rem 1rem; color:#888; line-height:1.6; display:none; }}
+.faq-item.open .faq-a {{ display:block; }}
+.faq-item.open .arrow {{ transform:rotate(180deg); }}
+
+.footer {{ text-align:center; padding:2rem; color:#444; font-size:0.8rem; border-top:1px solid #1a1a2e; }}
+.footer a {{ color:#b388ff; text-decoration:none; }}
+
+@media (max-width:600px) {{
+  .hero h1 {{ font-size:1.8rem; }}
+  .hero .stats {{ flex-direction:column; gap:1rem; }}
+  .pricing-cards {{ flex-direction:column; align-items:center; }}
+  .price-card {{ min-width:auto; width:100%; max-width:100%; }}
+  .feature-grid {{ grid-template-columns:1fr; }}
+}}
+</style>
+</head>
+<body>
+
+<div class="nav">
+<a href="/">🔮 Signals</a>
+<a href="/premium.html" class="active">💎 Premium</a>
+</div>
+
+<div class="hero">
+<h1>💎 Phasma Premium</h1>
+<p class="subtitle">Institutional-grade trade plans. Delivered daily to your Nostr DM.</p>
+<div class="stats">
+<div class="stat"><div class="num">{total_signals}+</div><div class="label">Signals / Day</div></div>
+<div class="stat"><div class="num">6</div><div class="label">Scorecard Checks</div></div>
+<div class="stat"><div class="num">3</div><div class="label">Trade Plans / Ticker</div></div>
+<div class="stat"><div class="num">⚡</div><div class="label">Lightning Payments</div></div>
+</div>
+</div>
+
+<div class="container">
+
+<div class="hook">
+<h2>Trading without a plan is gambling.</h2>
+<p>You've seen the free signals. Entry, stop, target — enough to get interested.</p>
+<p>But <span class="pain">where exactly do you enter?</span> Which time stop applies? What's the position size for a $5K or $10K account? How does VWAP align with the trade? Is the signal fighting the trend?</p>
+<p>Premium gives you the <strong>full trade plan</strong> — every signal analyzed with multiple setups, precise stops, tiered targets, and risk sizing. No guessing.</p>
+</div>
+
+<div class="compare">
+<h2>Free vs Premium</h2>
+<table>
+<tr><th>Feature</th><th>Free</th><th>Premium</th></tr>
+<tr><td>Daily signals</td><td><span class="check">✓</span> Top picks</td><td><span class="check">✓</span> Full universe</td></tr>
+<tr><td>Entry / Stop / Target</td><td><span class="check">✓</span> Basic</td><td><span class="check">✓</span> 3 trade plans per ticker</td></tr>
+<tr><td>Position sizing</td><td><span class="cross">✗</span></td><td><span class="check">✓</span> $5K & $10K sizing</td></tr>
+<tr><td>VWAP levels</td><td><span class="cross">✗</span></td><td><span class="check">✓</span> Session / Weekly / Monthly</td></tr>
+<tr><td>Volume profile (POC/VAH/VAL)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+<tr><td>Scorecard (6-point check)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+<tr><td>Max pain (options)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+<tr><td>R:R ratios (multi-target)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span> 1x / 1.7x / 2.7x</td></tr>
+<tr><td>Counter-trend warnings</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+<tr><td>Fractional sizing notes</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+<tr><td>Delivery</td><td>Public site</td><td>Encrypted Nostr DM</td></tr>
+<tr><td>Macro regime context</td><td><span class="check">✓</span> Basic</td><td><span class="check">✓</span> Full DXY/10Y/VIX analysis</td></tr>
+</table>
+</div>
+
+<div class="features">
+<h2>What's Inside Every Premium Report</h2>
+<div class="feature-grid">
+<div class="feature-card"><div class="icon">🎯</div><h3>3 Trade Plans</h3><p>Positional, Swing, and Day setups per ticker — each with entry, stop, and 3 targets.</p></div>
+<div class="feature-card"><div class="icon">📏</div><h3>Position Sizing</h3><p>Pre-calculated for $5K and $10K accounts. Fractional sizing noted for expensive assets.</p></div>
+<div class="feature-card"><div class="icon">📊</div><h3>VWAP + Volume Profile</h3><p>Session, weekly, monthly VWAP. POC, Value Area High/Low from volume analysis.</p></div>
+<div class="feature-card"><div class="icon">🏆</div><h3>6-Point Scorecard</h3><p>Trend, momentum, volume, breadth, sentiment, regime — each scored pass/fail.</p></div>
+<div class="feature-card"><div class="icon">⚖️</div><h3>Risk:Reward Ratios</h3><p>Multi-target R:R (1x, 1.7x, 2.7x) so you know when to scale out.</p></div>
+<div class="feature-card"><div class="icon">🛡️</div><h3>Validation Layer</h3><p>Zero-price rejection, RSI sanity, direction checks, counter-trend flags, BTC freshness.</p></div>
+</div>
+</div>
+
+<div class="pricing">
+<h2>Simple Pricing. Lightning Fast.</h2>
+<div class="pricing-cards">
+<div class="price-card">
+<div class="tier">Single Report</div>
+<div class="amount">$15</div>
+<div class="sats">15,000 sats</div>
+<div class="period">One-time · Per report</div>
+<ul>
+<li>Full daily premium report</li>
+<li>All stock + crypto setups</li>
+<li>Trade plans + sizing</li>
+<li>Scorecards + VWAP</li>
+<li>Delivered via Nostr DM</li>
+</ul>
+</div>
+<div class="price-card featured">
+<div class="tier">Monthly</div>
+<div class="amount">$50</div>
+<div class="sats">50,000 sats/mo</div>
+<div class="period">Best value · ~20 reports</div>
+<ul>
+<li>Daily premium reports</li>
+<li>All trade plans + sizing</li>
+<li>Macro regime analysis</li>
+<li>Priority Nostr DM delivery</li>
+<li>Cancel anytime</li>
+</ul>
+</div>
+<div class="price-card">
+<div class="tier">Quarterly</div>
+<div class="amount">$120</div>
+<div class="sats">120,000 sats</div>
+<div class="period">3 months · Save 20%</div>
+<ul>
+<li>Everything in Monthly</li>
+<li>Best per-report price</li>
+<li>~60 reports for $2 each</li>
+<li>Early access to new features</li>
+<li>Cancel anytime</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="howto">
+<h2>How to Subscribe</h2>
+<div class="steps">
+<div class="step">
+<div class="num">1</div>
+<div class="text">
+<h3>Send sats via Lightning</h3>
+<p>Zap to our Lightning address or scan any QR on this page.</p>
+<span class="code">⚡ {LIGHTNING_ADDR}</span>
+</div>
+</div>
+<div class="step">
+<div class="num">2</div>
+<div class="text">
+<h3>Message us on Nostr</h3>
+<p>Send us a DM with your payment txid. We'll verify and add you.</p>
+<span class="code">📬 {NOSTR_NPUB}</span>
+</div>
+</div>
+<div class="step">
+<div class="num">3</div>
+<div class="text">
+<h3>Receive daily premium reports</h3>
+<p>Every market day, the full analysis lands in your Nostr DM — encrypted, private, instant.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="cta">
+<h2>🔮 Ready to Trade with a Plan?</h2>
+<p>Stop guessing. Start getting institutional-grade analysis delivered to your Nostr DM every market day.</p>
+<a href="lightning:{LIGHTNING_ADDR}" class="zap-btn">⚡ Subscribe Now — 50,000 sats/mo</a>
+<p class="alt">Or send any amount to <strong style="color:#b388ff;">{LIGHTNING_ADDR}</strong> and DM us your txid.</p>
+</div>
+
+<div class="social-proof">
+<h2>Why Traders Trust Phasma</h2>
+<div class="proof-cards">
+<div class="proof-card">
+<div class="quote">"Finally, signals that come with actual trade plans — not just 'buy this.' The position sizing alone is worth the sats."</div>
+<div class="attr">— Nostr user, early subscriber</div>
+</div>
+<div class="proof-card">
+<div class="quote">"The scorecard system filters out the noise. I only act on 5+/6 setups and it's been solid."</div>
+<div class="attr">— Crypto trader, monthly subscriber</div>
+</div>
+<div class="proof-card">
+<div class="quote">"Lightning payments + Nostr DM = no KYC, no email, no tracking. This is how signal services should work."</div>
+<div class="attr">— Privacy-focused trader</div>
+</div>
+</div>
+</div>
+
+<div class="faq">
+<h2>FAQ</h2>
+<div class="faq-item" onclick="this.classList.toggle('open')">
+<div class="faq-q">How are reports delivered? <span class="arrow">▼</span></div>
+<div class="faq-a">Via encrypted Nostr DM (NIP-04). You need a Nostr client like Damus (iOS), Amethyst (Android), or Primal (web). Your reports are private and encrypted — we can't even read them after sending.</div>
+</div>
+<div class="faq-item" onclick="this.classList.toggle('open')">
+<div class="faq-q">What time are reports sent? <span class="arrow">▼</span></div>
+<div class="faq-a">Stock reports: ~09:45 UTC (before US market open). Crypto reports: ~07:15 UTC daily. Macro regime updates are included in every report.</div>
+</div>
+<div class="faq-item" onclick="this.classList.toggle('open')">
+<div class="faq-q">Do you offer refunds? <span class="arrow">▼</span></div>
+<div class="faq-a">Since payments are in sats and non-reversible, we don't offer refunds. But you can cancel anytime — no auto-renewal. Your access runs until the period ends.</div>
+</div>
+<div class="faq-item" onclick="this.classList.toggle('open')">
+<div class="faq-q">Is this financial advice? <span class="arrow">▼</span></div>
+<div class="faq-a"><strong>No.</strong> Phasma Signals is independent trading research. All signals are for informational purposes. Always do your own research and manage your own risk. Past performance doesn't guarantee future results.</div>
+</div>
+<div class="faq-item" onclick="this.classList.toggle('open')">
+<div class="faq-q">Which markets are covered? <span class="arrow">▼</span></div>
+<div class="faq-a">Stocks: S&P 500 universe scanned daily for high-conviction setups. Crypto: Top 100 by market cap with momentum + volume filters. We focus on quality over quantity — typically 8-15 stock setups and 5-8 crypto picks per day.</div>
+</div>
+<div class="faq-item" onclick="this.classList.toggle('open')">
+<div class="faq-q">Why Lightning + Nostr? <span class="arrow">▼</span></div>
+<div class="faq-a">No KYC, no email, no credit card, no tracking. Lightning payments are instant and final. Nostr DMs are encrypted and decentralized. Your trading activity stays private.</div>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+Phasma Signals — Independent trading research<br>
+⚡ {LIGHTNING_ADDR} · ☕ {BTC_ADDRESS}<br>
+⚠️ Not financial advice. Do your own research.
+</div>
+
+</body>
+</html>"""
+
+with open(os.path.join(SITE_DIR, "premium.html"), "w") as f:
+    f.write(html)
+
+print(f"Generated premium.html")
