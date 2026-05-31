@@ -169,9 +169,22 @@ stock_cards = ""
 for s in stocks:
     ticker = esc(s.get("ticker", s.get("symbol", "?")))
     score = fmt_score(s.get("score", s.get("rsi_score", "?")))
-    entry = esc(s.get("entry", s.get("price", "?")))
-    stop = esc(s.get("stop", "-"))
-    target = esc(s.get("target", s.get("t1", "-")))
+    entry_raw = s.get("entry", s.get("price", "?"))
+    # Format entry with $ if numeric
+    try:
+        entry = fmt_price(float(entry_raw))
+    except (ValueError, TypeError):
+        entry = esc(str(entry_raw))
+    stop_raw = s.get("stop", "-")
+    try:
+        stop = fmt_price(float(stop_raw))
+    except (ValueError, TypeError):
+        stop = "-"
+    target_raw = s.get("target", s.get("t1", "-"))
+    try:
+        target = fmt_price(float(target_raw))
+    except (ValueError, TypeError):
+        target = "-"
     trend = esc(s.get("trend", s.get("trend_label", "-")))
     # Fill stop/target/trend from bridge trade table if missing
     tt = s.get("trade_table", [])
@@ -188,7 +201,7 @@ for s in stocks:
 <div class="card">
 <span class="ticker">{ticker}</span>
 <span class="score">Score {score}</span>
-<div class="detail">Entry: ${entry} | Stop: ${stop} | Target: ${target}<br>Trend: {trend}</div>
+<div class="detail">Entry: {entry} | Stop: {stop} | Target: {target}<br>Trend: {trend}</div>
 {extras}
 </div>"""
 
