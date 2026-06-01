@@ -283,7 +283,7 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 </head>
 <body>
 <div class="nav">
-<a href="/" class="active">🔮 Signals</a>
+<a href="/phasma-signals/" class="active">🔮 Signals</a>
 <a href="/phasma-signals/premium.html">💎 Premium</a>
 </div>
 <div class="header">
@@ -318,7 +318,7 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 2. DM your txid on Nostr<br>
 3. Receive premium reports via encrypted DM
 </div>
-<p style="margin-top:1rem;"><a href="/premium.html" style="color:#e040fb;font-weight:bold;">→ See full premium details &amp; pricing</a></p>
+<p style="margin-top:1rem;"><a href="/phasma-signals/premium.html" style="color:#e040fb;font-weight:bold;">→ See full premium details &amp; pricing</a></p>
 <p style="margin-top:0.5rem;">
 <span class="tag">#phasma</span>
 <span class="tag">#signals</span>
