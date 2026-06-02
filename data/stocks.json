@@ -1,36 +1,76 @@
 {
-  "timestamp": "2026-06-01 09:35",
+  "timestamp": "2026-06-02 09:35",
   "total_scanned": 109,
   "bullish": [
     {
-      "ticker": "GOOGL",
-      "price": 380.34,
-      "change_pct": -2.51,
-      "volume_ratio": 1.62,
-      "rsi": 35.0,
-      "atr_pct": 11.74,
-      "ema20": 382.52,
-      "ema50": 360.13,
-      "ema200": 331.96,
+      "ticker": "AMZN",
+      "price": 261.26,
+      "change_pct": -3.47,
+      "volume_ratio": 1.35,
+      "rsi": 42.8,
+      "atr_pct": 8.5,
+      "ema20": 265.13,
+      "ema50": 252.84,
+      "ema200": 234.79,
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
         "\ud83d\udfe1 RSI Near Oversold (35-45)",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 10,
+      "score": 9,
       "validated": true,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$383",
-          "entry": 380.34,
-          "stop": 362.76,
-          "t1": 397.92,
-          "t2": 409.64,
-          "t3": 427.21,
+          "trigger": "D close >$265",
+          "entry": 261.26,
+          "stop": 249.52,
+          "t1": 273.0,
+          "t2": 280.82,
+          "t3": 292.56,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 6,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
+    },
+    {
+      "ticker": "GOOGL",
+      "price": 376.37,
+      "change_pct": -1.04,
+      "volume_ratio": 1.04,
+      "rsi": 39.8,
+      "atr_pct": 11.26,
+      "ema20": 381.94,
+      "ema50": 360.71,
+      "ema200": 330.19,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udfe1 RSI Near Oversold (35-45)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 9,
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$382",
+          "entry": 376.37,
+          "stop": 359.27,
+          "t1": 393.47,
+          "t2": 404.86,
+          "t3": 421.96,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -46,240 +86,14 @@
     },
     {
       "ticker": "UNH",
-      "price": 380.31,
-      "change_pct": -0.58,
-      "volume_ratio": 1.56,
-      "rsi": 50.2,
-      "atr_pct": 11.62,
-      "ema20": 377.27,
-      "ema50": 351.85,
-      "ema200": 326.5,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
-        "\ud83d\udcaa Price above all EMAs",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 10,
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$377",
-          "entry": 380.31,
-          "stop": 363.75,
-          "t1": 396.87,
-          "t2": 407.91,
-          "t3": 424.46,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "scorecard_total": 6,
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "regime_quadrant": "Reflation"
-    },
-    {
-      "ticker": "KO",
-      "price": 79.01,
-      "change_pct": -1.74,
-      "volume_ratio": 2.2,
-      "rsi": 53.2,
-      "atr_pct": 6.19,
-      "ema20": 79.9,
-      "ema50": 78.4,
-      "ema200": 74.36,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd0a Volume Surge (2x+ average)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 10,
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$80",
-          "entry": 79.01,
-          "stop": 76.81,
-          "t1": 81.21,
-          "t2": 82.68,
-          "t3": 84.88,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "scorecard_total": 6,
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "regime_quadrant": "Reflation"
-    },
-    {
-      "ticker": "VZ",
-      "price": 47.81,
-      "change_pct": -0.42,
-      "volume_ratio": 1.99,
-      "rsi": 55.8,
-      "atr_pct": 5.74,
-      "ema20": 47.67,
-      "ema50": 47.38,
-      "ema200": 44.43,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
-        "\ud83d\udcaa Price above all EMAs",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 10,
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$48",
-          "entry": 47.81,
-          "stop": 46.21,
-          "t1": 49.41,
-          "t2": 50.48,
-          "t3": 52.08,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "scorecard_total": 5,
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "regime_quadrant": "Reflation"
-    },
-    {
-      "ticker": "NVDA",
-      "price": 211.14,
-      "change_pct": -1.45,
-      "volume_ratio": 1.73,
-      "rsi": 46.3,
-      "atr_pct": 17.07,
-      "ema20": 214.12,
-      "ema50": 204.65,
-      "ema200": 190.67,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 9,
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$214",
-          "entry": 211.14,
-          "stop": 197.67,
-          "t1": 224.61,
-          "t2": 233.58,
-          "t3": 247.05,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "scorecard_total": 6,
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "regime_quadrant": "Reflation"
-    },
-    {
-      "ticker": "AVGO",
-      "price": 446.77,
-      "change_pct": 4.73,
-      "volume_ratio": 2.13,
-      "rsi": 57.8,
-      "atr_pct": 9.24,
-      "ema20": 419.25,
-      "ema50": 396.06,
-      "ema200": 373.71,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83d\udd0a Volume Surge (2x+ average)",
-        "\ud83d\udcaa Price above all EMAs",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 9,
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$419",
-          "entry": 446.77,
-          "stop": 420.75,
-          "t1": 472.79,
-          "t2": 490.14,
-          "t3": 516.16,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "scorecard_total": 5,
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "regime_quadrant": "Reflation"
-    },
-    {
-      "ticker": "COST",
-      "price": 956.32,
-      "change_pct": -3.91,
-      "volume_ratio": 3.0,
-      "rsi": 39.2,
-      "atr_pct": 9.81,
-      "ema20": 1018.17,
-      "ema50": 1008.47,
-      "ema200": 957.1,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83d\udfe1 RSI Near Oversold (35-45)",
-        "\ud83d\udd0a Volume Surge (2x+ average)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 9,
-      "validated": true
-    },
-    {
-      "ticker": "MDLZ",
-      "price": 61.17,
-      "change_pct": -1.96,
-      "volume_ratio": 1.26,
-      "rsi": 47.4,
-      "atr_pct": 5.6,
-      "ema20": 61.11,
-      "ema50": 59.79,
-      "ema200": 56.99,
+      "price": 379.86,
+      "change_pct": -0.12,
+      "volume_ratio": 0.99,
+      "rsi": 46.4,
+      "atr_pct": 11.5,
+      "ema20": 377.52,
+      "ema50": 352.9,
+      "ema200": 325.51,
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
@@ -287,97 +101,17 @@
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
       "score": 9,
-      "validated": true
-    },
-    {
-      "ticker": "APD",
-      "price": 278.62,
-      "change_pct": -1.77,
-      "volume_ratio": 1.84,
-      "rsi": 30.2,
-      "atr_pct": 7.3,
-      "ema20": 291.92,
-      "ema50": 291.27,
-      "ema200": 274.77,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83d\udd25 RSI Oversold (<35)",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 9,
-      "validated": true
-    },
-    {
-      "ticker": "EQIX",
-      "price": 1068.04,
-      "change_pct": -0.13,
-      "volume_ratio": 1.71,
-      "rsi": 50.6,
-      "atr_pct": 5.55,
-      "ema20": 1068.14,
-      "ema50": 1037.54,
-      "ema200": 894.72,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "score": 9,
       "validated": true,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$1,068",
-          "entry": 1068.04,
-          "stop": 1036.04,
-          "t1": 1100.04,
-          "t2": 1121.37,
-          "t3": 1153.36,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "scorecard_total": 5,
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "regime_quadrant": "Reflation"
-    },
-    {
-      "ticker": "MRK",
-      "price": 118.72,
-      "change_pct": -0.98,
-      "volume_ratio": 1.86,
-      "rsi": 66.3,
-      "atr_pct": 7.08,
-      "ema20": 116.06,
-      "ema50": 115.39,
-      "ema200": 109.4,
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
-        "\ud83d\udcaa Price above all EMAs",
-        "\ud83d\udd04 Double Bottom (W pattern)",
-        "\ud83d\udfe0 RSI Near Overbought (60-70)"
-      ],
-      "score": 8,
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$116",
-          "entry": 118.72,
-          "stop": 113.92,
-          "t1": 123.52,
-          "t2": 126.72,
-          "t3": 131.52,
+          "trigger": "D close >$378",
+          "entry": 379.86,
+          "stop": 363.84,
+          "t1": 395.88,
+          "t2": 406.56,
+          "t3": 422.58,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -393,33 +127,32 @@
     },
     {
       "ticker": "LIN",
-      "price": 497.69,
-      "change_pct": -0.85,
-      "volume_ratio": 2.13,
-      "rsi": 53.3,
-      "atr_pct": 6.01,
-      "ema20": 505.89,
-      "ema50": 499.21,
-      "ema200": 457.7,
+      "price": 497.41,
+      "change_pct": -0.06,
+      "volume_ratio": 1.19,
+      "rsi": 44.0,
+      "atr_pct": 6.03,
+      "ema20": 505.08,
+      "ema50": 499.06,
+      "ema200": 455.04,
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd0a Volume Surge (2x+ average)",
-        "\ud83d\udd04 Double Bottom (W pattern)",
-        "\ud83d\udd3b Breakdown below EMA50"
+        "\ud83d\udfe1 RSI Near Oversold (35-45)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 8,
+      "score": 9,
       "validated": true,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "SHORT",
-          "trigger": "D close <$506",
-          "entry": 497.69,
-          "stop": 514.63,
-          "t1": 480.75,
-          "t2": 469.46,
-          "t3": 452.52,
+          "trigger": "D close <$505",
+          "entry": 497.41,
+          "stop": 514.04,
+          "t1": 480.78,
+          "t2": 469.7,
+          "t3": 453.07,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -434,32 +167,33 @@
       "regime_quadrant": "Reflation"
     },
     {
-      "ticker": "PM",
-      "price": 177.38,
-      "change_pct": -0.67,
-      "volume_ratio": 1.21,
-      "rsi": 57.7,
-      "atr_pct": 15.5,
-      "ema20": 180.24,
-      "ema50": 174.36,
-      "ema200": 162.99,
+      "ticker": "VZ",
+      "price": 47.73,
+      "change_pct": -0.17,
+      "volume_ratio": 0.74,
+      "rsi": 54.9,
+      "atr_pct": 5.7,
+      "ema20": 47.68,
+      "ema50": 47.39,
+      "ema200": 44.35,
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
-      "score": 8,
+      "score": 9,
       "validated": true,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$180",
-          "entry": 177.38,
-          "stop": 167.48,
-          "t1": 187.28,
-          "t2": 193.88,
-          "t3": 203.77,
+          "trigger": "D close >$48",
+          "entry": 47.73,
+          "stop": 46.18,
+          "t1": 49.28,
+          "t2": 50.32,
+          "t3": 51.87,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -474,39 +208,211 @@
       "regime_quadrant": "Reflation"
     },
     {
-      "ticker": "BLK",
-      "price": 1046.88,
-      "change_pct": 0.04,
-      "volume_ratio": 1.77,
-      "rsi": 39.1,
-      "atr_pct": 7.32,
-      "ema20": 1062.12,
-      "ema50": 1048.86,
-      "ema200": 1052.48,
+      "ticker": "ADI",
+      "price": 402.69,
+      "change_pct": -2.7,
+      "volume_ratio": 0.93,
+      "rsi": 41.9,
+      "atr_pct": 12.9,
+      "ema20": 406.14,
+      "ema50": 383.39,
+      "ema200": 328.8,
       "setups": [
-        "\ud83d\udcc8 EMA20 > EMA50 (short-term uptrend)",
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
         "\ud83d\udfe1 RSI Near Oversold (35-45)",
-        "\ud83d\udd0a Volume Above Average (1.5x)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 9,
+      "validated": true
+    },
+    {
+      "ticker": "EQIX",
+      "price": 1050.77,
+      "change_pct": -1.62,
+      "volume_ratio": 0.61,
+      "rsi": 36.8,
+      "atr_pct": 5.41,
+      "ema20": 1066.49,
+      "ema50": 1038.04,
+      "ema200": 895.78,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udfe1 RSI Near Oversold (35-45)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 9,
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$1,067",
+          "entry": 1050.77,
+          "stop": 1082.59,
+          "t1": 1018.95,
+          "t2": 997.74,
+          "t3": 965.93,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 4,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
+    },
+    {
+      "ticker": "XOM",
+      "price": 149.38,
+      "change_pct": 2.84,
+      "volume_ratio": 0.95,
+      "rsi": 51.0,
+      "atr_pct": 12.03,
+      "ema20": 151.31,
+      "ema50": 151.07,
+      "ema200": 137.05,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
       "score": 8,
       "validated": true
     },
     {
-      "ticker": "AMZN",
-      "price": 270.64,
-      "change_pct": -1.23,
-      "volume_ratio": 1.38,
-      "rsi": 47.9,
-      "atr_pct": 8.44,
-      "ema20": 265.54,
-      "ema50": 252.52,
-      "ema200": 235.33,
+      "ticker": "KO",
+      "price": 78.64,
+      "change_pct": -0.47,
+      "volume_ratio": 0.87,
+      "rsi": 49.9,
+      "atr_pct": 6.09,
+      "ema20": 79.78,
+      "ema50": 78.41,
+      "ema200": 74.48,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 8,
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$80",
+          "entry": 78.64,
+          "stop": 80.93,
+          "t1": 76.35,
+          "t2": 74.83,
+          "t3": 72.55,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 5,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
+    },
+    {
+      "ticker": "MDLZ",
+      "price": 61.05,
+      "change_pct": -0.2,
+      "volume_ratio": 1.21,
+      "rsi": 47.5,
+      "atr_pct": 5.17,
+      "ema20": 61.1,
+      "ema50": 59.84,
+      "ema200": 56.98,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 8,
+      "validated": true
+    },
+    {
+      "ticker": "TGT",
+      "price": 123.71,
+      "change_pct": -2.64,
+      "volume_ratio": 0.78,
+      "rsi": 60.4,
+      "atr_pct": 11.54,
+      "ema20": 125.14,
+      "ema50": 122.59,
+      "ema200": 109.15,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)",
+        "\ud83d\udfe0 RSI Near Overbought (60-70)"
+      ],
+      "score": 8,
+      "validated": true
+    },
+    {
+      "ticker": "CL",
+      "price": 88.43,
+      "change_pct": -1.89,
+      "volume_ratio": 1.24,
+      "rsi": 57.6,
+      "atr_pct": 7.16,
+      "ema20": 88.88,
+      "ema50": 87.61,
+      "ema200": 83.36,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 8,
+      "validated": true
+    },
+    {
+      "ticker": "APD",
+      "price": 278.89,
+      "change_pct": 0.1,
+      "volume_ratio": 1.12,
+      "rsi": 11.9,
+      "atr_pct": 7.73,
+      "ema20": 290.67,
+      "ema50": 290.59,
+      "ema200": 267.49,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83d\udd25 RSI Oversold (<35)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 8,
+      "validated": true
+    },
+    {
+      "ticker": "AVGO",
+      "price": 459.97,
+      "change_pct": 2.95,
+      "volume_ratio": 1.48,
+      "rsi": 63.2,
+      "atr_pct": 9.25,
+      "ema20": 423.13,
+      "ema50": 398.65,
+      "ema200": 377.83,
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83d\udcaa Price above all EMAs",
-        "\ud83d\udd04 Double Bottom (W pattern)"
+        "\ud83d\udd04 Double Bottom (W pattern)",
+        "\ud83d\udfe0 RSI Near Overbought (60-70)"
       ],
       "score": 7,
       "validated": true,
@@ -514,24 +420,42 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$266",
-          "entry": 270.64,
-          "stop": 259.8,
-          "t1": 281.48,
-          "t2": 288.71,
-          "t3": 299.56,
+          "trigger": "D close >$423",
+          "entry": 459.97,
+          "stop": 432.44,
+          "t1": 487.5,
+          "t2": 505.85,
+          "t3": 533.38,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
         }
       ],
-      "scorecard_total": 6,
+      "scorecard_total": 5,
       "action_verdicts": {
         "Pos": "W",
         "Swing": "W",
         "Day": "W"
       },
       "regime_quadrant": "Reflation"
+    },
+    {
+      "ticker": "COST",
+      "price": 946.11,
+      "change_pct": -1.07,
+      "volume_ratio": 1.17,
+      "rsi": 39.1,
+      "atr_pct": 10.76,
+      "ema20": 1011.31,
+      "ema50": 1005.96,
+      "ema200": 954.84,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83d\udfe1 RSI Near Oversold (35-45)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "score": 7,
+      "validated": true
     }
   ],
   "watchlist": [],
