@@ -1,109 +1,10 @@
 {
-  "timestamp": "2026-06-03 05:12 UTC",
+  "timestamp": "2026-06-03 08:06 UTC",
   "stocks": [
     {
-      "ticker": "AMZN",
-      "price": 261.26,
-      "score": 9,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 256.52,
-      "stop_loss": 244.54,
-      "target_1": 268.5,
-      "target_2": 276.49,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "position_size_10k": 8,
-      "risk_amount": 100.0,
-      "rsi": 42.8,
-      "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 8.5,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udfe1 RSI Near Oversold (35-45)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$264",
-          "entry": 256.52,
-          "stop": 244.54,
-          "t1": 268.5,
-          "t2": 276.49,
-          "t3": 288.48,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "scorecard_total": 6
-    },
-    {
-      "ticker": "GOOGL",
-      "price": 376.37,
-      "score": 9,
-      "direction": "SHORT",
-      "trend": "STRONG UPTREND",
-      "entry": 361.85,
-      "stop_loss": 379.66,
-      "target_1": 344.04,
-      "target_2": 332.17,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "position_size_10k": 5,
-      "risk_amount": 100.0,
-      "rsi": 39.8,
-      "rsi_note": "Approaching oversold \u2014 potential bounce",
-      "atr_pct": 11.26,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udfe1 RSI Near Oversold (35-45)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "SHORT",
-          "trigger": "D close <$380",
-          "entry": 361.85,
-          "stop": 379.66,
-          "t1": 344.04,
-          "t2": 332.17,
-          "t3": 314.37,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "scorecard_total": 5,
-      "counter_trend": true
-    },
-    {
       "ticker": "UNH",
-      "price": 379.86,
-      "score": 9,
+      "price": 377.92,
+      "score": 11,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
       "entry": 377.92,
@@ -114,9 +15,9 @@
       "rr_2": 1.67,
       "position_size_10k": 6,
       "risk_amount": 100.0,
-      "rsi": 46.4,
-      "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 11.5,
+      "rsi": 33.0,
+      "rsi_note": "Approaching oversold \u2014 potential bounce",
+      "atr_pct": 11.2,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -125,6 +26,7 @@
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd25 RSI Oversold (<35)",
         "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
@@ -150,8 +52,90 @@
       "scorecard_total": 6
     },
     {
+      "ticker": "GOOGL",
+      "price": 361.85,
+      "score": 9,
+      "direction": "SHORT",
+      "trend": "STRONG UPTREND",
+      "entry": 361.85,
+      "stop_loss": 379.66,
+      "target_1": 344.04,
+      "target_2": 332.17,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "position_size_10k": 5,
+      "risk_amount": 100.0,
+      "rsi": 32.6,
+      "rsi_note": "Approaching oversold \u2014 potential bounce",
+      "atr_pct": 11.39,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83d\udd25 RSI Oversold (<35)",
+        "\ud83d\udd0a Volume Above Average (1.5x)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$380",
+          "entry": 361.85,
+          "stop": 379.66,
+          "t1": 344.04,
+          "t2": 332.17,
+          "t3": 314.37,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "scorecard_total": 5,
+      "counter_trend": true
+    },
+    {
+      "ticker": "CVX",
+      "price": 187.55,
+      "score": 9,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 187.55,
+      "stop_loss": 159.59,
+      "target_1": 243.48,
+      "target_2": 271.44,
+      "rr_1": 2.0,
+      "rr_2": 3.0,
+      "position_size_10k": 3,
+      "risk_amount": 100.0,
+      "rsi": 54.7,
+      "rsi_note": "Neutral \u2014 watch for reversal signals",
+      "atr_pct": 9.94,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "ATR-derived"
+    },
+    {
       "ticker": "LIN",
-      "price": 497.41,
+      "price": 495.91,
       "score": 9,
       "direction": "SHORT",
       "trend": "GENTLE UPTREND",
@@ -163,9 +147,9 @@
       "rr_2": 1.67,
       "position_size_10k": 6,
       "risk_amount": 100.0,
-      "rsi": 44.0,
+      "rsi": 43.3,
       "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 6.03,
+      "atr_pct": 6.07,
       "ema_status": [
         "Below EMA20 \u26a0\ufe0f",
         "Above EMA200 (bullish) \u2713"
@@ -200,7 +184,7 @@
     },
     {
       "ticker": "VZ",
-      "price": 47.73,
+      "price": 47.87,
       "score": 9,
       "direction": "LONG",
       "trend": "GENTLE UPTREND",
@@ -212,9 +196,9 @@
       "rr_2": 1.67,
       "position_size_10k": 64,
       "risk_amount": 100.0,
-      "rsi": 54.9,
+      "rsi": 49.3,
       "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 5.7,
+      "atr_pct": 5.8,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -248,40 +232,8 @@
       "scorecard_total": 5
     },
     {
-      "ticker": "ADI",
-      "price": 402.69,
-      "score": 9,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 402.69,
-      "stop_loss": 324.77,
-      "target_1": 558.53,
-      "target_2": 636.45,
-      "rr_1": 2.0,
-      "rr_2": 3.0,
-      "position_size_10k": 1,
-      "risk_amount": 100.0,
-      "rsi": 41.9,
-      "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 12.9,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udfe1 RSI Near Oversold (35-45)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "ATR-derived"
-    },
-    {
       "ticker": "EQIX",
-      "price": 1050.77,
+      "price": 1071.8,
       "score": 9,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
@@ -293,18 +245,18 @@
       "rr_2": 1.67,
       "position_size_10k": 3,
       "risk_amount": 100.0,
-      "rsi": 36.8,
-      "rsi_note": "Approaching oversold \u2014 potential bounce",
-      "atr_pct": 5.41,
+      "rsi": 48.6,
+      "rsi_note": "Neutral \u2014 watch for reversal signals",
+      "atr_pct": 5.07,
       "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA20 \u2713",
         "Above EMA50 \u2713",
         "Above EMA200 (bullish) \u2713"
       ],
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
         "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udfe1 RSI Near Oversold (35-45)",
+        "\ud83d\udcaa Price above all EMAs",
         "\ud83d\udd04 Double Bottom (W pattern)"
       ],
       "overbought": false,
@@ -330,21 +282,21 @@
     },
     {
       "ticker": "XOM",
-      "price": 149.38,
+      "price": 149.56,
       "score": 8,
       "direction": "LONG",
       "trend": "GENTLE UPTREND",
-      "entry": 149.38,
-      "stop_loss": 122.42,
-      "target_1": 203.29,
-      "target_2": 230.25,
+      "entry": 149.56,
+      "stop_loss": 121.83,
+      "target_1": 205.02,
+      "target_2": 232.75,
       "rr_1": 2.0,
       "rr_2": 3.0,
       "position_size_10k": 3,
       "risk_amount": 100.0,
-      "rsi": 51.0,
+      "rsi": 49.9,
       "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 12.03,
+      "atr_pct": 12.36,
       "ema_status": [
         "Below EMA20 \u26a0\ufe0f",
         "Above EMA200 (bullish) \u2713"
@@ -359,22 +311,241 @@
       "plan_name": "ATR-derived"
     },
     {
-      "ticker": "KO",
-      "price": 78.64,
+      "ticker": "MRK",
+      "price": 115.65,
+      "score": 8,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 115.65,
+      "stop_loss": 110.55,
+      "target_1": 120.75,
+      "target_2": 124.16,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "position_size_10k": 19,
+      "risk_amount": 100.0,
+      "rsi": 56.5,
+      "rsi_note": "Bullish momentum \u2014 good for entries",
+      "atr_pct": 7.89,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$116",
+          "entry": 115.65,
+          "stop": 110.55,
+          "t1": 120.75,
+          "t2": 124.16,
+          "t3": 129.26,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "scorecard_total": 5
+    },
+    {
+      "ticker": "PM",
+      "price": 173.66,
+      "score": 8,
+      "direction": "SHORT",
+      "trend": "STRONG UPTREND",
+      "entry": 173.66,
+      "stop_loss": 181.94,
+      "target_1": 165.38,
+      "target_2": 159.86,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "position_size_10k": 12,
+      "risk_amount": 100.0,
+      "rsi": 28.7,
+      "rsi_note": "Approaching oversold \u2014 potential bounce",
+      "atr_pct": 15.31,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83d\udd25 RSI Oversold (<35)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$179",
+          "entry": 173.66,
+          "stop": 181.94,
+          "t1": 165.38,
+          "t2": 159.86,
+          "t3": 151.58,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "scorecard_total": 3,
+      "counter_trend": true
+    },
+    {
+      "ticker": "MDLZ",
+      "price": 61.07,
+      "score": 8,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 61.07,
+      "stop_loss": 56.7,
+      "target_1": 69.81,
+      "target_2": 74.18,
+      "rr_1": 2.0,
+      "rr_2": 3.0,
+      "position_size_10k": 22,
+      "risk_amount": 100.0,
+      "rsi": 45.5,
+      "rsi_note": "Neutral \u2014 watch for reversal signals",
+      "atr_pct": 4.77,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "ATR-derived"
+    },
+    {
+      "ticker": "CI",
+      "price": 272.72,
+      "score": 8,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 272.72,
+      "stop_loss": 229.81,
+      "target_1": 358.55,
+      "target_2": 401.46,
+      "rr_1": 2.0,
+      "rr_2": 3.0,
+      "position_size_10k": 2,
+      "risk_amount": 100.0,
+      "rsi": 28.7,
+      "rsi_note": "Approaching oversold \u2014 potential bounce",
+      "atr_pct": 10.49,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Below EMA200 (bearish regime) \u26a0\ufe0f"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83d\udd25 RSI Oversold (<35)",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "ATR-derived"
+    },
+    {
+      "ticker": "TGT",
+      "price": 123.18,
+      "score": 8,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 123.18,
+      "stop_loss": 101.78,
+      "target_1": 165.97,
+      "target_2": 187.37,
+      "rr_1": 2.0,
+      "rr_2": 3.0,
+      "position_size_10k": 4,
+      "risk_amount": 100.0,
+      "rsi": 54.5,
+      "rsi_note": "Neutral \u2014 watch for reversal signals",
+      "atr_pct": 11.58,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "ATR-derived"
+    },
+    {
+      "ticker": "CL",
+      "price": 88.27,
+      "score": 8,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 88.27,
+      "stop_loss": 78.88,
+      "target_1": 107.05,
+      "target_2": 116.43,
+      "rr_1": 2.0,
+      "rr_2": 3.0,
+      "position_size_10k": 10,
+      "risk_amount": 100.0,
+      "rsi": 53.9,
+      "rsi_note": "Neutral \u2014 watch for reversal signals",
+      "atr_pct": 7.09,
+      "ema_status": [
+        "Below EMA20 \u26a0\ufe0f",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd04 Double Bottom (W pattern)"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "ATR-derived"
+    },
+    {
+      "ticker": "NSC",
+      "price": 307.55,
       "score": 8,
       "direction": "SHORT",
       "trend": "GENTLE UPTREND",
-      "entry": 78.41,
-      "stop_loss": 80.56,
-      "target_1": 76.26,
-      "target_2": 74.82,
+      "entry": 307.55,
+      "stop_loss": 321.1,
+      "target_1": 294.0,
+      "target_2": 284.97,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
-      "position_size_10k": 46,
+      "position_size_10k": 7,
       "risk_amount": 100.0,
-      "rsi": 49.9,
+      "rsi": 46.1,
       "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 6.09,
+      "atr_pct": 5.13,
       "ema_status": [
         "Below EMA20 \u26a0\ufe0f",
         "Above EMA50 \u2713",
@@ -392,12 +563,12 @@
         {
           "plan": "Swing-A",
           "side": "SHORT",
-          "trigger": "D close <$80",
-          "entry": 78.41,
-          "stop": 80.56,
-          "t1": 76.26,
-          "t2": 74.82,
-          "t3": 72.67,
+          "trigger": "D close <$312",
+          "entry": 307.55,
+          "stop": 321.1,
+          "t1": 294.0,
+          "t2": 284.97,
+          "t3": 271.42,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -408,198 +579,26 @@
       "counter_trend": true
     },
     {
-      "ticker": "MDLZ",
-      "price": 61.05,
-      "score": 8,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 61.05,
-      "stop_loss": 56.32,
-      "target_1": 70.52,
-      "target_2": 75.25,
-      "rr_1": 2.0,
-      "rr_2": 3.0,
-      "position_size_10k": 21,
-      "risk_amount": 100.0,
-      "rsi": 47.5,
-      "rsi_note": "Neutral \u2014 watch for reversal signals",
-      "atr_pct": 5.17,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "ATR-derived"
-    },
-    {
-      "ticker": "TGT",
-      "price": 123.71,
-      "score": 8,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 123.71,
-      "stop_loss": 102.3,
-      "target_1": 166.54,
-      "target_2": 187.95,
-      "rr_1": 2.0,
-      "rr_2": 3.0,
-      "position_size_10k": 4,
-      "risk_amount": 100.0,
-      "rsi": 60.4,
-      "rsi_note": "Bullish momentum \u2014 good for entries",
-      "atr_pct": 11.54,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd04 Double Bottom (W pattern)",
-        "\ud83d\udfe0 RSI Near Overbought (60-70)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "ATR-derived"
-    },
-    {
-      "ticker": "CL",
-      "price": 88.43,
-      "score": 8,
-      "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 88.43,
-      "stop_loss": 78.93,
-      "target_1": 107.42,
-      "target_2": 116.92,
-      "rr_1": 2.0,
-      "rr_2": 3.0,
-      "position_size_10k": 10,
-      "risk_amount": 100.0,
-      "rsi": 57.6,
-      "rsi_note": "Bullish momentum \u2014 good for entries",
-      "atr_pct": 7.16,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "ATR-derived"
-    },
-    {
-      "ticker": "APD",
-      "price": 278.89,
-      "score": 8,
-      "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 278.89,
-      "stop_loss": 246.55,
-      "target_1": 343.56,
-      "target_2": 375.9,
-      "rr_1": 2.0,
-      "rr_2": 3.0,
-      "position_size_10k": 3,
-      "risk_amount": 100.0,
-      "rsi": 11.9,
-      "rsi_note": "Oversold \u2014 watch for reversal candle patterns",
-      "atr_pct": 7.73,
-      "ema_status": [
-        "Below EMA20 \u26a0\ufe0f",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83d\udd25 RSI Oversold (<35)",
-        "\ud83d\udd04 Double Bottom (W pattern)"
-      ],
-      "overbought": false,
-      "oversold": true,
-      "plan_name": "ATR-derived"
-    },
-    {
-      "ticker": "AVGO",
-      "price": 459.97,
+      "ticker": "AMZN",
+      "price": 256.52,
       "score": 7,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 481.57,
-      "stop_loss": 452.07,
-      "target_1": 511.07,
-      "target_2": 530.74,
+      "entry": 256.52,
+      "stop_loss": 244.54,
+      "target_1": 268.5,
+      "target_2": 276.49,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
-      "position_size_10k": 3,
+      "position_size_10k": 8,
       "risk_amount": 100.0,
-      "rsi": 63.2,
-      "rsi_note": "Bullish momentum \u2014 good for entries",
-      "atr_pct": 9.25,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
-        "\ud83d\udcaa Price above all EMAs",
-        "\ud83d\udd04 Double Bottom (W pattern)",
-        "\ud83d\udfe0 RSI Near Overbought (60-70)"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$429",
-          "entry": 481.57,
-          "stop": 452.07,
-          "t1": 511.07,
-          "t2": 530.74,
-          "t3": 560.24,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "scorecard_total": 4
-    },
-    {
-      "ticker": "COST",
-      "price": 946.11,
-      "score": 7,
-      "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 946.11,
-      "stop_loss": 793.41,
-      "target_1": 1251.51,
-      "target_2": 1404.22,
-      "rr_1": 2.0,
-      "rr_2": 3.0,
-      "position_size_10k": 0,
-      "risk_amount": 100.0,
-      "rsi": 39.1,
-      "rsi_note": "Approaching oversold \u2014 potential bounce",
-      "atr_pct": 10.76,
+      "rsi": 41.5,
+      "rsi_note": "Neutral \u2014 watch for reversal signals",
+      "atr_pct": 8.52,
       "ema_status": [
         "Below EMA20 \u26a0\ufe0f",
-        "Below EMA200 (bearish regime) \u26a0\ufe0f"
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
       ],
       "setups": [
         "\ud83d\udcc8 Golden Stack (EMA20>50>200)",
@@ -608,9 +607,24 @@
       ],
       "overbought": false,
       "oversold": false,
-      "plan_name": "ATR-derived",
-      "zero_size": false,
-      "fractional_note": "Risk $152.70/unit > $100 budget \u2014 use fractional sizing or reduce stop"
+      "plan_name": "Swing-A",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$264",
+          "entry": 256.52,
+          "stop": 244.54,
+          "t1": 268.5,
+          "t2": 276.49,
+          "t3": 288.48,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "scorecard_total": 6
     }
   ],
   "crypto": [
