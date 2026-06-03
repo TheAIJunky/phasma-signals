@@ -1,22 +1,21 @@
 {
-  "timestamp": "2026-06-02 07:07",
+  "timestamp": "2026-06-03 07:03",
   "total_scanned": 37,
   "buys": [
     {
-      "symbol": "BNB",
-      "category": "majors",
-      "price": 685.75,
-      "change_1d": -3.22,
-      "rsi": 61.9,
-      "volume_ratio": 1.98,
-      "atr_pct": 3.24,
-      "ema9": 674.6743,
-      "ema21": 662.5446,
-      "ema50": 649.5776,
+      "symbol": "RIO",
+      "category": "rwa",
+      "price": 0.0591,
+      "change_1d": -11.76,
+      "rsi": 19.6,
+      "volume_ratio": 1.09,
+      "atr_pct": 11.56,
+      "ema9": 0.0699,
+      "ema21": 0.0779,
+      "ema50": 0.0788,
       "signals": [
-        "\u26a1 EMA9/21 Golden Cross",
-        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
-        "\ud83d\udd0a Above-Avg Volume (2.0x)"
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
       ],
       "score": 6,
       "action": "\ud83d\udfe2 STRONG BUY",
@@ -25,17 +24,17 @@
     {
       "symbol": "BTC",
       "category": "majors",
-      "price": 70524.7422,
-      "change_1d": -4.15,
-      "rsi": 24.0,
-      "volume_ratio": 1.51,
-      "atr_pct": 2.54,
-      "ema9": 73914.129,
-      "ema21": 75632.5448,
-      "ema50": 75852.376,
+      "price": 66609.6562,
+      "change_1d": -6.6,
+      "rsi": 18.4,
+      "volume_ratio": 1.82,
+      "atr_pct": 3.16,
+      "ema9": 72580.4394,
+      "ema21": 74877.4273,
+      "ema50": 75442.9914,
       "signals": [
         "\ud83d\udd25 RSI Deeply Oversold (<25)",
-        "\ud83d\udd0a Above-Avg Volume (1.5x)"
+        "\ud83d\udd0a Above-Avg Volume (1.8x)"
       ],
       "score": 5,
       "action": "\ud83d\udfe2 STRONG BUY",
@@ -102,19 +101,38 @@
       "regime_quadrant": "Reflation"
     },
     {
-      "symbol": "ALGO",
-      "category": "l1s",
-      "price": 0.1207,
-      "change_1d": -5.12,
-      "rsi": 60.7,
-      "volume_ratio": 1.18,
-      "atr_pct": 6.7,
-      "ema9": 0.1188,
-      "ema21": 0.1167,
-      "ema50": 0.1132,
+      "symbol": "ETH",
+      "category": "majors",
+      "price": 1855.41,
+      "change_1d": -7.38,
+      "rsi": 21.8,
+      "volume_ratio": 1.87,
+      "atr_pct": 3.98,
+      "ema9": 2001.4889,
+      "ema21": 2080.7389,
+      "ema50": 2150.6369,
       "signals": [
-        "\u26a1 EMA9/21 Golden Cross",
-        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)"
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udd0a Above-Avg Volume (1.9x)"
+      ],
+      "score": 5,
+      "action": "\ud83d\udfe2 STRONG BUY",
+      "validated": true
+    },
+    {
+      "symbol": "XRP",
+      "category": "majors",
+      "price": 1.2223,
+      "change_1d": -5.61,
+      "rsi": 24.7,
+      "volume_ratio": 1.64,
+      "atr_pct": 3.59,
+      "ema9": 1.3076,
+      "ema21": 1.3423,
+      "ema50": 1.3694,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udd0a Above-Avg Volume (1.6x)"
       ],
       "score": 5,
       "action": "\ud83d\udfe2 STRONG BUY",
@@ -123,32 +141,52 @@
     {
       "symbol": "AAVE",
       "category": "defi",
-      "price": 78.94,
-      "change_1d": -3.79,
-      "rsi": 21.7,
-      "volume_ratio": 1.29,
-      "atr_pct": 4.22,
-      "ema9": 82.9113,
-      "ema21": 86.4165,
-      "ema50": 91.6882,
+      "price": 74.58,
+      "change_1d": -6.93,
+      "rsi": 19.3,
+      "volume_ratio": 1.69,
+      "atr_pct": 4.96,
+      "ema9": 81.4357,
+      "ema21": 85.4377,
+      "ema50": 90.8891,
       "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udd0a Above-Avg Volume (1.7x)"
       ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
+      "score": 5,
+      "action": "\ud83d\udfe2 STRONG BUY",
       "validated": true
     },
     {
       "symbol": "ADA",
       "category": "l1s",
-      "price": 0.2251,
-      "change_1d": -4.33,
-      "rsi": 21.2,
-      "volume_ratio": 1.23,
-      "atr_pct": 3.51,
-      "ema9": 0.236,
-      "ema21": 0.2435,
-      "ema50": 0.2498,
+      "price": 0.2129,
+      "change_1d": -7.66,
+      "rsi": 17.7,
+      "volume_ratio": 1.64,
+      "atr_pct": 4.31,
+      "ema9": 0.2322,
+      "ema21": 0.2412,
+      "ema50": 0.2483,
+      "signals": [
+        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udd0a Above-Avg Volume (1.6x)"
+      ],
+      "score": 5,
+      "action": "\ud83d\udfe2 STRONG BUY",
+      "validated": true
+    },
+    {
+      "symbol": "SOL",
+      "category": "majors",
+      "price": 74.2,
+      "change_1d": -8.49,
+      "rsi": 24.8,
+      "volume_ratio": 1.41,
+      "atr_pct": 4.34,
+      "ema9": 81.1392,
+      "ema21": 83.6829,
+      "ema50": 85.2116,
       "signals": [
         "\ud83d\udd25 RSI Deeply Oversold (<25)"
       ],
@@ -157,21 +195,78 @@
       "validated": true
     },
     {
-      "symbol": "RIO",
-      "category": "rwa",
-      "price": 0.0646,
-      "change_1d": -9.63,
-      "rsi": 26.6,
-      "volume_ratio": 0.99,
-      "atr_pct": 10.68,
-      "ema9": 0.0721,
-      "ema21": 0.0796,
-      "ema50": 0.0797,
+      "symbol": "DOGE",
+      "category": "meme",
+      "price": 0.0931,
+      "change_1d": -7.53,
+      "rsi": 24.6,
+      "volume_ratio": 1.48,
+      "atr_pct": 4.04,
+      "ema9": 0.0995,
+      "ema21": 0.1021,
+      "ema50": 0.102,
       "signals": [
-        "\ud83d\udfe1 RSI Oversold (<35)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+        "\ud83d\udd25 RSI Deeply Oversold (<25)"
       ],
       "score": 4,
+      "action": "\ud83d\udfe2 BUY",
+      "validated": true
+    },
+    {
+      "symbol": "AGIX",
+      "category": "ai",
+      "price": 0.1118,
+      "change_1d": -6.74,
+      "rsi": 72.0,
+      "volume_ratio": 2.61,
+      "atr_pct": 7.6,
+      "ema9": 0.1095,
+      "ema21": 0.1023,
+      "ema50": 0.1012,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udd0a High Volume (2.6x)",
+        "\ud83d\udfe0 RSI High Zone (65-75)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "validated": true
+    },
+    {
+      "symbol": "OCEAN",
+      "category": "ai",
+      "price": 0.1276,
+      "change_1d": -5.63,
+      "rsi": 58.8,
+      "volume_ratio": 1.51,
+      "atr_pct": 4.69,
+      "ema9": 0.1274,
+      "ema21": 0.1253,
+      "ema50": 0.1255,
+      "signals": [
+        "\ud83c\udfaf Pullback to EMA21",
+        "\ud83d\udd0a Above-Avg Volume (1.5x)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "validated": true
+    },
+    {
+      "symbol": "ONDO",
+      "category": "rwa",
+      "price": 0.3968,
+      "change_1d": 11.44,
+      "rsi": 54.7,
+      "volume_ratio": 1.66,
+      "atr_pct": 9.2,
+      "ema9": 0.3798,
+      "ema21": 0.3774,
+      "ema50": 0.3478,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83d\udd0a Above-Avg Volume (1.7x)"
+      ],
+      "score": 3,
       "action": "\ud83d\udfe2 BUY",
       "validated": true
     }
