@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-04 08:44 UTC",
+  "timestamp": "2026-06-05 00:28 UTC",
   "stocks": [
     {
       "ticker": "UNH",
@@ -50,7 +50,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 6
     },
     {
@@ -102,7 +102,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 5
     },
     {
@@ -187,7 +187,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 6
     },
     {
@@ -239,7 +239,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 6
     },
     {
@@ -324,7 +324,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 5
     },
     {
@@ -377,7 +377,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 4
     },
     {
@@ -492,7 +492,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 4,
       "counter_trend": true
     },
@@ -577,7 +577,7 @@
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
+      "bridge_ts_days": 1,
       "scorecard_total": 4,
       "counter_trend": true
     },
@@ -769,7 +769,7 @@
           "size": "half",
           "time_stop": "2026-05-17",
           "recalibrated": true,
-          "stale_days": 33
+          "stale_days": 34
         },
         {
           "plan": "Swing-B",
@@ -784,7 +784,7 @@
           "size": "half",
           "time_stop": "2026-05-12",
           "recalibrated": true,
-          "stale_days": 33
+          "stale_days": 34
         },
         {
           "plan": "Day-A",
@@ -799,12 +799,12 @@
           "size": "quarter",
           "time_stop": "2026-05-02 close",
           "recalibrated": true,
-          "stale_days": 33
+          "stale_days": 34
         }
       ],
       "bridge_source": true,
       "bridge_ts_stale": true,
-      "bridge_ts_days": 33,
+      "bridge_ts_days": 34,
       "zero_size": false,
       "fractional_note": "Risk $3535.14/unit > $50 budget \u2014 use fractional sizing or reduce stop"
     },
