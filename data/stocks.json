@@ -60,7 +60,29 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 9,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$88",
+          "entry": 88.58,
+          "stop": 84.92,
+          "t1": 92.24,
+          "t2": 94.68,
+          "t3": 98.35,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 6,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "EQIX",
@@ -162,7 +184,29 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 8,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$132",
+          "entry": 129.16,
+          "stop": 134.59,
+          "t1": 123.73,
+          "t2": 120.1,
+          "t3": 114.67,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 4,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "SLB",
@@ -180,7 +224,29 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 8,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$56",
+          "entry": 54.87,
+          "stop": 51.91,
+          "t1": 57.83,
+          "t2": 59.81,
+          "t3": 62.77,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 6,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "HON",
@@ -198,7 +264,29 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 7,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$224",
+          "entry": 213.97,
+          "stop": 227.02,
+          "t1": 200.92,
+          "t2": 192.21,
+          "t3": 179.16,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 4,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "MDLZ",
@@ -216,7 +304,29 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 7,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$61",
+          "entry": 62.04,
+          "stop": 60.1,
+          "t1": 63.98,
+          "t2": 65.27,
+          "t3": 67.21,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 6,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "NSC",
@@ -276,7 +386,29 @@
         "\ud83d\udd3b Breakdown below EMA50"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$151",
+          "entry": 149.92,
+          "stop": 157.88,
+          "t1": 141.96,
+          "t2": 136.66,
+          "t3": 128.7,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 3,
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "TXN",
@@ -293,7 +425,29 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$298",
+          "entry": 285.06,
+          "stop": 261.22,
+          "t1": 308.9,
+          "t2": 324.79,
+          "t3": 348.63,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 4,
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "AMZN",
@@ -392,7 +546,29 @@
         "\ud83c\udfaf Pullback to EMA20 support"
       ],
       "score": 5,
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "SHORT",
+          "trigger": "D close <$187",
+          "entry": 187.31,
+          "stop": 195.55,
+          "t1": 179.07,
+          "t2": 173.58,
+          "t3": 165.35,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "scorecard_total": 3,
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation"
     },
     {
       "ticker": "MRK",
