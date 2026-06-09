@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-09 07:20",
+  "timestamp": "2026-06-09 07:30",
   "total_scanned": 37,
   "buys": [
     {
@@ -24,14 +24,14 @@
     {
       "symbol": "NEAR",
       "category": "l1s",
-      "price": 2.136,
-      "change_1d": 4.03,
-      "rsi": 50.9,
+      "price": 2.142,
+      "change_1d": 4.32,
+      "rsi": 51.0,
       "volume_ratio": 0.71,
-      "atr_pct": 14.35,
-      "ema9": 2.195,
-      "ema21": 2.1598,
-      "ema50": 1.9062,
+      "atr_pct": 14.31,
+      "ema9": 2.1962,
+      "ema21": 2.1603,
+      "ema50": 1.9065,
       "signals": [
         "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
         "\ud83c\udfaf Pullback to EMA21"
@@ -43,14 +43,14 @@
     {
       "symbol": "RIO",
       "category": "rwa",
-      "price": 0.0418,
-      "change_1d": -2.61,
-      "rsi": 26.3,
-      "volume_ratio": 1.24,
-      "atr_pct": 14.58,
+      "price": 0.0421,
+      "change_1d": -2.06,
+      "rsi": 26.4,
+      "volume_ratio": 1.25,
+      "atr_pct": 14.5,
       "ema9": 0.0534,
       "ema21": 0.0653,
-      "ema50": 0.0719,
+      "ema50": 0.072,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume",
         "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
@@ -68,7 +68,7 @@
           "t1": 0.05,
           "t2": 0.06,
           "t3": 0.07,
-          "rr": "0.6 / 1.4 / 2.3",
+          "rr": "0.7 / 1.5 / 2.4",
           "size": "half",
           "time_stop": "+5 sessions"
         }
