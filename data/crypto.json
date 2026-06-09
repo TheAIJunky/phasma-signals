@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-08 08:01",
+  "timestamp": "2026-06-09 07:20",
   "total_scanned": 37,
   "buys": [
     {
@@ -7,14 +7,14 @@
       "category": "defi",
       "price": 0.0008,
       "change_1d": 0.01,
-      "rsi": 6.0,
+      "rsi": 6.1,
       "volume_ratio": 20.0,
       "atr_pct": 0.0,
       "ema9": 0.0008,
       "ema21": 0.0008,
       "ema50": 0.0008,
       "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)",
+        "\ud83d\udd25 RSI Deeply Oversold (<25) + Volume",
         "\ud83d\udd0a Massive Volume (20.0x)"
       ],
       "score": 7,
@@ -22,23 +22,41 @@
       "validated": true
     },
     {
+      "symbol": "NEAR",
+      "category": "l1s",
+      "price": 2.136,
+      "change_1d": 4.03,
+      "rsi": 50.9,
+      "volume_ratio": 0.71,
+      "atr_pct": 14.35,
+      "ema9": 2.195,
+      "ema21": 2.1598,
+      "ema50": 1.9062,
+      "signals": [
+        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
+        "\ud83c\udfaf Pullback to EMA21"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY",
+      "validated": true
+    },
+    {
       "symbol": "RIO",
       "category": "rwa",
-      "price": 0.043,
-      "change_1d": -5.29,
-      "rsi": 26.8,
-      "volume_ratio": 1.85,
-      "atr_pct": 13.87,
-      "ema9": 0.0563,
-      "ema21": 0.0676,
-      "ema50": 0.0737,
+      "price": 0.0418,
+      "change_1d": -2.61,
+      "rsi": 26.3,
+      "volume_ratio": 1.24,
+      "atr_pct": 14.58,
+      "ema9": 0.0534,
+      "ema21": 0.0653,
+      "ema50": 0.0719,
       "signals": [
-        "\ud83d\udfe1 RSI Oversold (<35)",
-        "\ud83d\udd0a Above-Avg Volume (1.9x)",
+        "\ud83d\udd35 RSI Oversold (<35), low volume",
         "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
       ],
-      "score": 5,
-      "action": "\ud83d\udfe2 STRONG BUY",
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
       "validated": true,
       "trade_table": [
         {
@@ -60,252 +78,6 @@
         "Swing": "W",
         "Day": "B"
       }
-    },
-    {
-      "symbol": "BTC",
-      "category": "majors",
-      "price": 62787.8086,
-      "change_1d": 3.16,
-      "rsi": 24.4,
-      "volume_ratio": 1.03,
-      "atr_pct": 4.07,
-      "ema9": 65661.1064,
-      "ema21": 70146.8128,
-      "ema50": 73147.7074,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$69,889",
-          "entry": 62722.08,
-          "stop": 57755.36,
-          "t1": 67688.8,
-          "t2": 70999.95,
-          "t3": 75966.66,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "W"
-      }
-    },
-    {
-      "symbol": "ETH",
-      "category": "majors",
-      "price": 1655.84,
-      "change_1d": 5.55,
-      "rsi": 24.2,
-      "volume_ratio": 0.95,
-      "atr_pct": 5.69,
-      "ema9": 1770.1422,
-      "ema21": 1924.4325,
-      "ema50": 2066.2214,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$1,915",
-          "entry": 1659.11,
-          "stop": 1485.51,
-          "t1": 1832.71,
-          "t2": 1948.44,
-          "t3": 2122.04,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "W"
-      }
-    },
-    {
-      "symbol": "SOL",
-      "category": "majors",
-      "price": 65.37,
-      "change_1d": 5.11,
-      "rsi": 24.9,
-      "volume_ratio": 0.75,
-      "atr_pct": 5.79,
-      "ema9": 70.638,
-      "ema21": 76.9501,
-      "ema50": 81.8063,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$77",
-          "entry": 65.54,
-          "stop": 58.37,
-          "t1": 72.71,
-          "t2": 77.49,
-          "t3": 84.65,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "W"
-      }
-    },
-    {
-      "symbol": "AAVE",
-      "category": "defi",
-      "price": 62.4,
-      "change_1d": 2.42,
-      "rsi": 20.4,
-      "volume_ratio": 0.81,
-      "atr_pct": 7.29,
-      "ema9": 70.1881,
-      "ema21": 77.8519,
-      "ema50": 86.3208,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$77",
-          "entry": 62.38,
-          "stop": 53.98,
-          "t1": 70.78,
-          "t2": 76.38,
-          "t3": 84.77,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "B"
-      }
-    },
-    {
-      "symbol": "ADA",
-      "category": "l1s",
-      "price": 0.1609,
-      "change_1d": 2.32,
-      "rsi": 15.9,
-      "volume_ratio": 1.02,
-      "atr_pct": 7.49,
-      "ema9": 0.1883,
-      "ema21": 0.2138,
-      "ema50": 0.2342,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$0",
-          "entry": 0.16,
-          "stop": 0.14,
-          "t1": 0.19,
-          "t2": 0.2,
-          "t3": 0.23,
-          "rr": "1.3 / 1.8 / 3.2",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "B"
-      }
-    },
-    {
-      "symbol": "AVAX",
-      "category": "l1s",
-      "price": 6.61,
-      "change_1d": -0.91,
-      "rsi": 16.9,
-      "volume_ratio": 0.98,
-      "atr_pct": 6.88,
-      "ema9": 7.594,
-      "ema21": 8.3228,
-      "ema50": 8.8639,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$8",
-          "entry": 6.6,
-          "stop": 5.76,
-          "t1": 7.44,
-          "t2": 8.0,
-          "t3": 8.85,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "B"
-      }
-    },
-    {
-      "symbol": "DOT",
-      "category": "l1s",
-      "price": 0.958,
-      "change_1d": 1.61,
-      "rsi": 24.9,
-      "volume_ratio": 0.67,
-      "atr_pct": 6.96,
-      "ema9": 1.0465,
-      "ema21": 1.1347,
-      "ema50": 1.2149,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25)"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true
     }
   ],
   "watches": [],
