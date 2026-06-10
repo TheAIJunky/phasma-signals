@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-09 21:01 UTC",
+  "timestamp": "2026-06-10 08:01 UTC",
   "stocks": [
     {
       "ticker": "AES",
@@ -525,10 +525,10 @@
       "score": 6,
       "direction": "LONG",
       "trend": "GENTLE UPTREND",
-      "entry": 309.93,
-      "stop_loss": 295.41,
-      "target_1": 324.45,
-      "target_2": 334.13,
+      "entry": 312.32,
+      "stop_loss": 297.8,
+      "target_1": 326.84,
+      "target_2": 336.52,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
       "position_size_10k": 6,
@@ -560,11 +560,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$311",
-          "entry": 309.93,
-          "stop": 295.41,
-          "t1": 324.45,
-          "t2": 334.13,
-          "t3": 348.65,
+          "entry": 312.32,
+          "stop": 297.8,
+          "t1": 326.84,
+          "t2": 336.52,
+          "t3": 351.04,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -574,10 +574,10 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 301.15
+        "session": 301.2
       },
       "volume_profile": {
-        "poc": 303.89,
+        "poc": 304.96,
         "vah": 309.7,
         "val": 290.54
       },
@@ -587,39 +587,9 @@
   ],
   "crypto": [
     {
-      "symbol": "NEAR",
-      "category": "l1s",
-      "price": 2.142,
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "direction": "LONG",
-      "entry": 2.142,
-      "stop_loss": 1.885,
-      "target_1": 2.656,
-      "target_2": 3.0415,
-      "rr_1": 2.0,
-      "rr_2": 3.5,
-      "position_size_5k": 194,
-      "position_size_frac": 194.5525,
-      "risk_amount": 50.0,
-      "rsi": 51.0,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 14.31,
-      "volume_ratio": 0.71,
-      "volume_note": "Low volume \u2014 caution",
-      "signals": [
-        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
-        "\ud83c\udfaf Pullback to EMA21"
-      ],
-      "plan_name": "ATR-derived",
-      "recalibrated": false,
-      "is_counter_trend": false,
-      "direction_reason": "Neutral RSI \u2014 following action (\ud83d\udfe2 BUY)"
-    },
-    {
       "symbol": "RIO",
       "category": "rwa",
-      "price": 0.0421,
+      "price": 0.0391,
       "score": 3,
       "action": "\ud83d\udfe2 BUY",
       "direction": "LONG",
@@ -627,15 +597,15 @@
       "stop_loss": 0.0352,
       "target_1": 0.05,
       "target_2": 0.06,
-      "rr_1": "0.7 / 1.5 / 2.4",
+      "rr_1": "1.0 / 2.0 / 2.9",
       "rr_2": 4.17,
       "position_size_5k": 10416,
       "position_size_frac": 10416.6667,
       "risk_amount": 50.0,
-      "rsi": 26.4,
+      "rsi": 25.1,
       "rsi_note": "Approaching oversold \u2014 potential long entry",
-      "atr_pct": 14.5,
-      "volume_ratio": 1.25,
+      "atr_pct": 16.46,
+      "volume_ratio": 1.06,
       "volume_note": "Average volume",
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume",
@@ -655,7 +625,7 @@
           "t1": 0.05,
           "t2": 0.06,
           "t3": 0.07,
-          "rr": "0.7 / 1.5 / 2.4",
+          "rr": "1.0 / 2.0 / 2.9",
           "size": "half",
           "time_stop": "+5 sessions"
         }
