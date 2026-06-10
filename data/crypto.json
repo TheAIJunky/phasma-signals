@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-09 07:30",
+  "timestamp": "2026-06-10 07:37",
   "total_scanned": 37,
   "buys": [
     {
@@ -7,7 +7,7 @@
       "category": "defi",
       "price": 0.0008,
       "change_1d": 0.01,
-      "rsi": 6.1,
+      "rsi": 6.2,
       "volume_ratio": 20.0,
       "atr_pct": 0.0,
       "ema9": 0.0008,
@@ -22,35 +22,16 @@
       "validated": true
     },
     {
-      "symbol": "NEAR",
-      "category": "l1s",
-      "price": 2.142,
-      "change_1d": 4.32,
-      "rsi": 51.0,
-      "volume_ratio": 0.71,
-      "atr_pct": 14.31,
-      "ema9": 2.1962,
-      "ema21": 2.1603,
-      "ema50": 1.9065,
-      "signals": [
-        "\ud83d\udcc8 EMA Stack Bullish (9>21>50)",
-        "\ud83c\udfaf Pullback to EMA21"
-      ],
-      "score": 4,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true
-    },
-    {
       "symbol": "RIO",
       "category": "rwa",
-      "price": 0.0421,
-      "change_1d": -2.06,
-      "rsi": 26.4,
-      "volume_ratio": 1.25,
-      "atr_pct": 14.5,
-      "ema9": 0.0534,
-      "ema21": 0.0653,
-      "ema50": 0.072,
+      "price": 0.0391,
+      "change_1d": -7.66,
+      "rsi": 25.1,
+      "volume_ratio": 1.06,
+      "atr_pct": 16.46,
+      "ema9": 0.0506,
+      "ema21": 0.0629,
+      "ema50": 0.0706,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume",
         "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
@@ -68,15 +49,28 @@
           "t1": 0.05,
           "t2": 0.06,
           "t3": 0.07,
-          "rr": "0.7 / 1.5 / 2.4",
+          "rr": "1.0 / 2.0 / 2.9",
           "size": "half",
           "time_stop": "+5 sessions"
         }
       ],
+      "vwap_levels": {
+        "session": 0.07
+      },
+      "coverage_tiers": {
+        "position": "S",
+        "swing": "W",
+        "day": "B"
+      },
       "action_verdicts": {
         "Pos": "S",
         "Swing": "W",
         "Day": "B"
+      },
+      "volume_profile": {
+        "poc": 0.06,
+        "vah": 0.16,
+        "val": 0.04
       }
     }
   ],
@@ -85,5 +79,7 @@
   "macro_regime": "Reflation",
   "macro_dxy": 97.79,
   "macro_10y": 4.42,
-  "macro_vix": 16.78
+  "macro_vix": 16.78,
+  "macro_regime_code": "R2",
+  "macro_regime_confidence": 7
 }
