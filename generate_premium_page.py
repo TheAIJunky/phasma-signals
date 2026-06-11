@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Phasma Signals Premium landing page."""
+"""Generate Phasma Signals Premium landing page with live report preview."""
 import json, os, sys
 
 SITE_DIR = os.path.expanduser("~/phasma-signals-site")
@@ -25,6 +25,287 @@ except:
     pass
 
 total_signals = n_stocks + n_crypto
+
+# ── Load premium report for preview section ──
+premium_data = {}
+premium_file = os.path.join(SITE_DIR, "data", "premium_latest.json")
+if os.path.exists(premium_file):
+    try:
+        with open(premium_file) as f:
+            premium_data = json.load(f)
+    except:
+        pass
+
+# Build preview HTML from live data
+preview_html = ""
+if premium_data:
+    all_stocks = premium_data.get("stocks", [])
+    all_crypto = premium_data.get("crypto", [])
+    total_stock_count = len(all_stocks)
+    total_crypto_count = len(all_crypto)
+
+    # Pick 2 high-score stocks + 1 counter-trend for diversity
+    high_score = [s for s in all_stocks if s.get("scorecard_total", s.get("score", 0)) >= 5 and not s.get("is_counter_trend")]
+    ct_stocks = [s for s in all_stocks if s.get("is_counter_trend")]
+
+    preview_stocks = high_score[:2]
+    if ct_stocks:
+        preview_stocks.append(ct_stocks[0])
+    elif len(all_stocks) > 2:
+        preview_stocks.append(all_stocks[2])
+
+    preview_crypto = all_crypto[:1]
+
+    # ── Macro regime mini-dashboard ──
+    # Pull from bridge if available, else use placeholder
+    macro_regime = "Goldilocks"
+    macro_dxy = "98.32"
+    macro_10y = "4.28%"
+    macro_vix = "14.2"
+    try:
+        bridge_file = os.path.join(REPORTS_DIR, "trading_ops_bridge_latest.json")
+        if os.path.exists(bridge_file):
+            with open(bridge_file) as f:
+                bridge = json.load(f)
+            macro = bridge.get("macro", {})
+            macro_regime = macro.get("regime_quadrant", macro_regime)
+            if macro.get("dxy"):
+                macro_dxy = f"{macro['dxy']:.1f}" if isinstance(macro["dxy"], (int, float)) else str(macro["dxy"])
+            if macro.get("ten_year"):
+                macro_10y = f"{macro['ten_year']:.2f}%"
+            if macro.get("vix"):
+                macro_vix = f"{macro['vix']:.1f}" if isinstance(macro["vix"], (int, float)) else str(macro["vix"])
+    except:
+        pass
+
+    regime_colors = {"Goldilocks": "#00b894", "Reflation": "#fdcb6e", "Stagflation": "#e17055", "Risk-Off": "#d63031"}
+    regime_color = regime_colors.get(macro_regime, "#888")
+
+    preview_html += f'''<div class="preview-macro">
+<div class="preview-macro-title">🌍 Macro Regime Dashboard</div>
+<div class="preview-macro-grid">
+<div class="preview-macro-item">
+<span class="preview-macro-label">Regime</span>
+<span class="preview-macro-val" style="color:{regime_color};">{macro_regime}</span>
+</div>
+<div class="preview-macro-item">
+<span class="preview-macro-label">DXY</span>
+<span class="preview-macro-val">{macro_dxy}</span>
+</div>
+<div class="preview-macro-item">
+<span class="preview-macro-label">10Y Yield</span>
+<span class="preview-macro-val">{macro_10y}</span>
+</div>
+<div class="preview-macro-item">
+<span class="preview-macro-label">VIX</span>
+<span class="preview-macro-val" style="color:#00b894;">{macro_vix}</span>
+</div>
+</div>
+</div>\n'''
+
+    # ── Stock preview cards ──
+    sample_count = len(preview_stocks)
+    preview_html += f'<div class="preview-section">\n'
+    preview_html += f'<div class="preview-section-title">📊 Stock Swing Setups — Sample ({sample_count} of {total_stock_count})</div>\n'
+
+    for s in preview_stocks:
+        ticker = s.get("ticker", "?")
+        direction = s.get("direction", "LONG")
+        price = s.get("price", 0)
+        score = s.get("scorecard_total", s.get("score", 0))
+        trend = s.get("trend", "")
+        is_ct = s.get("is_counter_trend", False)
+        entry = s.get("entry", 0)
+        stop = s.get("stop_loss", 0)
+        t1 = s.get("target_1", 0)
+        t2 = s.get("target_2", 0)
+        rr = s.get("rr_1", "")
+        size_10k = s.get("position_size_10k", "")
+        vwap = s.get("vwap_levels", {})
+        vprofile = s.get("volume_profile", {})
+        ema_status = s.get("ema_status", [])
+        tt = s.get("trade_table", [{}])[0] if s.get("trade_table") else {}
+        t3 = tt.get("t3", "")
+        trigger = tt.get("trigger", "")
+        time_stop = tt.get("time_stop", "")
+        recalibrated = tt.get("recalibrated", False)
+
+        # Score badge class
+        if score >= 5:
+            score_cls = "perfect"
+        elif score >= 3:
+            score_cls = "mid"
+        else:
+            score_cls = "low"
+
+        # Direction badge
+        dir_label = direction
+        if is_ct:
+            dir_label += " ⚠️"
+        dir_cls = "long" if "LONG" in direction.upper() else "short"
+
+        # Trend class
+        trend_cls = "warn" if is_ct or "NEUTRAL" in trend.upper() or "CONSOLIDATION" in trend.upper() else ""
+
+        # Card class
+        card_cls = " counter-trend" if is_ct else ""
+
+        # Format price
+        if price >= 1:
+            price_str = f"${price:,.2f}"
+            entry_str = f"${entry:,.2f}"
+            stop_str = f"${stop:,.2f}"
+            t1_str = f"${t1:,.2f}"
+            t2_str = f"${t2:,.2f}" if t2 else "—"
+            t3_str = f"${t3:,.2f}" if t3 else "—"
+            vwap_parts = [f"{k.title()}: ${v:,.2f}" for k, v in vwap.items() if v]
+            vp_parts = [f"{k.upper()}: ${v:,.2f}" for k, v in vprofile.items() if v and k in ("poc", "vah", "val")]
+            size_str = f"{size_10k} shares ($10K, 1% risk)" if size_10k else ""
+        else:
+            price_str = f"${price:.4f}"
+            entry_str = f"${entry:.4f}"
+            stop_str = f"${stop:.4f}"
+            t1_str = f"${t1:.4f}"
+            t2_str = f"${t2:.4f}" if t2 else "—"
+            t3_str = f"${t3:.4f}" if t3 else "—"
+            vwap_parts = [f"{k.title()}: ${v:.4f}" for k, v in vwap.items() if v]
+            vp_parts = [f"{k.upper()}: ${v:.4f}" for k, v in vprofile.items() if v and k in ("poc", "vah", "val")]
+            size_str = f"{size_10k:,} units ($5K, 1% risk)" if size_10k else ""
+
+        ema_str = " · ".join(ema_status) if ema_status else ""
+
+        preview_html += f'''<div class="preview-card{card_cls}">
+<div class="preview-card-header">
+<span class="preview-ticker">{ticker}</span>
+<span class="preview-dir {dir_cls}">{dir_label}</span>
+<span class="preview-price">{price_str}</span>
+<span class="preview-score {score_cls}">{score}/6</span>
+<span class="preview-trend {trend_cls}">{trend}</span>
+</div>
+<div class="preview-card-body">
+<table class="preview-table">
+<tr><th>Entry</th><th>Stop</th><th>T1</th><th>T2</th><th>T3</th><th>R:R</th></tr>
+<tr><td class="entry">{entry_str}</td><td class="stop">{stop_str}</td><td class="t1">{t1_str}</td><td class="t2">{t2_str}</td><td class="t3">{t3_str}</td><td>{rr}</td></tr>
+</table>
+'''
+
+        if is_ct:
+            reason = s.get("direction_reason", "Counter-trend — lower conviction")
+            preview_html += f'<div class="preview-ct-badge">⚠️ COUNTER-TREND — {reason}. Tighter stops, reduced size.</div>\n'
+
+        preview_html += f'''<div class="preview-details">
+<div class="preview-detail-row"><span class="preview-detail-label">Position Size</span><span>{size_str}</span></div>
+'''
+        if vwap_parts:
+            preview_html += f'<div class="preview-detail-row"><span class="preview-detail-label">VWAP</span><span>{" | ".join(vwap_parts)}</span></div>\n'
+        if vp_parts:
+            preview_html += f'<div class="preview-detail-row"><span class="preview-detail-label">Vol Profile</span><span>{" | ".join(vp_parts)}</span></div>\n'
+        if ema_str:
+            ema_color = ' style="color:#f0883e;"' if is_ct else ''
+            preview_html += f'<div class="preview-detail-row"><span class="preview-detail-label">EMA Status</span><span{ema_color}>{ema_str}</span></div>\n'
+        if trigger or time_stop:
+            preview_html += f'<div class="preview-detail-row"><span class="preview-detail-label">Trigger</span><span>{trigger}{" | Time stop: " + time_stop if time_stop else ""}</span></div>\n'
+        if recalibrated:
+            preview_html += f'<div class="preview-detail-row"><span class="preview-detail-label">Recalibrated</span><span style="color:#ff9800;">🔄 Plans recalibrated from live price</span></div>\n'
+
+        preview_html += '</div>\n</div>\n</div>\n'
+
+    remaining = total_stock_count - sample_count
+    if remaining > 0:
+        preview_html += f'<div class="preview-more">…and {remaining} more stock setups with full trade plans, scorecards, and risk sizing.</div>\n'
+    preview_html += '</div>\n'
+
+    # ── Crypto preview cards ──
+    if preview_crypto:
+        preview_html += f'<div class="preview-section">\n'
+        preview_html += f'<div class="preview-section-title">₿ Crypto Swing Setups — Sample</div>\n'
+
+        for c in preview_crypto:
+            symbol = c.get("symbol", "?")
+            direction = c.get("direction", "LONG")
+            price = c.get("price", 0)
+            score = c.get("scorecard_total", c.get("score", 0))
+            trend = c.get("direction_reason", c.get("trend", ""))
+            entry = c.get("entry", 0)
+            stop = c.get("stop_loss", 0)
+            t1 = c.get("target_1", 0)
+            t2 = c.get("target_2", 0)
+            rr = c.get("rr_1", "")
+            size_5k = c.get("position_size_10k", "")
+            rsi = c.get("rsi", "")
+            vwap = c.get("vwap_levels", {})
+            vprofile = c.get("volume_profile", {})
+            tt = c.get("trade_table", [{}])[0] if c.get("trade_table") else {}
+            t3 = tt.get("t3", "")
+            atr = c.get("atr_pct", 0)
+
+            if score >= 5:
+                score_cls = "perfect"
+            elif score >= 3:
+                score_cls = "mid"
+            else:
+                score_cls = "low"
+
+            dir_cls = "long" if "LONG" in direction.upper() else "short"
+            trend_cls = "warn" if rsi and isinstance(rsi, (int, float)) and rsi < 35 else ""
+
+            price_str = f"${price:.4f}"
+            entry_str = f"${entry:.4f}"
+            stop_str = f"${stop:.4f}"
+            t1_str = f"${t1:.4f}"
+            t2_str = f"${t2:.4f}" if t2 else "—"
+            t3_str = f"${t3:.4f}" if t3 else "—"
+
+            vwap_parts = [f"{k.title()}: ${v:.4f}" for k, v in vwap.items() if v]
+            vp_parts = [f"{k.upper()}: ${v:.4f}" for k, v in vprofile.items() if v and k in ("poc", "vah", "val")]
+
+            rsi_str = ""
+            if rsi and isinstance(rsi, (int, float)):
+                rsi_color = "#fdcb6e" if rsi < 35 else "#e0e0e0"
+                rsi_label = "Oversold (<35)" if rsi < 35 else f"{rsi:.0f}"
+                rsi_str = f'<div class="preview-detail-row"><span class="preview-detail-label">RSI</span><span style="color:{rsi_color};">{rsi:.1f} — {rsi_label}</span></div>\n'
+
+            atr_str = ""
+            if atr:
+                atr_str = f'<div class="preview-detail-row"><span class="preview-detail-label">ATR</span><span>{atr:.1f}% — Volatility squeeze, breakout imminent</span></div>\n'
+
+            size_str = f"{size_5k:,} units ($5K, 1% risk)" if size_5k else ""
+
+            preview_html += f'''<div class="preview-card">
+<div class="preview-card-header">
+<span class="preview-ticker">{symbol}</span>
+<span class="preview-dir {dir_cls}">BUY {direction}</span>
+<span class="preview-price">{price_str}</span>
+<span class="preview-score {score_cls}">{score}/6</span>
+<span class="preview-trend {trend_cls}">{trend}</span>
+</div>
+<div class="preview-card-body">
+<table class="preview-table">
+<tr><th>Entry</th><th>Stop</th><th>T1</th><th>T2</th><th>T3</th><th>R:R</th></tr>
+<tr><td class="entry">{entry_str}</td><td class="stop">{stop_str}</td><td class="t1">{t1_str}</td><td class="t2">{t2_str}</td><td class="t3">{t3_str}</td><td>{rr}</td></tr>
+</table>
+<div class="preview-details">
+<div class="preview-detail-row"><span class="preview-detail-label">Position Size</span><span>{size_str}</span></div>
+{rsi_str}{''.join([f'<div class="preview-detail-row"><span class="preview-detail-label">VWAP</span><span>{" | ".join(vwap_parts)}</span></div>\n'] if vwap_parts else [])}{''.join([f'<div class="preview-detail-row"><span class="preview-detail-label">Vol Profile</span><span>{" | ".join(vp_parts)}</span></div>\n'] if vp_parts else [])}{atr_str}</div>
+</div>
+</div>\n'''
+
+        preview_html += '</div>\n'
+
+    # ── Blur note ──
+    preview_html += f'''<div class="preview-blur-note">
+<span class="preview-lock">🔒</span> The full report includes <strong>all</strong> tickers (unlocked), SPX gamma analysis, VIX structure, breadth indicators, sector ETF rankings, macro catalyst calendar, and the screener's regime-aligned conviction picks. This preview shows {sample_count} of {total_stock_count} stocks and {len(preview_crypto)} crypto.
+</div>\n'''
+
+# If no premium data, show placeholder
+if not preview_html:
+    preview_html = '''<div class="preview-blur-note">
+<span class="preview-lock">🔒</span> Full report preview available when today's scan completes. Subscribe to receive the complete analysis in your Nostr DM.
+</div>\n'''
+
+# ══════════════════════════════════════════════════════
+#  BUILD FULL HTML
+# ══════════════════════════════════════════════════════
 
 html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -91,6 +372,61 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 .feature-card h3 {{ color:#e040fb; font-size:1rem; margin-bottom:0.3rem; }}
 .feature-card p {{ color:#888; font-size:0.85rem; line-height:1.5; }}
 
+/* ═══════════════ REPORT PREVIEW ═══════════════ */
+.preview {{ margin:3rem 0; }}
+.preview h2 {{ color:#b388ff; text-align:center; margin-bottom:0.5rem; font-size:1.5rem; }}
+.preview-sub {{ color:#888; text-align:center; font-size:0.9rem; margin-bottom:2rem; }}
+.preview-macro {{ background:#111; border:1px solid #1a1a2e; border-radius:12px; padding:1.2rem; margin-bottom:1.5rem; }}
+.preview-macro-title {{ color:#b388ff; font-size:1rem; font-weight:600; margin-bottom:0.8rem; }}
+.preview-macro-grid {{ display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }}
+.preview-macro-item {{ text-align:center; }}
+.preview-macro-label {{ display:block; color:#888; font-size:0.75rem; margin-bottom:0.2rem; text-transform:uppercase; letter-spacing:1px; }}
+.preview-macro-val {{ font-size:1.2rem; font-weight:600; color:#e0e0e0; }}
+
+.preview-section {{ margin-bottom:1.5rem; }}
+.preview-section-title {{ color:#00cec9; font-size:1rem; font-weight:600; margin-bottom:0.8rem; padding-left:0.2rem; }}
+
+.preview-card {{ background:#0d0d14; border:1px solid #1a1a2e; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; transition:border-color 0.3s; }}
+.preview-card:hover {{ border-color:#b388ff; }}
+.preview-card.counter-trend {{ border-color:#ff980044; }}
+.preview-card.counter-trend:hover {{ border-color:#ff9800; }}
+
+.preview-card-header {{ display:flex; align-items:center; gap:0.8rem; padding:0.8rem 1rem; background:#111; border-bottom:1px solid #1a1a2e; flex-wrap:wrap; }}
+.preview-ticker {{ font-size:1.3rem; font-weight:bold; color:#e040fb; }}
+.preview-dir {{ font-size:0.8rem; font-weight:600; padding:0.15rem 0.6rem; border-radius:20px; }}
+.preview-dir.long {{ background:#3fb95022; color:#3fb950; border:1px solid #3fb95044; }}
+.preview-dir.short {{ background:#f8514922; color:#f85149; border:1px solid #f8514944; }}
+.preview-price {{ font-size:1rem; color:#e0e0e0; font-weight:500; }}
+.preview-score {{ font-size:0.8rem; font-weight:600; padding:0.15rem 0.5rem; border-radius:6px; margin-left:auto; }}
+.preview-score.perfect {{ background:#3fb95022; color:#3fb950; }}
+.preview-score.mid {{ background:#fdcb6e22; color:#fdcb6e; }}
+.preview-score.low {{ background:#f8514922; color:#f85149; }}
+.preview-trend {{ font-size:0.8rem; color:#888; }}
+.preview-trend.warn {{ color:#f0883e; }}
+
+.preview-card-body {{ padding:0.8rem 1rem; }}
+
+.preview-table {{ width:100%; border-collapse:collapse; margin-bottom:0.8rem; font-size:0.85rem; }}
+.preview-table th {{ color:#888; font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; padding:0.4rem 0.6rem; text-align:center; border-bottom:1px solid #1a1a2e; }}
+.preview-table td {{ text-align:center; padding:0.5rem 0.6rem; color:#e0e0e0; }}
+.preview-table .entry {{ color:#b388ff; font-weight:600; }}
+.preview-table .stop {{ color:#f85149; }}
+.preview-table .t1 {{ color:#3fb950; }}
+.preview-table .t2 {{ color:#00cec9; }}
+.preview-table .t3 {{ color:#888; }}
+
+.preview-details {{ font-size:0.8rem; }}
+.preview-detail-row {{ display:flex; gap:0.8rem; padding:0.25rem 0; border-bottom:1px solid #1a1a2e0a; }}
+.preview-detail-row:last-child {{ border:none; }}
+.preview-detail-label {{ color:#888; min-width:110px; flex-shrink:0; }}
+
+.preview-ct-badge {{ background:#ff980015; border:1px solid #ff980044; border-radius:8px; padding:0.5rem 0.8rem; margin-bottom:0.8rem; font-size:0.8rem; color:#f0883e; line-height:1.5; }}
+
+.preview-more {{ color:#888; font-size:0.85rem; text-align:center; padding:0.5rem; font-style:italic; }}
+
+.preview-blur-note {{ background:#1a1a2e; border:1px solid #b388ff33; border-radius:12px; padding:1.2rem; margin-top:1.5rem; text-align:center; color:#aaa; font-size:0.9rem; line-height:1.6; }}
+.preview-lock {{ font-size:1.5rem; display:block; margin-bottom:0.5rem; }}
+
 /* Pricing */
 .pricing {{ margin:3rem 0; text-align:center; }}
 .pricing h2 {{ color:#b388ff; margin-bottom:1.5rem; font-size:1.5rem; }}
@@ -149,11 +485,14 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 .footer a {{ color:#b388ff; text-decoration:none; }}
 
 @media (max-width:600px) {{
-  .hero h1 {{ font-size:1.8rem; }}
-  .hero .stats {{ flex-direction:column; gap:1rem; }}
-  .pricing-cards {{ flex-direction:column; align-items:center; }}
-  .price-card {{ min-width:auto; width:100%; max-width:100%; }}
-  .feature-grid {{ grid-template-columns:1fr; }}
+ .hero h1 {{ font-size:1.8rem; }}
+ .hero .stats {{ flex-direction:column; gap:1rem; }}
+ .pricing-cards {{ flex-direction:column; align-items:center; }}
+ .price-card {{ min-width:auto; width:100%; max-width:100%; }}
+ .feature-grid {{ grid-template-columns:1fr; }}
+ .preview-macro-grid {{ grid-template-columns:1fr 1fr; }}
+ .preview-card-header {{ flex-wrap:wrap; gap:0.3rem; }}
+ .preview-table th, .preview-table td {{ font-size:0.7rem; padding:0.3rem 0.4rem; }}
 }}
 </style>
 </head>
@@ -213,6 +552,13 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 <div class="feature-card"><div class="icon">⚖️</div><h3>Risk:Reward Ratios</h3><p>Multi-target R:R (1x, 1.7x, 2.7x) so you know when to scale out.</p></div>
 <div class="feature-card"><div class="icon">🛡️</div><h3>Validation Layer</h3><p>Zero-price rejection, RSI sanity, direction checks, counter-trend flags, BTC freshness.</p></div>
 </div>
+</div>
+
+<!-- ═══════════════ SAMPLE REPORT PREVIEW ═══════════════ -->
+<div class="preview">
+<h2>📖 Report Preview — See What You Get</h2>
+<p class="preview-sub">This is a <em>real</em> excerpt from the latest Premium report. Names are unblurred — subscribers see every ticker.</p>
+{preview_html}
 </div>
 
 <div class="pricing">
@@ -356,4 +702,8 @@ Phasma Signals — Independent trading research<br>
 with open(os.path.join(SITE_DIR, "premium.html"), "w") as f:
     f.write(html)
 
-print(f"Generated premium.html")
+print(f"Generated premium.html with live report preview")
+if premium_data:
+    print(f"  Preview: {len(premium_data.get('stocks',[]))} stocks, {len(premium_data.get('crypto',[]))} crypto loaded")
+else:
+    print(f"  Preview: no premium data found — showing placeholder")
