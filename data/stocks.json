@@ -800,9 +800,9 @@
   ],
   "watchlist": [],
   "macro_regime": "Reflation",
-  "macro_dxy": 97.79,
-  "macro_10y": 4.42,
-  "macro_vix": 16.78,
+  "macro_dxy": 99.75,
+  "macro_10y": 4.49,
+  "macro_vix": 17.68,
   "macro_regime_code": "R2",
-  "macro_regime_confidence": 7
+  "macro_regime_confidence": 6
 }
