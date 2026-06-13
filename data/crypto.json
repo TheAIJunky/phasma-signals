@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-12 07:03",
+  "timestamp": "2026-06-13 07:00",
   "total_scanned": 37,
   "buys": [
     {
@@ -7,7 +7,7 @@
       "category": "defi",
       "price": 0.0008,
       "change_1d": 0.01,
-      "rsi": 6.5,
+      "rsi": 6.7,
       "volume_ratio": 20.0,
       "atr_pct": 0.0,
       "ema9": 0.0008,
@@ -22,16 +22,34 @@
       "validated": true
     },
     {
+      "symbol": "CRV",
+      "category": "defi",
+      "price": 0.2349,
+      "change_1d": -7.73,
+      "rsi": 56.6,
+      "volume_ratio": 1.15,
+      "atr_pct": 6.78,
+      "ema9": 0.2169,
+      "ema21": 0.2161,
+      "ema50": 0.2235,
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "validated": true
+    },
+    {
       "symbol": "RIO",
       "category": "rwa",
-      "price": 0.042,
-      "change_1d": 11.03,
-      "rsi": 30.0,
-      "volume_ratio": 0.95,
-      "atr_pct": 14.97,
-      "ema9": 0.0471,
-      "ema21": 0.0591,
-      "ema50": 0.0687,
+      "price": 0.0401,
+      "change_1d": -6.08,
+      "rsi": 29.4,
+      "volume_ratio": 0.85,
+      "atr_pct": 14.49,
+      "ema9": 0.0458,
+      "ema21": 0.0574,
+      "ema50": 0.0676,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume",
         "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
@@ -49,7 +67,7 @@
           "t1": 0.05,
           "t2": 0.06,
           "t3": 0.07,
-          "rr": "0.7 / 1.5 / 2.3",
+          "rr": "1.0 / 2.0 / 2.9",
           "size": "half",
           "time_stop": "+5 sessions"
         }
