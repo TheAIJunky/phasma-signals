@@ -1,5 +1,320 @@
 {
-  "timestamp": "2026-06-14 18:31 UTC",
+  "timestamp": "2026-06-14 18:46 UTC",
+  "macro": {
+    "regime_quadrant": "Reflation",
+    "regime_code": "R2",
+    "regime_confidence": 6,
+    "regime_pillars": [],
+    "dxy": 99.75,
+    "ten_year": 4.49,
+    "vix": 17.68,
+    "sector_etfs": [
+      {
+        "sector": "Sector",
+        "etf": "ETF",
+        "price": "Price",
+        "change": "\u0394 vs May 6",
+        "regime_fit": "Regime fit"
+      },
+      {
+        "sector": "Tech",
+        "etf": "XLK",
+        "price": "$184.80",
+        "change": "+11.6%",
+        "regime_fit": "R1/R2 \u2014 leading"
+      },
+      {
+        "sector": "Financials",
+        "etf": "XLF",
+        "price": "$53.34",
+        "change": "+3.4%",
+        "regime_fit": "R2 \u2014 rates up helps"
+      },
+      {
+        "sector": "Energy",
+        "etf": "XLE",
+        "price": "$57.55",
+        "change": "\u20133.2%",
+        "regime_fit": "R2/R3 \u2014 oil crash hurting"
+      },
+      {
+        "sector": "Healthcare",
+        "etf": "XLV",
+        "price": "$153.81",
+        "change": "+5.8%",
+        "regime_fit": "Defensive \u2014 R4 play"
+      },
+      {
+        "sector": "Utilities",
+        "etf": "XLU",
+        "price": "$44.53",
+        "change": "\u20134.0%",
+        "regime_fit": "Defensive \u2014 rates up hurts"
+      },
+      {
+        "sector": "High Yield",
+        "etf": "HYG",
+        "price": "$79.94",
+        "change": "+0.02%",
+        "regime_fit": "Credit calm"
+      },
+      {
+        "sector": "IG Corp",
+        "etf": "LQD",
+        "price": "$109.01",
+        "change": "+0.3%",
+        "regime_fit": "Steady"
+      },
+      {
+        "sector": "Long Treasury",
+        "etf": "TLT",
+        "price": "$85.77",
+        "change": "+0.4%",
+        "regime_fit": "Modest bid"
+      }
+    ],
+    "regime_tilts": [
+      {
+        "scenario": "Scenario",
+        "trigger": "Trigger",
+        "new_regime": "New regime",
+        "probability": "Probability"
+      },
+      {
+        "scenario": "**R2 \u2192 R1**",
+        "trigger": "Oil stays <$85 + June CPI <3.5% + SPX holds >7,200",
+        "new_regime": "Goldilocks (growth \u2191, inflation \u2193)",
+        "probability": "**35%** \u2014 rising (was 30%)"
+      },
+      {
+        "scenario": "**R2 stays**",
+        "trigger": "Oil $82-90, CPI sticky 3.5-3.8%",
+        "new_regime": "Reflation",
+        "probability": "**50%** \u2014 base case (was 55%)"
+      },
+      {
+        "scenario": "**R2 \u2192 R3**",
+        "trigger": "Oil rebounds >$95 + GDPNow drops <2%",
+        "new_regime": "Stagflation",
+        "probability": "**10%**"
+      },
+      {
+        "scenario": "**R2 \u2192 R4**",
+        "trigger": "NFP negative + credit spreads blow out",
+        "new_regime": "Deflation / Risk-Off",
+        "probability": "**5%**"
+      }
+    ],
+    "macro_calendar": [
+      {
+        "date": "Date",
+        "release": "Release",
+        "expected": "Expected",
+        "impact": "Market impact"
+      },
+      {
+        "date": "Jun 16-17",
+        "release": "FOMC meeting + dot plot + SEP",
+        "expected": "Hawkish hold likely",
+        "impact": "**High** \u2014 rate path for H2"
+      },
+      {
+        "date": "Jun 17",
+        "release": "FOMC press conference (2:30pm ET)",
+        "expected": "\u2014",
+        "impact": "**High** \u2014 forward guidance"
+      },
+      {
+        "date": "Jul 3",
+        "release": "NFP (June)",
+        "expected": "\u2014",
+        "impact": "**High** \u2014 labor market health"
+      },
+      {
+        "date": "Jul 14",
+        "release": "CPI (June)",
+        "expected": "est. ~3.3-3.6% headline",
+        "impact": "**High** \u2014 regime-defining"
+      },
+      {
+        "date": "Jul 15",
+        "release": "PPI (June)",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 feeds PCE"
+      },
+      {
+        "date": "Jul 28-29",
+        "release": "FOMC meeting",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 no SEP"
+      },
+      {
+        "date": "Jul 30",
+        "release": "GDPNow Q2 advance",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 growth confirmation"
+      },
+      {
+        "date": "Aug 8",
+        "release": "CPI (July)",
+        "expected": "\u2014",
+        "impact": "**High** \u2014 next regime check"
+      }
+    ],
+    "actionable_takeaways": [
+      ""
+    ]
+  },
+  "spx": {
+    "source": "/data/data/com.termux/files/home/trading-ops/scanned/indices/SPX/current.md",
+    "timestamp": "2026-06-14",
+    "price": 7431.46,
+    "regime": "R2 \u2014 Reflation (growth up, inflation up); confidence 7/10",
+    "action_verdicts": {
+      "Pos": "B",
+      "Swing": "W"
+    },
+    "trade_table": [
+      {
+        "plan": "Swing-A",
+        "side": "LONG",
+        "trigger": "CPI <3.0% + gap above 7,370",
+        "entry": 7370.0,
+        "stop": 7200.0,
+        "t1": 7450.0,
+        "t2": 7500.0,
+        "t3": null,
+        "rr": "1.5 / 3.7",
+        "size": "half",
+        "time_stop": "2026-05-22"
+      },
+      {
+        "plan": "Swing-B",
+        "side": "SHORT",
+        "trigger": "FOMC hawkish + rejection at ATH",
+        "entry": 7360.0,
+        "stop": 7440.0,
+        "t1": 7100.0,
+        "t2": 7000.0,
+        "t3": null,
+        "rr": "1.3 / 2.0",
+        "size": "quarter",
+        "time_stop": "2026-05-22"
+      }
+    ],
+    "vwap_levels": {},
+    "volume_profile": {},
+    "scorecard": {},
+    "scorecard_total": 5,
+    "max_pain": null,
+    "gamma_exposure": null,
+    "gamma_data": {
+      "call_wall": 760.0,
+      "put_wall": 720.0
+    },
+    "vix_structure": {
+      "VIX9D": 17.26,
+      "VIX": 17.68,
+      "VIX3M": 20.51,
+      "VIX6M": 22.59,
+      "term": "Contango",
+      "SKEW": 142.6
+    },
+    "breadth": {
+      "pct_above_50d": 67,
+      "pct_above_200d": 83
+    },
+    "squeeze_tier": "Trend-up grind",
+    "funding_rate": null,
+    "open_interest": null,
+    "regime_quadrant": "Reflation",
+    "coverage_tiers": {},
+    "pattern_slug": "trend-up-grind",
+    "catalyst": "FOMC Meeting + Dot Plot (Jun 18)",
+    "catalyst_watch": [
+      {
+        "date": "Jun 18",
+        "event": "FOMC Meeting + Dot Plot",
+        "expected": "Hold at 4.25\u20134.50%",
+        "impact": "**High** \u2014 trajectory into 2026-27"
+      },
+      {
+        "date": "Jun 20",
+        "event": "Quadruple Witching OPEX",
+        "expected": "\u2014",
+        "impact": "Structural \u2014 gamma reset"
+      },
+      {
+        "date": "Jun 25",
+        "event": "PCE Price Index (May)",
+        "expected": "+0.1% mom core",
+        "impact": "**High** \u2014 Fed's preferred inflation gauge"
+      },
+      {
+        "date": "Jul 2",
+        "event": "FOMC Minutes (Jun 17\u201318)",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 rate-cut clues"
+      },
+      {
+        "date": "Jul 9",
+        "event": "CPI (June)",
+        "expected": "~2.8\u20133.1% headline",
+        "impact": "**High** \u2014 regime-defining"
+      },
+      {
+        "date": "Jul 16",
+        "event": "Retail Sales (June)",
+        "expected": "+0.3% mom",
+        "impact": "Medium \u2014 growth signal"
+      }
+    ],
+    "key_levels": [
+      {
+        "price": 7500.0,
+        "label": "[T2] R1.618 extension from April low"
+      },
+      {
+        "price": 7450.0,
+        "label": "[T1] round-number magnet"
+      },
+      {
+        "price": 7369.0,
+        "label": "^^ ATH (intraday 5/6)"
+      },
+      {
+        "price": 7093.0,
+        "label": "EMA 20d (pullback target)"
+      },
+      {
+        "price": 7060.0,
+        "label": "quarterly VWAP"
+      },
+      {
+        "price": 7257.0,
+        "label": "monthly VWAP"
+      },
+      {
+        "price": 6942.0,
+        "label": "EMA 50d (major support)"
+      },
+      {
+        "price": 6894.0,
+        "label": "POC (D volume profile)"
+      },
+      {
+        "price": 6696.0,
+        "label": "EMA 200d (trend anchor)"
+      },
+      {
+        "price": 6492.0,
+        "label": "VAL (4H volume profile)"
+      }
+    ],
+    "cross_confluence": null,
+    "ticker": "SPX",
+    "yf_ticker": "SPX"
+  },
   "stocks": [
     {
       "ticker": "AES",
