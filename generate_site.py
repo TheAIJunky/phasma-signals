@@ -10,9 +10,14 @@ REPORTS_DIR = "/sdcard/Documents/Projets_Termux"
 BTC_ADDRESS = "bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx"
 LIGHTNING_ADDR = "antsyopen378@walletofsatoshi.com"
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+# ── Bridge stale-data guard ────────────────────────────────────────
+BRIDGE_STALE_MAX_DAYS = 3  # warn if bridge data older than this
+bridge_is_stale = False
+bridge_days_old = 0
 
 # Load bridge data for macro regime
 macro_regime = None
@@ -22,6 +27,21 @@ macro_vix = None
 try:
     with open(os.path.join(REPORTS_DIR, "trading_ops_bridge_latest.json")) as f:
         bridge = json.load(f)
+    # Stale timestamp check
+    bridge_ts_str = bridge.get("timestamp")
+    if bridge_ts_str:
+        try:
+            bridge_ts = datetime.fromisoformat(bridge_ts_str.replace("Z", "+00:00"))
+            bridge_days_old = (datetime.now(timezone.utc) - bridge_ts).days
+            if bridge_days_old > BRIDGE_STALE_MAX_DAYS:
+                bridge_is_stale = True
+                print(f"⚠️  Bridge data is {bridge_days_old} days old (stale > {BRIDGE_STALE_MAX_DAYS})")
+        except (ValueError, TypeError):
+            bridge_is_stale = True  # can't parse timestamp = assume stale
+    else:
+        bridge_is_stale = True  # no timestamp = assume stale
+    if bridge_is_stale:
+        print(f"⚠️  WARNING: Bridge data may be stale — enrichments could be outdated")
     m = bridge.get("macro", {}) or {}
     macro_regime = m.get("regime_quadrant")
     macro_dxy = m.get("dxy")
@@ -294,6 +314,8 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,sans
 <div class="zap">&#9889; {LIGHTNING_ADDR}</div>
 </div>
 <div class="container">
+
+{'<div style="background:#2a1a1a;border:1px solid #f85149;border-radius:8px;padding:0.8rem;margin-bottom:1rem;text-align:center;color:#f85149;font-size:0.9rem;">⚠️ Stale data — bridge is ' + str(bridge_days_old) + ' days old. Signals may not reflect current market.</div>' if bridge_is_stale else ''}
 
 {macro_banner}
 
