@@ -548,7 +548,7 @@ body {{ background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-app
 <div class="feature-card"><div class="icon">🎯</div><h3>3 Trade Plans</h3><p>Positional, Swing, and Day setups per ticker — each with entry, stop, and 3 targets.</p></div>
 <div class="feature-card"><div class="icon">📏</div><h3>Position Sizing</h3><p>Pre-calculated for $5K and $10K accounts. Fractional sizing noted for expensive assets.</p></div>
 <div class="feature-card"><div class="icon">📊</div><h3>VWAP + Volume Profile</h3><p>Session, weekly, monthly VWAP. POC, Value Area High/Low from volume analysis.</p></div>
-<div class="feature-card"><div class="icon">🏆</div><h3>6-Point Scorecard</h3><p>Trend, momentum, volume, breadth, sentiment, regime — each scored pass/fail.</p></div>
+<div class="feature-card"><div class="icon">🏆</div><h3>6-Point Scorecard</h3><p>Trend, momentum, volume, breadth, setup, risk:reward — each scored pass/fail.</p></div>
 <div class="feature-card"><div class="icon">⚖️</div><h3>Risk:Reward Ratios</h3><p>Multi-target R:R (1x, 1.7x, 2.7x) so you know when to scale out.</p></div>
 <div class="feature-card"><div class="icon">🛡️</div><h3>Validation Layer</h3><p>Zero-price rejection, RSI sanity, direction checks, counter-trend flags, BTC freshness.</p></div>
 </div>
