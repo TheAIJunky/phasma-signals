@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-15 05:18 UTC",
+  "timestamp": "2026-06-15 07:43 UTC",
   "macro": {
     "regime_quadrant": "Reflation",
     "regime_code": "R2",
@@ -214,10 +214,9 @@
     },
     "vix_structure": {
       "VIX9D": 17.26,
-      "VIX": 17.68,
+      "VIX": 16.73,
       "VIX3M": 20.51,
       "VIX6M": 22.59,
-      "term": "Contango",
       "SKEW": 142.6
     },
     "breadth": {
@@ -318,7 +317,7 @@
   "stocks": [
     {
       "ticker": "AES",
-      "price": 14.67,
+      "price": 14.68,
       "score": 6,
       "direction": "LONG",
       "trend": "GENTLE UPTREND",
@@ -336,9 +335,9 @@
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 59.0,
+      "rsi": 59.8,
       "rsi_note": "Momentum supports long \u2014 good entry zone",
-      "atr_pct": 2.3,
+      "atr_pct": 2.12,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -352,7 +351,7 @@
       "overbought": false,
       "oversold": false,
       "plan_name": "Swing-A",
-      "volume_ratio": 0.71,
+      "volume_ratio": 0.64,
       "volume_note": "Low volume \u2014 caution",
       "recalibrated": false,
       "trade_plans": [
@@ -373,10 +372,10 @@
           "plan": "Positional-B",
           "side": "LONG",
           "entry": 14.68,
-          "stop": 13.84,
-          "t1": 16.37,
-          "t2": 17.63,
-          "t3": 18.9,
+          "stop": 13.9,
+          "t1": 16.24,
+          "t2": 17.4,
+          "t3": 18.57,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
@@ -386,10 +385,10 @@
           "plan": "Day-C",
           "side": "LONG",
           "entry": 14.68,
-          "stop": 14.34,
-          "t1": 14.85,
-          "t2": 14.95,
-          "t3": 15.09,
+          "stop": 14.37,
+          "t1": 14.84,
+          "t2": 14.93,
+          "t3": 15.05,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
@@ -409,11 +408,11 @@
         },
         "momentum": {
           "pass": true,
-          "note": "RSI 59"
+          "note": "RSI 60"
         },
         "volume": {
           "pass": false,
-          "note": "Vol ratio 0.7x"
+          "note": "Vol ratio 0.6x"
         },
         "breadth": {
           "pass": true,
@@ -456,284 +455,8 @@
       "scorecard_adjustments": 1
     },
     {
-      "ticker": "AFL",
-      "price": 116.45,
-      "score": 6,
-      "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 117.8,
-      "stop_loss": 113.44,
-      "target_1": 122.16,
-      "target_2": 125.07,
-      "target_3": 129.43,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 22,
-      "position_size_5k": 11,
-      "position_size_frac": 22.9358,
-      "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 54.6,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 7.01,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udcaa Price above all EMAs"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "volume_ratio": 0.99,
-      "volume_note": "Low volume \u2014 caution",
-      "recalibrated": false,
-      "trade_plans": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "entry": 117.8,
-          "stop": 113.44,
-          "t1": 122.16,
-          "t2": 125.07,
-          "t3": 129.43,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "full",
-          "time_stop": "+5 sessions",
-          "trigger": "D close >$117.8"
-        },
-        {
-          "plan": "Positional-B",
-          "side": "LONG",
-          "entry": 117.8,
-          "stop": 108.38,
-          "t1": 136.65,
-          "t2": 150.78,
-          "t3": 164.92,
-          "rr": "2.0 / 3.5 / 5.0",
-          "size": "half",
-          "time_stop": "+15 sessions",
-          "trigger": "W close >$117.8"
-        },
-        {
-          "plan": "Day-C",
-          "side": "LONG",
-          "entry": 117.8,
-          "stop": 112.15,
-          "t1": 120.63,
-          "t2": 122.32,
-          "t3": 124.59,
-          "rr": "0.5 / 0.8 / 1.2",
-          "size": "full",
-          "time_stop": "EOD",
-          "trigger": "15m cross >$117.8"
-        }
-      ],
-      "vwap_levels": {
-        "session": 117.28,
-        "weekly": 116.52,
-        "monthly": 115.83
-      },
-      "scorecard_total": 6,
-      "scorecard_checks": {
-        "trend": {
-          "pass": true,
-          "note": "GENTLE UPTREND"
-        },
-        "momentum": {
-          "pass": true,
-          "note": "RSI 55"
-        },
-        "volume": {
-          "pass": false,
-          "note": "Vol ratio 1.0x"
-        },
-        "breadth": {
-          "pass": true,
-          "note": "Above EMA200"
-        },
-        "setup": {
-          "pass": true,
-          "note": "Above EMA20"
-        },
-        "risk_reward": {
-          "pass": true,
-          "note": "1 / 1.7 / 2.7x"
-        }
-      },
-      "max_pain": 125.0,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$116",
-          "entry": 117.8,
-          "stop": 113.44,
-          "t1": 122.16,
-          "t2": 125.07,
-          "t3": 129.43,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
-      "volume_profile": {
-        "poc": 113.1,
-        "vah": 113.23,
-        "val": 110.48
-      },
-      "scorecard_adjustments": 0
-    },
-    {
-      "ticker": "LNT",
-      "price": 72.62,
-      "score": 6,
-      "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 73.11,
-      "stop_loss": 70.7,
-      "target_1": 75.52,
-      "target_2": 77.13,
-      "target_3": 79.55,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 41,
-      "position_size_5k": 20,
-      "position_size_frac": 41.4938,
-      "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 52.4,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 6.32,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udcaa Price above all EMAs"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "volume_ratio": 0.94,
-      "volume_note": "Low volume \u2014 caution",
-      "recalibrated": false,
-      "trade_plans": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "entry": 73.11,
-          "stop": 70.7,
-          "t1": 75.52,
-          "t2": 77.13,
-          "t3": 79.55,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "full",
-          "time_stop": "+5 sessions",
-          "trigger": "D close >$73.11"
-        },
-        {
-          "plan": "Positional-B",
-          "side": "LONG",
-          "entry": 73.11,
-          "stop": 67.26,
-          "t1": 84.81,
-          "t2": 93.58,
-          "t3": 102.35,
-          "rr": "2.0 / 3.5 / 5.0",
-          "size": "half",
-          "time_stop": "+15 sessions",
-          "trigger": "W close >$73.11"
-        },
-        {
-          "plan": "Day-C",
-          "side": "LONG",
-          "entry": 73.11,
-          "stop": 69.6,
-          "t1": 74.86,
-          "t2": 75.92,
-          "t3": 77.32,
-          "rr": "0.5 / 0.8 / 1.2",
-          "size": "full",
-          "time_stop": "EOD",
-          "trigger": "15m cross >$73.11"
-        }
-      ],
-      "vwap_levels": {
-        "session": 73.1,
-        "weekly": 72.69,
-        "monthly": 72.33
-      },
-      "scorecard_total": 6,
-      "scorecard_checks": {
-        "trend": {
-          "pass": true,
-          "note": "GENTLE UPTREND"
-        },
-        "momentum": {
-          "pass": true,
-          "note": "RSI 52"
-        },
-        "volume": {
-          "pass": false,
-          "note": "Vol ratio 0.9x"
-        },
-        "breadth": {
-          "pass": true,
-          "note": "Above EMA200"
-        },
-        "setup": {
-          "pass": true,
-          "note": "Above EMA20"
-        },
-        "risk_reward": {
-          "pass": true,
-          "note": "1 / 1.7 / 2.7x"
-        }
-      },
-      "max_pain": 50.0,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$72",
-          "entry": 73.11,
-          "stop": 70.7,
-          "t1": 75.52,
-          "t2": 77.13,
-          "t3": 79.55,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
-      "volume_profile": {
-        "poc": 72.09,
-        "vah": 71.97,
-        "val": 70.98
-      },
-      "scorecard_adjustments": 0
-    },
-    {
       "ticker": "MO",
-      "price": 71.41,
+      "price": 71.94,
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
@@ -751,9 +474,9 @@
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 51.8,
+      "rsi": 53.7,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 8.71,
+      "atr_pct": 8.59,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -767,8 +490,8 @@
       "overbought": false,
       "oversold": false,
       "plan_name": "Swing-A",
-      "volume_ratio": 0.95,
-      "volume_note": "Low volume \u2014 caution",
+      "volume_ratio": 1.08,
+      "volume_note": "Average volume",
       "recalibrated": false,
       "trade_plans": [
         {
@@ -824,11 +547,11 @@
         },
         "momentum": {
           "pass": true,
-          "note": "RSI 52"
+          "note": "RSI 54"
         },
         "volume": {
-          "pass": false,
-          "note": "Vol ratio 0.9x"
+          "pass": true,
+          "note": "Vol ratio 1.1x"
         },
         "breadth": {
           "pass": true,
@@ -870,28 +593,166 @@
       "scorecard_adjustments": 0
     },
     {
-      "ticker": "ADI",
-      "price": 412.13,
+      "ticker": "ADM",
+      "price": 80.24,
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 417.79,
-      "stop_loss": 384.37,
-      "target_1": 451.43,
-      "target_2": 473.85,
-      "target_3": 507.49,
+      "entry": 80.24,
+      "stop_loss": 76.02,
+      "target_1": 84.46,
+      "target_2": 87.27,
+      "target_3": 91.49,
       "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.68,
-      "rr_3": 2.68,
-      "position_size_10k": 2,
-      "position_size_5k": 1,
-      "position_size_frac": 2.9919,
+      "rr_2": 1.67,
+      "rr_3": 2.67,
+      "position_size_10k": 23,
+      "position_size_5k": 11,
+      "position_size_frac": 23.6967,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 52.6,
+      "rsi": 53.7,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 13.76,
+      "atr_pct": 9.44,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.58,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 80.24,
+          "stop": 76.02,
+          "t1": 84.46,
+          "t2": 87.27,
+          "t3": 91.49,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$80.24"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 80.24,
+          "stop": 73.82,
+          "t1": 93.08,
+          "t2": 102.71,
+          "t3": 112.34,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$80.24"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 80.24,
+          "stop": 76.39,
+          "t1": 82.17,
+          "t2": 83.32,
+          "t3": 84.86,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$80.24"
+        }
+      ],
+      "vwap_levels": {
+        "session": 79.56,
+        "weekly": 80.31,
+        "monthly": 80.33
+      },
+      "scorecard_total": 3,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 54"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.6x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 95.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$80",
+          "entry": 80.24,
+          "stop": 76.02,
+          "t1": 84.46,
+          "t2": 87.27,
+          "t3": 91.49,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 73.56,
+        "vah": 81.1,
+        "val": 67.88
+      },
+      "scorecard_adjustments": 1
+    },
+    {
+      "ticker": "AVB",
+      "price": 187.03,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 187.03,
+      "stop_loss": 181.69,
+      "target_1": 192.37,
+      "target_2": 195.92,
+      "target_3": 201.26,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.66,
+      "rr_3": 2.66,
+      "position_size_10k": 18,
+      "position_size_5k": 9,
+      "position_size_frac": 18.7266,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 56.2,
+      "rsi_note": "Momentum supports long \u2014 good entry zone",
+      "atr_pct": 4.73,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -912,49 +773,49 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 417.79,
-          "stop": 384.37,
-          "t1": 451.43,
-          "t2": 473.85,
-          "t3": 507.49,
+          "entry": 187.03,
+          "stop": 181.69,
+          "t1": 192.37,
+          "t2": 195.92,
+          "t3": 201.26,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$417.79"
+          "trigger": "D close >$187.03"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 417.79,
-          "stop": 384.37,
-          "t1": 484.64,
-          "t2": 534.77,
-          "t3": 584.91,
+          "entry": 187.03,
+          "stop": 172.07,
+          "t1": 216.95,
+          "t2": 239.4,
+          "t3": 261.84,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$417.79"
+          "trigger": "W close >$187.03"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 417.79,
-          "stop": 397.74,
-          "t1": 427.82,
-          "t2": 433.83,
-          "t3": 441.85,
+          "entry": 187.03,
+          "stop": 178.18,
+          "t1": 191.45,
+          "t2": 194.11,
+          "t3": 197.65,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$417.79"
+          "trigger": "15m cross >$187.03"
         }
       ],
       "vwap_levels": {
-        "session": 415.47,
-        "weekly": 405.85,
-        "monthly": 411.92
+        "session": 186.29,
+        "weekly": 186.8,
+        "monthly": 185.38
       },
-      "scorecard_total": 3,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -962,7 +823,7 @@
         },
         "momentum": {
           "pass": true,
-          "note": "RSI 53"
+          "note": "RSI 56"
         },
         "volume": {
           "pass": false,
@@ -981,17 +842,17 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": null,
+      "max_pain": 160.0,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$409",
-          "entry": 417.79,
-          "stop": 384.15,
-          "t1": 451.43,
-          "t2": 473.85,
-          "t3": 507.49,
+          "trigger": "D close >$185",
+          "entry": 187.03,
+          "stop": 181.69,
+          "t1": 192.37,
+          "t2": 195.92,
+          "t3": 201.26,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1001,570 +862,15 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "volume_profile": {
-        "poc": 392.09,
-        "vah": 417.72,
-        "val": 314.73
-      },
-      "scorecard_adjustments": 0
-    },
-    {
-      "ticker": "CAT",
-      "price": 897.63,
-      "score": 6,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 910.57,
-      "stop_loss": 845.68,
-      "target_1": 975.46,
-      "target_2": 1018.72,
-      "target_3": 1083.61,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 1,
-      "position_size_5k": 0,
-      "position_size_frac": 1.5411,
-      "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 52.5,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 9.98,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udcaa Price above all EMAs"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "volume_ratio": 1.23,
-      "volume_note": "Average volume",
-      "recalibrated": false,
-      "trade_plans": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "entry": 910.57,
-          "stop": 845.68,
-          "t1": 975.46,
-          "t2": 1018.72,
-          "t3": 1083.61,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "full",
-          "time_stop": "+5 sessions",
-          "trigger": "D close >$910.57"
-        },
-        {
-          "plan": "Positional-B",
-          "side": "LONG",
-          "entry": 910.57,
-          "stop": 837.72,
-          "t1": 1056.26,
-          "t2": 1165.53,
-          "t3": 1274.8,
-          "rr": "2.0 / 3.5 / 5.0",
-          "size": "half",
-          "time_stop": "+15 sessions",
-          "trigger": "W close >$910.57"
-        },
-        {
-          "plan": "Day-C",
-          "side": "LONG",
-          "entry": 910.57,
-          "stop": 866.86,
-          "t1": 932.42,
-          "t2": 945.54,
-          "t3": 963.02,
-          "rr": "0.5 / 0.8 / 1.2",
-          "size": "full",
-          "time_stop": "EOD",
-          "trigger": "15m cross >$910.57"
-        }
-      ],
-      "vwap_levels": {
-        "session": 909.58,
-        "weekly": 899.3,
-        "monthly": 893.23
-      },
-      "scorecard_total": 5,
-      "scorecard_checks": {
-        "trend": {
-          "pass": true,
-          "note": "STRONG UPTREND"
-        },
-        "momentum": {
-          "pass": true,
-          "note": "RSI 52"
-        },
-        "volume": {
-          "pass": true,
-          "note": "Vol ratio 1.2x"
-        },
-        "breadth": {
-          "pass": true,
-          "note": "Above EMA200"
-        },
-        "setup": {
-          "pass": true,
-          "note": "Above EMA20"
-        },
-        "risk_reward": {
-          "pass": true,
-          "note": "1 / 1.7 / 2.7x"
-        }
-      },
-      "max_pain": null,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$894",
-          "entry": 910.57,
-          "stop": 845.68,
-          "t1": 975.46,
-          "t2": 1018.72,
-          "t3": 1083.61,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
-      "volume_profile": {
-        "poc": 833.01,
-        "vah": 899.49,
-        "val": 696.47
-      },
-      "scorecard_adjustments": 0
-    },
-    {
-      "ticker": "CNP",
-      "price": 42.55,
-      "score": 6,
-      "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 42.9,
-      "stop_loss": 41.51,
-      "target_1": 44.29,
-      "target_2": 45.21,
-      "target_3": 46.6,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.66,
-      "rr_3": 2.66,
-      "position_size_10k": 71,
-      "position_size_5k": 35,
-      "position_size_frac": 71.9424,
-      "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 52.4,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 5.4,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udcaa Price above all EMAs"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "volume_ratio": 0.8,
-      "volume_note": "Low volume \u2014 caution",
-      "recalibrated": false,
-      "trade_plans": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "entry": 42.9,
-          "stop": 41.51,
-          "t1": 44.29,
-          "t2": 45.21,
-          "t3": 46.6,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "full",
-          "time_stop": "+5 sessions",
-          "trigger": "D close >$42.9"
-        },
-        {
-          "plan": "Positional-B",
-          "side": "LONG",
-          "entry": 42.9,
-          "stop": 39.47,
-          "t1": 49.76,
-          "t2": 54.91,
-          "t3": 60.06,
-          "rr": "2.0 / 3.5 / 5.0",
-          "size": "half",
-          "time_stop": "+15 sessions",
-          "trigger": "W close >$42.9"
-        },
-        {
-          "plan": "Day-C",
-          "side": "LONG",
-          "entry": 42.9,
-          "stop": 40.84,
-          "t1": 43.93,
-          "t2": 44.55,
-          "t3": 45.37,
-          "rr": "0.5 / 0.8 / 1.2",
-          "size": "full",
-          "time_stop": "EOD",
-          "trigger": "15m cross >$42.9"
-        }
-      ],
-      "vwap_levels": {
-        "session": 42.84,
-        "weekly": 42.54,
-        "monthly": 42.21
-      },
-      "scorecard_total": 5,
-      "scorecard_checks": {
-        "trend": {
-          "pass": true,
-          "note": "GENTLE UPTREND"
-        },
-        "momentum": {
-          "pass": true,
-          "note": "RSI 52"
-        },
-        "volume": {
-          "pass": false,
-          "note": "Vol ratio 0.8x"
-        },
-        "breadth": {
-          "pass": true,
-          "note": "Above EMA200"
-        },
-        "setup": {
-          "pass": true,
-          "note": "Above EMA20"
-        },
-        "risk_reward": {
-          "pass": true,
-          "note": "1 / 1.7 / 2.7x"
-        }
-      },
-      "max_pain": 55.0,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$42",
-          "entry": 42.9,
-          "stop": 41.51,
-          "t1": 44.29,
-          "t2": 45.21,
-          "t3": 46.6,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
-      "volume_profile": {
-        "poc": 42.52,
-        "vah": 42.02,
-        "val": 43.02,
-        "inverted": true
-      },
-      "scorecard_adjustments": 0
-    },
-    {
-      "ticker": "FIX",
-      "price": 1843.42,
-      "score": 6,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 1877.61,
-      "stop_loss": 1727.4,
-      "target_1": 2054.97,
-      "target_2": 2173.21,
-      "target_3": 2350.58,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.97,
-      "rr_3": 3.15,
-      "position_size_10k": 0,
-      "position_size_5k": 0,
-      "position_size_frac": 0.6657,
-      "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 50.8,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 15.64,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udcaa Price above all EMAs"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "volume_ratio": 1.12,
-      "volume_note": "Average volume",
-      "recalibrated": false,
-      "trade_plans": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "entry": 1877.61,
-          "stop": 1727.4,
-          "t1": 2054.97,
-          "t2": 2173.21,
-          "t3": 2350.58,
-          "rr": "1.2 / 2.0 / 3.1",
-          "size": "full",
-          "time_stop": "+5 sessions",
-          "trigger": "D close >$1877.61"
-        },
-        {
-          "plan": "Positional-B",
-          "side": "LONG",
-          "entry": 1877.61,
-          "stop": 1727.4,
-          "t1": 2178.03,
-          "t2": 2403.34,
-          "t3": 2628.65,
-          "rr": "2.0 / 3.5 / 5.0",
-          "size": "half",
-          "time_stop": "+15 sessions",
-          "trigger": "W close >$1877.61"
-        },
-        {
-          "plan": "Day-C",
-          "side": "LONG",
-          "entry": 1877.61,
-          "stop": 1787.48,
-          "t1": 1922.67,
-          "t2": 1949.71,
-          "t3": 1985.76,
-          "rr": "0.5 / 0.8 / 1.2",
-          "size": "full",
-          "time_stop": "EOD",
-          "trigger": "15m cross >$1877.61"
-        }
-      ],
-      "vwap_levels": {
-        "session": 1878.56,
-        "weekly": 1821.81,
-        "monthly": 1867.89
-      },
-      "scorecard_total": 4,
-      "scorecard_checks": {
-        "trend": {
-          "pass": true,
-          "note": "STRONG UPTREND"
-        },
-        "momentum": {
-          "pass": true,
-          "note": "RSI 51"
-        },
-        "volume": {
-          "pass": true,
-          "note": "Vol ratio 1.1x"
-        },
-        "breadth": {
-          "pass": true,
-          "note": "Above EMA200"
-        },
-        "setup": {
-          "pass": true,
-          "note": "Above EMA20"
-        },
-        "risk_reward": {
-          "pass": true,
-          "note": "1 / 1.7 / 2.7x"
-        }
-      },
-      "max_pain": null,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$1,847",
-          "entry": 1877.61,
-          "stop": 1700.25,
-          "t1": 2054.97,
-          "t2": 2173.21,
-          "t3": 2350.58,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
-      "volume_profile": {
-        "poc": 1749.33,
-        "vah": 1969.52,
-        "val": 1317.23
-      },
-      "scorecard_adjustments": 0,
-      "fractional_note": "Risk $150.21/unit > $100 budget \u2014 use fractional sizing or reduce stop",
-      "zero_size": false
-    },
-    {
-      "ticker": "CPAY",
-      "price": 350.85,
-      "score": 6,
-      "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 356.11,
-      "stop_loss": 336.28,
-      "target_1": 375.94,
-      "target_2": 389.16,
-      "target_3": 408.99,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 5,
-      "position_size_5k": 2,
-      "position_size_frac": 5.0429,
-      "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 54.8,
-      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 11.87,
-      "ema_status": [
-        "Above EMA20 \u2713",
-        "Above EMA50 \u2713",
-        "Above EMA200 (bullish) \u2713"
-      ],
-      "setups": [
-        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
-        "\ud83c\udfaf Pullback to EMA20 support",
-        "\ud83d\udcaa Price above all EMAs"
-      ],
-      "overbought": false,
-      "oversold": false,
-      "plan_name": "Swing-A",
-      "volume_ratio": 0.9,
-      "volume_note": "Low volume \u2014 caution",
-      "recalibrated": false,
-      "trade_plans": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "entry": 356.11,
-          "stop": 336.28,
-          "t1": 375.94,
-          "t2": 389.16,
-          "t3": 408.99,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "full",
-          "time_stop": "+5 sessions",
-          "trigger": "D close >$356.11"
-        },
-        {
-          "plan": "Positional-B",
-          "side": "LONG",
-          "entry": 356.11,
-          "stop": 327.62,
-          "t1": 413.09,
-          "t2": 455.82,
-          "t3": 498.55,
-          "rr": "2.0 / 3.5 / 5.0",
-          "size": "half",
-          "time_stop": "+15 sessions",
-          "trigger": "W close >$356.11"
-        },
-        {
-          "plan": "Day-C",
-          "side": "LONG",
-          "entry": 356.11,
-          "stop": 339.02,
-          "t1": 364.66,
-          "t2": 369.78,
-          "t3": 376.62,
-          "rr": "0.5 / 0.8 / 1.2",
-          "size": "full",
-          "time_stop": "EOD",
-          "trigger": "15m cross >$356.11"
-        }
-      ],
-      "vwap_levels": {
-        "session": 354.41,
-        "weekly": 352.1,
-        "monthly": 348.58
-      },
-      "scorecard_total": 6,
-      "scorecard_checks": {
-        "trend": {
-          "pass": true,
-          "note": "STRONG UPTREND"
-        },
-        "momentum": {
-          "pass": true,
-          "note": "RSI 55"
-        },
-        "volume": {
-          "pass": false,
-          "note": "Vol ratio 0.9x"
-        },
-        "breadth": {
-          "pass": true,
-          "note": "Above EMA200"
-        },
-        "setup": {
-          "pass": true,
-          "note": "Above EMA20"
-        },
-        "risk_reward": {
-          "pass": true,
-          "note": "1 / 1.7 / 2.7x"
-        }
-      },
-      "max_pain": 240.0,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$348",
-          "entry": 356.11,
-          "stop": 336.28,
-          "t1": 375.94,
-          "t2": 389.16,
-          "t3": 408.99,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "bridge_source": true,
-      "bridge_ts_stale": false,
-      "bridge_ts_days": 0,
-      "volume_profile": {
-        "poc": 319.01,
-        "vah": 349.06,
-        "val": 295.22
+        "poc": 181.64,
+        "vah": 181.35,
+        "val": 166.51
       },
       "scorecard_adjustments": 0
     },
     {
       "ticker": "CCI",
-      "price": 92.04,
+      "price": 92.16,
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
@@ -1582,9 +888,9 @@
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 53.7,
+      "rsi": 54.0,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 8.5,
+      "atr_pct": 8.35,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -1598,7 +904,7 @@
       "overbought": false,
       "oversold": false,
       "plan_name": "Swing-A",
-      "volume_ratio": 1.03,
+      "volume_ratio": 1.1,
       "volume_note": "Average volume",
       "recalibrated": false,
       "trade_plans": [
@@ -1659,7 +965,7 @@
         },
         "volume": {
           "pass": true,
-          "note": "Vol ratio 1.0x"
+          "note": "Vol ratio 1.1x"
         },
         "breadth": {
           "pass": true,
@@ -1701,28 +1007,304 @@
       "scorecard_adjustments": 0
     },
     {
-      "ticker": "EBAY",
-      "price": 109.61,
+      "ticker": "ETR",
+      "price": 111.11,
       "score": 6,
       "direction": "LONG",
-      "trend": "STRONG UPTREND",
-      "entry": 108.61,
-      "stop_loss": 103.39,
-      "target_1": 113.83,
-      "target_2": 117.31,
-      "target_3": 122.53,
+      "trend": "GENTLE UPTREND",
+      "entry": 111.11,
+      "stop_loss": 107.15,
+      "target_1": 115.07,
+      "target_2": 117.7,
+      "target_3": 121.66,
       "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 19,
-      "position_size_5k": 9,
-      "position_size_frac": 19.1571,
+      "rr_2": 1.66,
+      "rr_3": 2.66,
+      "position_size_10k": 25,
+      "position_size_5k": 12,
+      "position_size_frac": 25.2525,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 51.7,
+      "rsi": 52.0,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 11.77,
+      "atr_pct": 6.65,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.75,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 111.11,
+          "stop": 107.15,
+          "t1": 115.07,
+          "t2": 117.7,
+          "t3": 121.66,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$111.11"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 111.11,
+          "stop": 102.22,
+          "t1": 128.89,
+          "t2": 142.22,
+          "t3": 155.55,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$111.11"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 111.11,
+          "stop": 105.78,
+          "t1": 113.78,
+          "t2": 115.38,
+          "t3": 117.51,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$111.11"
+        }
+      ],
+      "vwap_levels": {
+        "session": 110.76,
+        "weekly": 110.08,
+        "monthly": 110.24
+      },
+      "scorecard_total": 5,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "GENTLE UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 52"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.8x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 75.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$110",
+          "entry": 111.11,
+          "stop": 107.15,
+          "t1": 115.07,
+          "t2": 117.7,
+          "t3": 121.66,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 111.84,
+        "vah": 112.53,
+        "val": 103.64
+      },
+      "scorecard_adjustments": 1
+    },
+    {
+      "ticker": "F",
+      "price": 14.84,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 14.84,
+      "stop_loss": 13.65,
+      "target_1": 16.4,
+      "target_2": 17.45,
+      "target_3": 19.01,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 2.2,
+      "rr_3": 3.51,
+      "position_size_10k": 84,
+      "position_size_5k": 42,
+      "position_size_frac": 84.2318,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 53.6,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 32.81,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.58,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 14.84,
+          "stop": 13.65,
+          "t1": 16.4,
+          "t2": 17.45,
+          "t3": 19.01,
+          "rr": "1.3 / 2.2 / 3.5",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$14.84"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 14.84,
+          "stop": 13.65,
+          "t1": 17.21,
+          "t2": 19.0,
+          "t3": 20.78,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$14.84"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 14.84,
+          "stop": 14.13,
+          "t1": 15.2,
+          "t2": 15.41,
+          "t3": 15.69,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$14.84"
+        }
+      ],
+      "vwap_levels": {
+        "session": 14.82,
+        "weekly": 14.76,
+        "monthly": 14.85
+      },
+      "scorecard_total": 2,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 54"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.6x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 19.5,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$15",
+          "entry": 14.84,
+          "stop": 13.28,
+          "t1": 16.4,
+          "t2": 17.45,
+          "t3": 19.01,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 12.24,
+        "vah": 16.89,
+        "val": 11.52
+      },
+      "scorecard_adjustments": 1
+    },
+    {
+      "ticker": "LII",
+      "price": 512.15,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 512.15,
+      "stop_loss": 478.87,
+      "target_1": 545.43,
+      "target_2": 567.62,
+      "target_3": 600.9,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "rr_3": 2.67,
+      "position_size_10k": 3,
+      "position_size_5k": 1,
+      "position_size_frac": 3.0048,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 51.8,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 12.59,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -1743,53 +1325,53 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 108.61,
-          "stop": 103.39,
-          "t1": 113.83,
-          "t2": 117.31,
-          "t3": 122.53,
+          "entry": 512.15,
+          "stop": 478.87,
+          "t1": 545.43,
+          "t2": 567.62,
+          "t3": 600.9,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$108.61"
+          "trigger": "D close >$512.15"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 108.61,
-          "stop": 99.92,
-          "t1": 125.99,
-          "t2": 139.02,
-          "t3": 152.05,
+          "entry": 512.15,
+          "stop": 471.18,
+          "t1": 594.09,
+          "t2": 655.55,
+          "t3": 717.01,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$108.61"
+          "trigger": "W close >$512.15"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 108.61,
-          "stop": 103.4,
-          "t1": 111.22,
-          "t2": 112.78,
-          "t3": 114.87,
+          "entry": 512.15,
+          "stop": 487.57,
+          "t1": 524.44,
+          "t2": 531.82,
+          "t3": 541.65,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$108.61"
+          "trigger": "15m cross >$512.15"
         }
       ],
       "vwap_levels": {
-        "session": 108.64,
-        "weekly": 108.13,
-        "monthly": 111.52
+        "session": 514.88,
+        "weekly": 515.06,
+        "monthly": 504.82
       },
       "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
-          "note": "STRONG UPTREND"
+          "note": "GENTLE UPTREND"
         },
         "momentum": {
           "pass": true,
@@ -1812,17 +1394,17 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 82.5,
+      "max_pain": 420.0,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$109",
-          "entry": 108.61,
-          "stop": 103.39,
-          "t1": 113.83,
-          "t2": 117.31,
-          "t3": 122.53,
+          "trigger": "D close >$509",
+          "entry": 512.15,
+          "stop": 478.87,
+          "t1": 545.43,
+          "t2": 567.62,
+          "t3": 600.9,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1832,35 +1414,35 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "volume_profile": {
-        "poc": 104.66,
-        "vah": 113.03,
-        "val": 91.31
+        "poc": 496.14,
+        "vah": 523.92,
+        "val": 454.43
       },
       "scorecard_adjustments": 1
     },
     {
-      "ticker": "EW",
-      "price": 85.76,
+      "ticker": "MPWR",
+      "price": 1577.32,
       "score": 6,
       "direction": "LONG",
-      "trend": "GENTLE UPTREND",
-      "entry": 85.11,
-      "stop_loss": 80.89,
-      "target_1": 89.33,
-      "target_2": 92.15,
-      "target_3": 96.38,
+      "trend": "STRONG UPTREND",
+      "entry": 1577.32,
+      "stop_loss": 1451.13,
+      "target_1": 1757.07,
+      "target_2": 1876.91,
+      "target_3": 2056.66,
       "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 23,
-      "position_size_5k": 11,
-      "position_size_frac": 23.6967,
+      "rr_2": 2.37,
+      "rr_3": 3.8,
+      "position_size_10k": 0,
+      "position_size_5k": 0,
+      "position_size_frac": 0.7925,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 53.2,
+      "rsi": 51.5,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 11.39,
+      "atr_pct": 19.24,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -1874,54 +1456,194 @@
       "overbought": false,
       "oversold": false,
       "plan_name": "Swing-A",
-      "volume_ratio": 1.0,
-      "volume_note": "Average volume",
+      "volume_ratio": 0.76,
+      "volume_note": "Low volume \u2014 caution",
       "recalibrated": false,
       "trade_plans": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 85.11,
-          "stop": 80.89,
-          "t1": 89.33,
-          "t2": 92.15,
-          "t3": 96.38,
-          "rr": "1.0 / 1.7 / 2.7",
+          "entry": 1577.32,
+          "stop": 1451.13,
+          "t1": 1757.07,
+          "t2": 1876.91,
+          "t3": 2056.66,
+          "rr": "1.4 / 2.4 / 3.8",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$85.11"
+          "trigger": "D close >$1577.32"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 85.11,
-          "stop": 78.3,
-          "t1": 98.73,
-          "t2": 108.94,
-          "t3": 119.15,
+          "entry": 1577.32,
+          "stop": 1451.13,
+          "t1": 1829.69,
+          "t2": 2018.97,
+          "t3": 2208.25,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$85.11"
+          "trigger": "W close >$1577.32"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 85.11,
-          "stop": 81.02,
-          "t1": 87.15,
-          "t2": 88.38,
-          "t3": 90.01,
+          "entry": 1577.32,
+          "stop": 1501.61,
+          "t1": 1615.18,
+          "t2": 1637.89,
+          "t3": 1668.17,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$85.11"
+          "trigger": "15m cross >$1577.32"
         }
       ],
       "vwap_levels": {
-        "session": 84.93,
-        "weekly": 86.01,
-        "monthly": 85.03
+        "session": 1577.98,
+        "weekly": 1543.7,
+        "monthly": 1575.51
+      },
+      "scorecard_total": 3,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 52"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.8x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 1120.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$1,568",
+          "entry": 1577.32,
+          "stop": 1397.57,
+          "t1": 1757.07,
+          "t2": 1876.91,
+          "t3": 2056.66,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 1524.44,
+        "vah": 1628.39,
+        "val": 1043.72
+      },
+      "scorecard_adjustments": 1,
+      "fractional_note": "Risk $126.19/unit > $100 budget \u2014 use fractional sizing or reduce stop",
+      "zero_size": false
+    },
+    {
+      "ticker": "NSC",
+      "price": 313.91,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 313.91,
+      "stop_loss": 300.53,
+      "target_1": 327.29,
+      "target_2": 336.22,
+      "target_3": 349.6,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "rr_3": 2.67,
+      "position_size_10k": 7,
+      "position_size_5k": 3,
+      "position_size_frac": 7.4738,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 53.6,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 7.36,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.43,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 313.91,
+          "stop": 300.53,
+          "t1": 327.29,
+          "t2": 336.22,
+          "t3": 349.6,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$313.91"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 313.91,
+          "stop": 288.8,
+          "t1": 364.14,
+          "t2": 401.8,
+          "t3": 439.47,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$313.91"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 313.91,
+          "stop": 298.84,
+          "t1": 321.44,
+          "t2": 325.96,
+          "t3": 331.99,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$313.91"
+        }
+      ],
+      "vwap_levels": {
+        "session": 313.42,
+        "weekly": 311.4,
+        "monthly": 312.55
       },
       "scorecard_total": 5,
       "scorecard_checks": {
@@ -1931,11 +1653,11 @@
         },
         "momentum": {
           "pass": true,
-          "note": "RSI 53"
+          "note": "RSI 54"
         },
         "volume": {
-          "pass": true,
-          "note": "Vol ratio 1.0x"
+          "pass": false,
+          "note": "Vol ratio 0.4x"
         },
         "breadth": {
           "pass": true,
@@ -1950,17 +1672,17 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 95.0,
+      "max_pain": 230.0,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$85",
-          "entry": 85.11,
-          "stop": 80.89,
-          "t1": 89.33,
-          "t2": 92.15,
-          "t3": 96.38,
+          "trigger": "D close >$311",
+          "entry": 313.91,
+          "stop": 300.53,
+          "t1": 327.29,
+          "t2": 336.22,
+          "t3": 349.6,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1970,35 +1692,35 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "volume_profile": {
-        "poc": 82.33,
-        "vah": 85.01,
-        "val": 80.31
+        "poc": 307.37,
+        "vah": 309.7,
+        "val": 290.54
       },
-      "scorecard_adjustments": 0
+      "scorecard_adjustments": 1
     },
     {
-      "ticker": "ELV",
-      "price": 399.18,
+      "ticker": "NXPI",
+      "price": 304.86,
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 404.07,
-      "stop_loss": 383.42,
-      "target_1": 424.72,
-      "target_2": 438.48,
-      "target_3": 459.13,
+      "entry": 304.86,
+      "stop_loss": 280.47,
+      "target_1": 334.33,
+      "target_2": 353.98,
+      "target_3": 383.45,
       "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
+      "rr_2": 2.01,
+      "rr_3": 3.22,
       "position_size_10k": 4,
       "position_size_5k": 2,
-      "position_size_frac": 4.8426,
+      "position_size_frac": 4.1002,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 55.4,
-      "rsi_note": "Momentum supports long \u2014 good entry zone",
-      "atr_pct": 8.87,
+      "rsi": 53.2,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 18.44,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -2012,54 +1734,330 @@
       "overbought": false,
       "oversold": false,
       "plan_name": "Swing-A",
-      "volume_ratio": 1.24,
+      "volume_ratio": 0.54,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 304.86,
+          "stop": 280.47,
+          "t1": 334.33,
+          "t2": 353.98,
+          "t3": 383.45,
+          "rr": "1.2 / 2.0 / 3.2",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$304.86"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 304.86,
+          "stop": 280.47,
+          "t1": 353.64,
+          "t2": 390.22,
+          "t3": 426.8,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$304.86"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 304.86,
+          "stop": 290.23,
+          "t1": 312.18,
+          "t2": 316.57,
+          "t3": 322.42,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$304.86"
+        }
+      ],
+      "vwap_levels": {
+        "session": 303.4,
+        "weekly": 297.96,
+        "monthly": 307.96
+      },
+      "scorecard_total": 4,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 53"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.5x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 420.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$303",
+          "entry": 304.86,
+          "stop": 275.39,
+          "t1": 334.33,
+          "t2": 353.98,
+          "t3": 383.45,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 264.8,
+        "vah": 322.95,
+        "val": 193.91
+      },
+      "scorecard_adjustments": 1
+    },
+    {
+      "ticker": "ON",
+      "price": 116.79,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 116.79,
+      "stop_loss": 107.45,
+      "target_1": 131.87,
+      "target_2": 141.92,
+      "target_3": 157.0,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 2.69,
+      "rr_3": 4.3,
+      "position_size_10k": 10,
+      "position_size_5k": 5,
+      "position_size_frac": 10.703,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 52.7,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 25.16,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.63,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 116.79,
+          "stop": 107.45,
+          "t1": 131.87,
+          "t2": 141.92,
+          "t3": 157.0,
+          "rr": "1.6 / 2.7 / 4.3",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$116.79"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 116.79,
+          "stop": 107.45,
+          "t1": 135.48,
+          "t2": 149.49,
+          "t3": 163.51,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$116.79"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 116.79,
+          "stop": 111.18,
+          "t1": 119.59,
+          "t2": 121.27,
+          "t3": 123.52,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$116.79"
+        }
+      ],
+      "vwap_levels": {
+        "session": 116.46,
+        "weekly": 116.13,
+        "monthly": 118.09
+      },
+      "scorecard_total": 2,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 53"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.6x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 128.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$117",
+          "entry": 116.79,
+          "stop": 101.71,
+          "t1": 131.87,
+          "t2": 141.92,
+          "t3": 157.0,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 98.63,
+        "vah": 128.17,
+        "val": 57.78
+      },
+      "scorecard_adjustments": 1
+    },
+    {
+      "ticker": "PSX",
+      "price": 179.45,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 179.45,
+      "stop_loss": 170.37,
+      "target_1": 188.53,
+      "target_2": 194.58,
+      "target_3": 203.66,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "rr_3": 2.67,
+      "position_size_10k": 11,
+      "position_size_5k": 5,
+      "position_size_frac": 11.0132,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 53.0,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 9.9,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 1.28,
       "volume_note": "Average volume",
       "recalibrated": false,
       "trade_plans": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 404.07,
-          "stop": 383.42,
-          "t1": 424.72,
-          "t2": 438.48,
-          "t3": 459.13,
+          "entry": 179.45,
+          "stop": 170.37,
+          "t1": 188.53,
+          "t2": 194.58,
+          "t3": 203.66,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$404.07"
+          "trigger": "D close >$179.45"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 404.07,
-          "stop": 371.74,
-          "t1": 468.72,
-          "t2": 517.21,
-          "t3": 565.7,
+          "entry": 179.45,
+          "stop": 165.09,
+          "t1": 208.16,
+          "t2": 229.7,
+          "t3": 251.23,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$404.07"
+          "trigger": "W close >$179.45"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 404.07,
-          "stop": 384.67,
-          "t1": 413.77,
-          "t2": 419.59,
-          "t3": 427.34,
+          "entry": 179.45,
+          "stop": 170.84,
+          "t1": 183.76,
+          "t2": 186.34,
+          "t3": 189.79,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$404.07"
+          "trigger": "15m cross >$179.45"
         }
       ],
       "vwap_levels": {
-        "session": 400.5,
-        "weekly": 409.66,
-        "monthly": 397.63
+        "session": 179.34,
+        "weekly": 181.31,
+        "monthly": 178.71
       },
       "scorecard_total": 6,
       "scorecard_checks": {
@@ -2069,11 +2067,11 @@
         },
         "momentum": {
           "pass": true,
-          "note": "RSI 55"
+          "note": "RSI 53"
         },
         "volume": {
           "pass": true,
-          "note": "Vol ratio 1.2x"
+          "note": "Vol ratio 1.3x"
         },
         "breadth": {
           "pass": true,
@@ -2088,17 +2086,17 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 240.0,
+      "max_pain": 115.0,
       "trade_table": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$397",
-          "entry": 404.07,
-          "stop": 383.42,
-          "t1": 424.72,
-          "t2": 438.48,
-          "t3": 459.13,
+          "trigger": "D close >$179",
+          "entry": 179.45,
+          "stop": 170.37,
+          "t1": 188.53,
+          "t2": 194.58,
+          "t3": 203.66,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -2108,35 +2106,35 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "volume_profile": {
-        "poc": 364.42,
-        "vah": 405.63,
-        "val": 295.38
+        "poc": 174.5,
+        "vah": 179.77,
+        "val": 160.1
       },
       "scorecard_adjustments": 0
     },
     {
-      "ticker": "EQR",
-      "price": 66.65,
+      "ticker": "PWR",
+      "price": 707.74,
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 67.34,
-      "stop_loss": 65.39,
-      "target_1": 69.29,
-      "target_2": 70.6,
-      "target_3": 72.55,
+      "entry": 707.74,
+      "stop_loss": 655.57,
+      "target_1": 759.91,
+      "target_2": 794.7,
+      "target_3": 846.87,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
       "rr_3": 2.67,
-      "position_size_10k": 51,
-      "position_size_5k": 25,
-      "position_size_frac": 51.2821,
+      "position_size_10k": 1,
+      "position_size_5k": 0,
+      "position_size_frac": 1.9168,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
-      "rsi": 54.1,
+      "rsi": 51.6,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
-      "atr_pct": 5.98,
+      "atr_pct": 13.29,
       "ema_status": [
         "Above EMA20 \u2713",
         "Above EMA50 \u2713",
@@ -2150,54 +2148,54 @@
       "overbought": false,
       "oversold": false,
       "plan_name": "Swing-A",
-      "volume_ratio": 0.95,
+      "volume_ratio": 0.9,
       "volume_note": "Low volume \u2014 caution",
       "recalibrated": false,
       "trade_plans": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 67.34,
-          "stop": 65.39,
-          "t1": 69.29,
-          "t2": 70.6,
-          "t3": 72.55,
+          "entry": 707.74,
+          "stop": 655.57,
+          "t1": 759.91,
+          "t2": 794.7,
+          "t3": 846.87,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$67.34"
+          "trigger": "D close >$707.74"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 67.34,
-          "stop": 61.95,
-          "t1": 78.11,
-          "t2": 86.2,
-          "t3": 94.28,
+          "entry": 707.74,
+          "stop": 651.12,
+          "t1": 820.98,
+          "t2": 905.91,
+          "t3": 990.84,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$67.34"
+          "trigger": "W close >$707.74"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 67.34,
-          "stop": 64.11,
-          "t1": 68.96,
-          "t2": 69.93,
-          "t3": 71.22,
+          "entry": 707.74,
+          "stop": 673.77,
+          "t1": 724.73,
+          "t2": 734.92,
+          "t3": 748.51,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$67.34"
+          "trigger": "15m cross >$707.74"
         }
       ],
       "vwap_levels": {
-        "session": 67.15,
-        "weekly": 67.46,
-        "monthly": 66.34
+        "session": 700.58,
+        "weekly": 684.28,
+        "monthly": 717.08
       },
       "scorecard_total": 5,
       "scorecard_checks": {
@@ -2207,11 +2205,149 @@
         },
         "momentum": {
           "pass": true,
-          "note": "RSI 54"
+          "note": "RSI 52"
         },
         "volume": {
           "pass": false,
           "note": "Vol ratio 0.9x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1 / 1.7 / 2.7x"
+        }
+      },
+      "max_pain": 970.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$704",
+          "entry": 707.74,
+          "stop": 655.57,
+          "t1": 759.91,
+          "t2": 794.7,
+          "t3": 846.87,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 635.36,
+        "vah": 749.31,
+        "val": 548.02
+      },
+      "scorecard_adjustments": 0
+    },
+    {
+      "ticker": "Q",
+      "price": 150.65,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 150.65,
+      "stop_loss": 138.6,
+      "target_1": 164.67,
+      "target_2": 174.02,
+      "target_3": 188.04,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.94,
+      "rr_3": 3.1,
+      "position_size_10k": 8,
+      "position_size_5k": 4,
+      "position_size_frac": 8.2974,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "rsi": 51.6,
+      "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
+      "atr_pct": 19.38,
+      "ema_status": [
+        "Above EMA20 \u2713",
+        "Above EMA50 \u2713",
+        "Above EMA200 (bullish) \u2713"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.78,
+      "volume_note": "Low volume \u2014 caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 150.65,
+          "stop": 138.6,
+          "t1": 164.67,
+          "t2": 174.02,
+          "t3": 188.04,
+          "rr": "1.2 / 1.9 / 3.1",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$150.65"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 150.65,
+          "stop": 138.6,
+          "t1": 174.75,
+          "t2": 192.83,
+          "t3": 210.91,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$150.65"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 150.65,
+          "stop": 143.42,
+          "t1": 154.27,
+          "t2": 156.43,
+          "t3": 159.33,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$150.65"
+        }
+      ],
+      "vwap_levels": {
+        "session": 150.05,
+        "weekly": 145.26,
+        "monthly": 153.07
+      },
+      "scorecard_total": 2,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 52"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.8x"
         },
         "breadth": {
           "pass": true,
@@ -2231,12 +2367,12 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$67",
-          "entry": 67.34,
-          "stop": 65.39,
-          "t1": 69.29,
-          "t2": 70.6,
-          "t3": 72.55,
+          "trigger": "D close >$150",
+          "entry": 150.65,
+          "stop": 136.63,
+          "t1": 164.67,
+          "t2": 174.02,
+          "t3": 188.04,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -2246,11 +2382,11 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "volume_profile": {
-        "poc": 64.45,
-        "vah": 65.58,
-        "val": 59.73
+        "poc": 140.79,
+        "vah": 162.86,
+        "val": 111.42
       },
-      "scorecard_adjustments": 0
+      "scorecard_adjustments": 1
     }
   ],
   "crypto": [
