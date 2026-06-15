@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-15 13:53 UTC",
+  "timestamp": "2026-06-15 15:27 UTC",
   "macro": {
     "regime_quadrant": "Reflation",
     "regime_code": "R2",
@@ -168,7 +168,7 @@
   "spx": {
     "source": "/data/data/com.termux/files/home/trading-ops/scanned/indices/SPX/current.md",
     "timestamp": "2026-06-15",
-    "price": 7551.49,
+    "price": 7560.47,
     "regime": "R2 \u2014 Reflation (growth up, inflation up); confidence 7/10",
     "action_verdicts": {
       "Pos": "B",
@@ -213,10 +213,10 @@
       "put_wall": 720.0
     },
     "vix_structure": {
-      "VIX9D": 15.15,
-      "VIX": 16.1,
-      "VIX3M": 19.53,
-      "VIX6M": 21.83,
+      "VIX9D": 15.41,
+      "VIX": 16.24,
+      "VIX3M": 19.61,
+      "VIX6M": 21.98,
       "term": "Contango",
       "SKEW": 142.6
     },
@@ -401,7 +401,7 @@
         "weekly": 14.67,
         "monthly": 14.66
       },
-      "scorecard_total": 4,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -452,8 +452,7 @@
         "vah": 14.0,
         "val": 14.51,
         "inverted": true
-      },
-      "scorecard_adjustments": 1
+      }
     },
     {
       "ticker": "MO",
@@ -536,11 +535,11 @@
         }
       ],
       "vwap_levels": {
-        "session": 69.91,
-        "weekly": 71.59,
-        "monthly": 71.89
+        "session": 69.73,
+        "weekly": 71.56,
+        "monthly": 71.88
       },
-      "scorecard_total": 3,
+      "scorecard_total": 6,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -592,7 +591,8 @@
         "vah": 70.83,
         "val": 66.01
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 4,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "ADM",
@@ -600,17 +600,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 78.62,
-      "stop_loss": 74.48,
-      "target_1": 82.76,
-      "target_2": 85.52,
-      "target_3": 89.66,
+      "entry": 78.11,
+      "stop_loss": 73.92,
+      "target_1": 82.31,
+      "target_2": 85.1,
+      "target_3": 89.3,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
       "rr_3": 2.67,
-      "position_size_10k": 24,
-      "position_size_5k": 12,
-      "position_size_frac": 24.1546,
+      "position_size_10k": 23,
+      "position_size_5k": 11,
+      "position_size_frac": 23.8663,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -637,49 +637,49 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 78.62,
-          "stop": 74.48,
-          "t1": 82.76,
-          "t2": 85.52,
-          "t3": 89.66,
+          "entry": 78.11,
+          "stop": 73.92,
+          "t1": 82.31,
+          "t2": 85.1,
+          "t3": 89.3,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$78.62"
+          "trigger": "D close >$78.11"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 78.62,
-          "stop": 72.33,
-          "t1": 91.2,
-          "t2": 100.63,
-          "t3": 110.07,
+          "entry": 78.11,
+          "stop": 71.86,
+          "t1": 90.61,
+          "t2": 99.98,
+          "t3": 109.35,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$78.62"
+          "trigger": "W close >$78.11"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 78.62,
-          "stop": 74.85,
-          "t1": 80.51,
-          "t2": 81.64,
-          "t3": 83.15,
+          "entry": 78.11,
+          "stop": 74.36,
+          "t1": 79.98,
+          "t2": 81.11,
+          "t3": 82.61,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$78.62"
+          "trigger": "15m cross >$78.11"
         }
       ],
       "vwap_levels": {
-        "session": 78.63,
-        "weekly": 79.83,
-        "monthly": 80.14
+        "session": 78.34,
+        "weekly": 79.77,
+        "monthly": 80.13
       },
-      "scorecard_total": 3,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -712,11 +712,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$80",
-          "entry": 78.62,
-          "stop": 74.48,
-          "t1": 82.76,
-          "t2": 85.52,
-          "t3": 89.66,
+          "entry": 78.11,
+          "stop": 73.92,
+          "t1": 82.31,
+          "t2": 85.1,
+          "t3": 89.3,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -729,8 +729,7 @@
         "poc": 73.92,
         "vah": 81.1,
         "val": 67.88
-      },
-      "scorecard_adjustments": 1
+      }
     },
     {
       "ticker": "AVB",
@@ -738,17 +737,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 186.29,
-      "stop_loss": 181.02,
-      "target_1": 191.56,
-      "target_2": 195.07,
-      "target_3": 200.34,
+      "entry": 186.13,
+      "stop_loss": 180.85,
+      "target_1": 191.41,
+      "target_2": 194.92,
+      "target_3": 200.2,
       "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
+      "rr_2": 1.66,
+      "rr_3": 2.66,
       "position_size_10k": 18,
       "position_size_5k": 9,
-      "position_size_frac": 18.9753,
+      "position_size_frac": 18.9394,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -775,46 +774,46 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 186.29,
-          "stop": 181.02,
-          "t1": 191.56,
-          "t2": 195.07,
-          "t3": 200.34,
+          "entry": 186.13,
+          "stop": 180.85,
+          "t1": 191.41,
+          "t2": 194.92,
+          "t3": 200.2,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$186.29"
+          "trigger": "D close >$186.13"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 186.29,
-          "stop": 171.39,
-          "t1": 216.1,
-          "t2": 238.45,
-          "t3": 260.81,
+          "entry": 186.13,
+          "stop": 171.24,
+          "t1": 215.91,
+          "t2": 238.25,
+          "t3": 260.58,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$186.29"
+          "trigger": "W close >$186.13"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 186.29,
-          "stop": 177.48,
-          "t1": 190.7,
-          "t2": 193.34,
-          "t3": 196.86,
+          "entry": 186.13,
+          "stop": 177.33,
+          "t1": 190.53,
+          "t2": 193.17,
+          "t3": 196.69,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$186.29"
+          "trigger": "15m cross >$186.13"
         }
       ],
       "vwap_levels": {
-        "session": 186.21,
-        "weekly": 186.4,
+        "session": 186.26,
+        "weekly": 186.41,
         "monthly": 185.42
       },
       "scorecard_total": 5,
@@ -850,11 +849,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$185",
-          "entry": 186.29,
-          "stop": 181.02,
-          "t1": 191.56,
-          "t2": 195.07,
-          "t3": 200.34,
+          "entry": 186.13,
+          "stop": 180.85,
+          "t1": 191.41,
+          "t2": 194.92,
+          "t3": 200.2,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -867,8 +866,7 @@
         "poc": 182.47,
         "vah": 181.35,
         "val": 166.51
-      },
-      "scorecard_adjustments": 0
+      }
     },
     {
       "ticker": "CCI",
@@ -876,20 +874,20 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 90.73,
-      "stop_loss": 86.8,
-      "target_1": 94.66,
-      "target_2": 97.29,
-      "target_3": 101.22,
-      "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 1.67,
-      "rr_3": 2.67,
-      "position_size_10k": 25,
-      "position_size_5k": 12,
-      "position_size_frac": 25.4453,
+      "entry": 92.16,
+      "stop_loss": 84.79,
+      "target_1": 99.53,
+      "target_2": 104.69,
+      "target_3": 112.07,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "rr_3": 2.7,
+      "position_size_10k": 13,
+      "position_size_5k": 6,
+      "position_size_frac": 13.5634,
       "risk_amount": 100.0,
-      "is_counter_trend": false,
-      "direction_reason": "Uptrend continuation \u2014 RSI neutral",
+      "is_counter_trend": true,
+      "direction_reason": "Uptrend continuation \u2014 RSI neutral (bridge says short but trend/RSI override)",
       "rsi": 54.0,
       "rsi_note": "Neutral RSI \u2014 wait for bounce confirmation",
       "atr_pct": 8.35,
@@ -908,54 +906,54 @@
       "plan_name": "Swing-A",
       "volume_ratio": 1.1,
       "volume_note": "Average volume",
-      "recalibrated": false,
+      "recalibrated": true,
       "trade_plans": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 90.73,
-          "stop": 86.8,
-          "t1": 94.66,
-          "t2": 97.29,
-          "t3": 101.22,
+          "entry": 92.16,
+          "stop": 84.79,
+          "t1": 99.53,
+          "t2": 104.69,
+          "t3": 112.07,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$90.73"
+          "trigger": "D close >$92.16"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 90.73,
-          "stop": 83.47,
-          "t1": 105.25,
-          "t2": 116.13,
-          "t3": 127.02,
+          "entry": 92.16,
+          "stop": 84.79,
+          "t1": 106.91,
+          "t2": 117.96,
+          "t3": 129.02,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$90.73"
+          "trigger": "W close >$92.16"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 90.73,
-          "stop": 86.37,
-          "t1": 92.91,
-          "t2": 94.21,
-          "t3": 95.96,
+          "entry": 92.16,
+          "stop": 87.74,
+          "t1": 94.37,
+          "t2": 95.7,
+          "t3": 97.47,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$90.73"
+          "trigger": "15m cross >$92.16"
         }
       ],
       "vwap_levels": {
-        "session": 90.83,
-        "weekly": 92.23,
-        "monthly": 91.38
+        "session": 89.52,
+        "weekly": 91.97,
+        "monthly": 91.32
       },
-      "scorecard_total": 4,
+      "scorecard_total": 6,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -986,16 +984,17 @@
       "trade_table": [
         {
           "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$91",
-          "entry": 90.73,
-          "stop": 86.8,
-          "t1": 94.66,
-          "t2": 97.29,
-          "t3": 101.22,
-          "rr": "1.0 / 1.7 / 2.7",
+          "side": "long",
+          "trigger": "D close <$91",
+          "entry": 92.16,
+          "stop": 84.7872,
+          "t1": 99.5328,
+          "t2": 104.6938,
+          "t3": 112.0666,
+          "rr": 1.0,
           "size": "half",
-          "time_stop": "+5 sessions"
+          "time_stop": "+5 sessions",
+          "recalibrated": true
         }
       ],
       "bridge_source": true,
@@ -1006,6 +1005,7 @@
         "vah": 90.32,
         "val": 79.76
       },
+      "scorecard_bridge_total": 3,
       "scorecard_adjustments": 0
     },
     {
@@ -1089,11 +1089,11 @@
         }
       ],
       "vwap_levels": {
-        "session": 110.26,
-        "weekly": 110.31,
-        "monthly": 110.03
+        "session": 110.53,
+        "weekly": 110.37,
+        "monthly": 110.04
       },
-      "scorecard_total": 2,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -1145,7 +1145,8 @@
         "vah": 112.53,
         "val": 103.64
       },
-      "scorecard_adjustments": 2
+      "scorecard_bridge_total": 4,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "F",
@@ -1153,17 +1154,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 15.19,
-      "stop_loss": 13.97,
-      "target_1": 16.65,
-      "target_2": 17.62,
-      "target_3": 19.08,
+      "entry": 14.78,
+      "stop_loss": 13.6,
+      "target_1": 16.25,
+      "target_2": 17.23,
+      "target_3": 18.71,
       "rr_1": "1.0 / 1.7 / 2.7",
-      "rr_2": 2.0,
-      "rr_3": 3.2,
-      "position_size_10k": 82,
-      "position_size_5k": 41,
-      "position_size_frac": 82.291,
+      "rr_2": 2.07,
+      "rr_3": 3.32,
+      "position_size_10k": 84,
+      "position_size_5k": 42,
+      "position_size_frac": 84.5737,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -1190,49 +1191,49 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 15.19,
-          "stop": 13.97,
-          "t1": 16.65,
-          "t2": 17.62,
-          "t3": 19.08,
-          "rr": "1.2 / 2.0 / 3.2",
+          "entry": 14.78,
+          "stop": 13.6,
+          "t1": 16.25,
+          "t2": 17.23,
+          "t3": 18.71,
+          "rr": "1.2 / 2.1 / 3.3",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$15.19"
+          "trigger": "D close >$14.78"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 15.19,
-          "stop": 13.97,
-          "t1": 17.62,
-          "t2": 19.44,
-          "t3": 21.27,
+          "entry": 14.78,
+          "stop": 13.6,
+          "t1": 17.14,
+          "t2": 18.92,
+          "t3": 20.69,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$15.19"
+          "trigger": "W close >$14.78"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 15.19,
-          "stop": 14.46,
-          "t1": 15.55,
-          "t2": 15.77,
-          "t3": 16.06,
+          "entry": 14.78,
+          "stop": 14.07,
+          "t1": 15.13,
+          "t2": 15.35,
+          "t3": 15.63,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$15.19"
+          "trigger": "15m cross >$14.78"
         }
       ],
       "vwap_levels": {
-        "session": 15.27,
-        "weekly": 14.8,
-        "monthly": 14.97
+        "session": 15.01,
+        "weekly": 14.75,
+        "monthly": 14.96
       },
-      "scorecard_total": 2,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -1265,11 +1266,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$15",
-          "entry": 15.19,
-          "stop": 13.73,
-          "t1": 16.65,
-          "t2": 17.62,
-          "t3": 19.08,
+          "entry": 14.78,
+          "stop": 13.3,
+          "t1": 16.25,
+          "t2": 17.23,
+          "t3": 18.71,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1283,7 +1284,8 @@
         "vah": 16.89,
         "val": 11.52
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 3,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "LII",
@@ -1291,17 +1293,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "GENTLE UPTREND",
-      "entry": 524.58,
-      "stop_loss": 492.37,
-      "target_1": 556.78,
-      "target_2": 578.24,
-      "target_3": 610.45,
+      "entry": 524.91,
+      "stop_loss": 492.67,
+      "target_1": 557.15,
+      "target_2": 578.64,
+      "target_3": 610.88,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
       "rr_3": 2.67,
       "position_size_10k": 3,
       "position_size_5k": 1,
-      "position_size_frac": 3.1046,
+      "position_size_frac": 3.1017,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -1328,47 +1330,47 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 524.58,
-          "stop": 492.37,
-          "t1": 556.78,
-          "t2": 578.24,
-          "t3": 610.45,
+          "entry": 524.91,
+          "stop": 492.67,
+          "t1": 557.15,
+          "t2": 578.64,
+          "t3": 610.88,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$524.58"
+          "trigger": "D close >$524.91"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 524.58,
-          "stop": 482.61,
-          "t1": 608.51,
-          "t2": 671.46,
-          "t3": 734.41,
+          "entry": 524.91,
+          "stop": 482.92,
+          "t1": 608.9,
+          "t2": 671.88,
+          "t3": 734.87,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$524.58"
+          "trigger": "W close >$524.91"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 524.58,
-          "stop": 499.4,
-          "t1": 537.17,
-          "t2": 544.72,
-          "t3": 554.8,
+          "entry": 524.91,
+          "stop": 499.71,
+          "t1": 537.51,
+          "t2": 545.07,
+          "t3": 555.14,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$524.58"
+          "trigger": "15m cross >$524.91"
         }
       ],
       "vwap_levels": {
-        "session": 526.64,
-        "weekly": 517.87,
-        "monthly": 505.51
+        "session": 526.46,
+        "weekly": 517.83,
+        "monthly": 505.5
       },
       "scorecard_total": 5,
       "scorecard_checks": {
@@ -1402,12 +1404,12 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$510",
-          "entry": 524.58,
-          "stop": 492.37,
-          "t1": 556.78,
-          "t2": 578.24,
-          "t3": 610.45,
+          "trigger": "D close >$511",
+          "entry": 524.91,
+          "stop": 492.67,
+          "t1": 557.15,
+          "t2": 578.64,
+          "t3": 610.88,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1421,7 +1423,8 @@
         "vah": 523.92,
         "val": 454.43
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 6,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "MPWR",
@@ -1429,17 +1432,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 1644.06,
-      "stop_loss": 1512.54,
-      "target_1": 1821.98,
-      "target_2": 1940.59,
-      "target_3": 2118.51,
+      "entry": 1632.16,
+      "stop_loss": 1501.59,
+      "target_1": 1808.81,
+      "target_2": 1926.57,
+      "target_3": 2103.21,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 2.25,
       "rr_3": 3.61,
       "position_size_10k": 0,
       "position_size_5k": 0,
-      "position_size_frac": 0.7603,
+      "position_size_frac": 0.7659,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -1466,49 +1469,49 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 1644.06,
-          "stop": 1512.54,
-          "t1": 1821.98,
-          "t2": 1940.59,
-          "t3": 2118.51,
+          "entry": 1632.16,
+          "stop": 1501.59,
+          "t1": 1808.81,
+          "t2": 1926.57,
+          "t3": 2103.21,
           "rr": "1.4 / 2.2 / 3.6",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$1644.06"
+          "trigger": "D close >$1632.16"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 1644.06,
-          "stop": 1512.54,
-          "t1": 1907.11,
-          "t2": 2104.4,
-          "t3": 2301.68,
+          "entry": 1632.16,
+          "stop": 1501.59,
+          "t1": 1893.31,
+          "t2": 2089.16,
+          "t3": 2285.02,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$1644.06"
+          "trigger": "W close >$1632.16"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 1644.06,
-          "stop": 1565.15,
-          "t1": 1683.52,
-          "t2": 1707.19,
-          "t3": 1738.76,
+          "entry": 1632.16,
+          "stop": 1553.82,
+          "t1": 1671.33,
+          "t2": 1694.83,
+          "t3": 1726.17,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$1644.06"
+          "trigger": "15m cross >$1632.16"
         }
       ],
       "vwap_levels": {
-        "session": 1648.4,
-        "weekly": 1562.59,
-        "monthly": 1573.48
+        "session": 1635.08,
+        "weekly": 1559.92,
+        "monthly": 1572.85
       },
-      "scorecard_total": 3,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -1540,12 +1543,12 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "trigger": "D close >$1,575",
-          "entry": 1644.06,
-          "stop": 1466.14,
-          "t1": 1821.98,
-          "t2": 1940.59,
-          "t3": 2118.51,
+          "trigger": "D close >$1,574",
+          "entry": 1632.16,
+          "stop": 1455.51,
+          "t1": 1808.81,
+          "t2": 1926.57,
+          "t3": 2103.21,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1559,8 +1562,9 @@
         "vah": 1628.39,
         "val": 1043.72
       },
-      "scorecard_adjustments": 1,
-      "fractional_note": "Risk $131.52/unit > $100 budget \u2014 use fractional sizing or reduce stop",
+      "scorecard_bridge_total": 4,
+      "scorecard_adjustments": 0,
+      "fractional_note": "Risk $130.57/unit > $100 budget \u2014 use fractional sizing or reduce stop",
       "zero_size": false
     },
     {
@@ -1569,17 +1573,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "GENTLE UPTREND",
-      "entry": 311.12,
-      "stop_loss": 298.18,
-      "target_1": 324.05,
-      "target_2": 332.67,
-      "target_3": 345.6,
+      "entry": 309.75,
+      "stop_loss": 296.66,
+      "target_1": 322.83,
+      "target_2": 331.55,
+      "target_3": 344.63,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
       "rr_3": 2.66,
       "position_size_10k": 7,
       "position_size_5k": 3,
-      "position_size_frac": 7.728,
+      "position_size_frac": 7.6394,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -1606,47 +1610,47 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 311.12,
-          "stop": 298.18,
-          "t1": 324.05,
-          "t2": 332.67,
-          "t3": 345.6,
+          "entry": 309.75,
+          "stop": 296.66,
+          "t1": 322.83,
+          "t2": 331.55,
+          "t3": 344.63,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$311.12"
+          "trigger": "D close >$309.75"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 311.12,
-          "stop": 286.23,
-          "t1": 360.9,
-          "t2": 398.23,
-          "t3": 435.57,
+          "entry": 309.75,
+          "stop": 284.97,
+          "t1": 359.31,
+          "t2": 396.48,
+          "t3": 433.65,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$311.12"
+          "trigger": "W close >$309.75"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 311.12,
-          "stop": 296.19,
-          "t1": 318.59,
-          "t2": 323.07,
-          "t3": 329.04,
+          "entry": 309.75,
+          "stop": 294.88,
+          "t1": 317.18,
+          "t2": 321.64,
+          "t3": 327.59,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$311.12"
+          "trigger": "15m cross >$309.75"
         }
       ],
       "vwap_levels": {
-        "session": 312.2,
-        "weekly": 311.53,
-        "monthly": 312.44
+        "session": 311.0,
+        "weekly": 311.29,
+        "monthly": 312.38
       },
       "scorecard_total": 5,
       "scorecard_checks": {
@@ -1681,11 +1685,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$311",
-          "entry": 311.12,
-          "stop": 298.18,
-          "t1": 324.05,
-          "t2": 332.67,
-          "t3": 345.6,
+          "entry": 309.75,
+          "stop": 296.66,
+          "t1": 322.83,
+          "t2": 331.55,
+          "t3": 344.63,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1699,7 +1703,8 @@
         "vah": 309.7,
         "val": 290.54
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 6,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "NXPI",
@@ -1707,17 +1712,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 316.94,
-      "stop_loss": 291.58,
-      "target_1": 344.99,
-      "target_2": 363.7,
-      "target_3": 391.75,
+      "entry": 315.79,
+      "stop_loss": 290.53,
+      "target_1": 343.72,
+      "target_2": 362.34,
+      "target_3": 390.27,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.84,
       "rr_3": 2.95,
       "position_size_10k": 3,
       "position_size_5k": 1,
-      "position_size_frac": 3.944,
+      "position_size_frac": 3.9583,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -1744,49 +1749,49 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 316.94,
-          "stop": 291.58,
-          "t1": 344.99,
-          "t2": 363.7,
-          "t3": 391.75,
+          "entry": 315.79,
+          "stop": 290.53,
+          "t1": 343.72,
+          "t2": 362.34,
+          "t3": 390.27,
           "rr": "1.1 / 1.8 / 3.0",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$316.94"
+          "trigger": "D close >$315.79"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 316.94,
-          "stop": 291.58,
-          "t1": 367.65,
-          "t2": 405.68,
-          "t3": 443.72,
+          "entry": 315.79,
+          "stop": 290.53,
+          "t1": 366.32,
+          "t2": 404.21,
+          "t3": 442.11,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$316.94"
+          "trigger": "W close >$315.79"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 316.94,
-          "stop": 301.73,
-          "t1": 324.55,
-          "t2": 329.11,
-          "t3": 335.2,
+          "entry": 315.79,
+          "stop": 300.63,
+          "t1": 323.37,
+          "t2": 327.92,
+          "t3": 333.98,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$316.94"
+          "trigger": "15m cross >$315.79"
         }
       ],
       "vwap_levels": {
-        "session": 317.23,
-        "weekly": 300.82,
-        "monthly": 309.49
+        "session": 316.76,
+        "weekly": 300.72,
+        "monthly": 309.47
       },
-      "scorecard_total": 4,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -1819,11 +1824,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$304",
-          "entry": 316.94,
-          "stop": 288.89,
-          "t1": 344.99,
-          "t2": 363.7,
-          "t3": 391.75,
+          "entry": 315.79,
+          "stop": 287.86,
+          "t1": 343.72,
+          "t2": 362.34,
+          "t3": 390.27,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -1836,8 +1841,7 @@
         "poc": 287.4,
         "vah": 322.95,
         "val": 193.91
-      },
-      "scorecard_adjustments": 1
+      }
     },
     {
       "ticker": "ON",
@@ -1845,17 +1849,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 116.79,
-      "stop_loss": 107.45,
-      "target_1": 126.13,
-      "target_2": 132.67,
-      "target_3": 142.02,
-      "rr_1": 1.0,
-      "rr_2": 1.7,
-      "rr_3": 2.7,
+      "entry": 122.19,
+      "stop_loss": 112.41,
+      "target_1": 136.41,
+      "target_2": 145.89,
+      "target_3": 160.11,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 2.42,
+      "rr_3": 3.88,
       "position_size_10k": 10,
       "position_size_5k": 5,
-      "position_size_frac": 10.703,
+      "position_size_frac": 10.23,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -1877,54 +1881,54 @@
       "plan_name": "Swing-A",
       "volume_ratio": 0.63,
       "volume_note": "Low volume \u2014 caution",
-      "recalibrated": true,
+      "recalibrated": false,
       "trade_plans": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 116.79,
-          "stop": 107.45,
-          "t1": 126.13,
-          "t2": 132.67,
-          "t3": 142.02,
-          "rr": "1.0 / 1.7 / 2.7",
+          "entry": 122.19,
+          "stop": 112.41,
+          "t1": 136.41,
+          "t2": 145.89,
+          "t3": 160.11,
+          "rr": "1.4 / 2.4 / 3.9",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$116.79"
+          "trigger": "D close >$122.19"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 116.79,
-          "stop": 107.45,
-          "t1": 135.48,
-          "t2": 149.49,
-          "t3": 163.51,
+          "entry": 122.19,
+          "stop": 112.41,
+          "t1": 141.74,
+          "t2": 156.4,
+          "t3": 171.07,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$116.79"
+          "trigger": "W close >$122.19"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 116.79,
-          "stop": 111.18,
-          "t1": 119.59,
-          "t2": 121.27,
-          "t3": 123.52,
+          "entry": 122.19,
+          "stop": 116.32,
+          "t1": 125.12,
+          "t2": 126.88,
+          "t3": 129.23,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$116.79"
+          "trigger": "15m cross >$122.19"
         }
       ],
       "vwap_levels": {
-        "session": 123.43,
-        "weekly": 116.46,
-        "monthly": 118.64
+        "session": 122.7,
+        "weekly": 116.32,
+        "monthly": 118.61
       },
-      "scorecard_total": 2,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -1955,18 +1959,16 @@
       "trade_table": [
         {
           "plan": "Swing-A",
-          "side": "long",
+          "side": "LONG",
           "trigger": "D close >$117",
-          "entry": 116.79,
-          "stop": 107.4468,
-          "t1": 126.1332,
-          "t2": 132.6734,
-          "t3": 142.0166,
-          "rr": 1.0,
+          "entry": 122.19,
+          "stop": 107.96,
+          "t1": 136.41,
+          "t2": 145.89,
+          "t3": 160.11,
+          "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
-          "time_stop": "+5 sessions",
-          "recalibrated": true,
-          "stale_days": 0
+          "time_stop": "+5 sessions"
         }
       ],
       "bridge_source": true,
@@ -1977,7 +1979,8 @@
         "vah": 128.17,
         "val": 57.78
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 3,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "PSX",
@@ -2060,11 +2063,11 @@
         }
       ],
       "vwap_levels": {
-        "session": 172.65,
-        "weekly": 178.94,
-        "monthly": 179.12
+        "session": 172.83,
+        "weekly": 178.97,
+        "monthly": 179.13
       },
-      "scorecard_total": 3,
+      "scorecard_total": 6,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -2116,7 +2119,8 @@
         "vah": 179.77,
         "val": 160.1
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 4,
+      "scorecard_adjustments": 0
     },
     {
       "ticker": "PWR",
@@ -2124,11 +2128,11 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 720.87,
-      "stop_loss": 668.09,
-      "target_1": 773.65,
-      "target_2": 808.84,
-      "target_3": 861.62,
+      "entry": 720.88,
+      "stop_loss": 668.1,
+      "target_1": 773.66,
+      "target_2": 808.85,
+      "target_3": 861.64,
       "rr_1": "1.0 / 1.7 / 2.7",
       "rr_2": 1.67,
       "rr_3": 2.67,
@@ -2161,47 +2165,47 @@
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 720.87,
-          "stop": 668.09,
-          "t1": 773.65,
-          "t2": 808.84,
-          "t3": 861.62,
+          "entry": 720.88,
+          "stop": 668.1,
+          "t1": 773.66,
+          "t2": 808.85,
+          "t3": 861.64,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$720.87"
+          "trigger": "D close >$720.88"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 720.87,
-          "stop": 663.2,
-          "t1": 836.21,
-          "t2": 922.71,
-          "t3": 1009.22,
+          "entry": 720.88,
+          "stop": 663.21,
+          "t1": 836.22,
+          "t2": 922.73,
+          "t3": 1009.23,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$720.87"
+          "trigger": "W close >$720.88"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 720.87,
-          "stop": 686.27,
-          "t1": 738.17,
-          "t2": 748.55,
-          "t3": 762.39,
+          "entry": 720.88,
+          "stop": 686.28,
+          "t1": 738.18,
+          "t2": 748.56,
+          "t3": 762.4,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$720.87"
+          "trigger": "15m cross >$720.88"
         }
       ],
       "vwap_levels": {
-        "session": 722.46,
-        "weekly": 690.05,
-        "monthly": 711.98
+        "session": 722.81,
+        "weekly": 690.12,
+        "monthly": 712.0
       },
       "scorecard_total": 5,
       "scorecard_checks": {
@@ -2236,11 +2240,11 @@
           "plan": "Swing-A",
           "side": "LONG",
           "trigger": "D close >$705",
-          "entry": 720.87,
-          "stop": 668.09,
-          "t1": 773.65,
-          "t2": 808.84,
-          "t3": 861.62,
+          "entry": 720.88,
+          "stop": 668.1,
+          "t1": 773.66,
+          "t2": 808.85,
+          "t3": 861.64,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
@@ -2253,8 +2257,7 @@
         "poc": 644.1,
         "vah": 749.31,
         "val": 548.02
-      },
-      "scorecard_adjustments": 0
+      }
     },
     {
       "ticker": "Q",
@@ -2262,17 +2265,17 @@
       "score": 6,
       "direction": "LONG",
       "trend": "STRONG UPTREND",
-      "entry": 150.65,
-      "stop_loss": 138.6,
-      "target_1": 162.7,
-      "target_2": 171.14,
-      "target_3": 183.19,
-      "rr_1": 1.0,
-      "rr_2": 1.7,
-      "rr_3": 2.7,
-      "position_size_10k": 8,
-      "position_size_5k": 4,
-      "position_size_frac": 8.2974,
+      "entry": 156.52,
+      "stop_loss": 144.0,
+      "target_1": 170.35,
+      "target_2": 179.57,
+      "target_3": 193.4,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.84,
+      "rr_3": 2.95,
+      "position_size_10k": 7,
+      "position_size_5k": 3,
+      "position_size_frac": 7.9862,
       "risk_amount": 100.0,
       "is_counter_trend": false,
       "direction_reason": "Uptrend continuation \u2014 RSI neutral",
@@ -2294,54 +2297,54 @@
       "plan_name": "Swing-A",
       "volume_ratio": 0.78,
       "volume_note": "Low volume \u2014 caution",
-      "recalibrated": true,
+      "recalibrated": false,
       "trade_plans": [
         {
           "plan": "Swing-A",
           "side": "LONG",
-          "entry": 150.65,
-          "stop": 138.6,
-          "t1": 162.7,
-          "t2": 171.14,
-          "t3": 183.19,
-          "rr": "1.0 / 1.7 / 2.7",
+          "entry": 156.52,
+          "stop": 144.0,
+          "t1": 170.35,
+          "t2": 179.57,
+          "t3": 193.4,
+          "rr": "1.1 / 1.8 / 3.0",
           "size": "full",
           "time_stop": "+5 sessions",
-          "trigger": "D close >$150.65"
+          "trigger": "D close >$156.52"
         },
         {
           "plan": "Positional-B",
           "side": "LONG",
-          "entry": 150.65,
-          "stop": 138.6,
-          "t1": 174.75,
-          "t2": 192.83,
-          "t3": 210.91,
+          "entry": 156.52,
+          "stop": 144.0,
+          "t1": 181.56,
+          "t2": 200.35,
+          "t3": 219.13,
           "rr": "2.0 / 3.5 / 5.0",
           "size": "half",
           "time_stop": "+15 sessions",
-          "trigger": "W close >$150.65"
+          "trigger": "W close >$156.52"
         },
         {
           "plan": "Day-C",
           "side": "LONG",
-          "entry": 150.65,
-          "stop": 143.42,
-          "t1": 154.27,
-          "t2": 156.43,
-          "t3": 159.33,
+          "entry": 156.52,
+          "stop": 149.01,
+          "t1": 160.28,
+          "t2": 162.53,
+          "t3": 165.54,
           "rr": "0.5 / 0.8 / 1.2",
           "size": "full",
           "time_stop": "EOD",
-          "trigger": "15m cross >$150.65"
+          "trigger": "15m cross >$156.52"
         }
       ],
       "vwap_levels": {
-        "session": 157.3,
-        "weekly": 147.84,
-        "monthly": 152.23
+        "session": 157.15,
+        "weekly": 147.81,
+        "monthly": 152.22
       },
-      "scorecard_total": 2,
+      "scorecard_total": 5,
       "scorecard_checks": {
         "trend": {
           "pass": true,
@@ -2372,18 +2375,16 @@
       "trade_table": [
         {
           "plan": "Swing-A",
-          "side": "long",
-          "trigger": "D close >$151",
-          "entry": 150.65,
-          "stop": 138.598,
-          "t1": 162.702,
-          "t2": 171.1384,
-          "t3": 183.1904,
-          "rr": 1.0,
+          "side": "LONG",
+          "trigger": "D close >$150",
+          "entry": 156.52,
+          "stop": 142.69,
+          "t1": 170.35,
+          "t2": 179.57,
+          "t3": 193.4,
+          "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
-          "time_stop": "+5 sessions",
-          "recalibrated": true,
-          "stale_days": 0
+          "time_stop": "+5 sessions"
         }
       ],
       "bridge_source": true,
@@ -2394,7 +2395,8 @@
         "vah": 162.86,
         "val": 111.42
       },
-      "scorecard_adjustments": 1
+      "scorecard_bridge_total": 3,
+      "scorecard_adjustments": 0
     }
   ],
   "crypto": [
