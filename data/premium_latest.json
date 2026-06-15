@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-15 10:58 UTC",
+  "timestamp": "2026-06-15 11:49 UTC",
   "macro": {
     "regime_quadrant": "Reflation",
     "regime_code": "R2",
@@ -209,12 +209,12 @@
     "max_pain": null,
     "gamma_exposure": null,
     "gamma_data": {
-      "call_wall": 500.0,
-      "put_wall": 500.0
+      "call_wall": 760.0,
+      "put_wall": 720.0
     },
     "vix_structure": {
       "VIX9D": 17.26,
-      "VIX": 16.79,
+      "VIX": 16.65,
       "VIX3M": 20.51,
       "VIX6M": 22.59,
       "SKEW": 142.6
@@ -427,7 +427,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 16.0,
+      "max_pain": 14.5,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -566,7 +566,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 90.0,
+      "max_pain": 72.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -842,7 +842,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 160.0,
+      "max_pain": 180.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -980,7 +980,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 55.0,
+      "max_pain": 92.5,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -1118,7 +1118,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 75.0,
+      "max_pain": 110.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -1256,7 +1256,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 19.5,
+      "max_pain": 13.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -1532,7 +1532,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 1120.0,
+      "max_pain": 1520.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -1672,7 +1672,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 230.0,
+      "max_pain": 300.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -1948,7 +1948,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 128.0,
+      "max_pain": 80.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -2086,7 +2086,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 115.0,
+      "max_pain": 165.0,
       "trade_table": [
         {
           "plan": "Swing-A",
@@ -2362,7 +2362,7 @@
           "note": "1 / 1.7 / 2.7x"
         }
       },
-      "max_pain": 70.0,
+      "max_pain": 135.0,
       "trade_table": [
         {
           "plan": "Swing-A",
