@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-15 07:43 UTC",
+  "timestamp": "2026-06-15 10:55 UTC",
   "macro": {
     "regime_quadrant": "Reflation",
     "regime_code": "R2",
@@ -214,7 +214,7 @@
     },
     "vix_structure": {
       "VIX9D": 17.26,
-      "VIX": 16.73,
+      "VIX": 16.79,
       "VIX3M": 20.51,
       "VIX6M": 22.59,
       "SKEW": 142.6
@@ -2397,14 +2397,14 @@
       "score": 5,
       "action": "\ud83d\udfe2 STRONG BUY",
       "direction": "LONG",
-      "entry": 2.365,
-      "stop_loss": 2.0812,
-      "target_1": 2.9326,
-      "target_2": 3.3583,
-      "rr_1": 2.0,
-      "rr_2": 3.5,
-      "position_size_5k": 176,
-      "position_size_frac": 176.1804,
+      "entry": 2.4,
+      "stop_loss": 2.112,
+      "target_1": 2.95,
+      "target_2": 3.32,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 3.19,
+      "position_size_5k": 173,
+      "position_size_frac": 173.6111,
       "risk_amount": 50.0,
       "rsi": 57.0,
       "rsi_note": "Momentum supports long \u2014 good entry zone",
@@ -2415,10 +2415,36 @@
         "\u26a1 EMA9/21 Golden Cross",
         "\ud83d\udcc8 EMA Stack Bullish (9>21>50)"
       ],
-      "plan_name": "ATR-derived",
+      "plan_name": "Swing-A",
       "recalibrated": false,
       "is_counter_trend": false,
-      "direction_reason": "Bullish action overrides RSI 55-65 (normal momentum zone)"
+      "direction_reason": "Bullish action overrides RSI 55-65 (normal momentum zone)",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$2",
+          "entry": 2.4,
+          "stop": 1.85,
+          "t1": 2.95,
+          "t2": 3.32,
+          "t3": 3.87,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 1.97
+      },
+      "volume_profile": {
+        "poc": 1.41,
+        "vah": 2.92,
+        "val": 1.2
+      }
     },
     {
       "symbol": "CRV",
@@ -2569,7 +2595,7 @@
         {
           "plan": "Swing-A",
           "side": "long",
-          "trigger": "D close <$66,727",
+          "trigger": "D close <$66,637",
           "entry": 65595.8984,
           "stop": 61453.5174,
           "t1": 69738.2794,
@@ -2585,10 +2611,10 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 72737.95
+        "session": 72686.81
       },
       "volume_profile": {
-        "poc": 73889.41,
+        "poc": 73856.35,
         "vah": 78652.6,
         "val": 62064.36
       },
@@ -2627,7 +2653,7 @@
         {
           "plan": "Swing-A",
           "side": "long",
-          "trigger": "D close <$1,794",
+          "trigger": "D close <$1,789",
           "entry": 1715.6,
           "stop": 1578.352,
           "t1": 1852.848,
@@ -2643,10 +2669,10 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 2138.65
+        "session": 2136.5
       },
       "volume_profile": {
-        "poc": 2153.93,
+        "poc": 2152.15,
         "vah": 2341.54,
         "val": 1581.83
       },
@@ -2701,7 +2727,7 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 84.22
+        "session": 84.16
       },
       "volume_profile": {
         "poc": 84.82,
@@ -2835,17 +2861,18 @@
           "rr": 1.0,
           "size": "half",
           "time_stop": "+5 sessions",
-          "recalibrated": true
+          "recalibrated": true,
+          "stale_days": 0
         }
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 95.04
+        "session": 94.94
       },
       "volume_profile": {
-        "poc": 93.56,
+        "poc": 93.5,
         "vah": 118.25,
         "val": 60.95
       }
@@ -2882,7 +2909,7 @@
         {
           "plan": "Swing-A",
           "side": "long",
-          "trigger": "D close <$1,510",
+          "trigger": "D close <$1,506",
           "entry": 1467.1714,
           "stop": 1349.7977,
           "t1": 1584.5451,
@@ -2898,10 +2925,10 @@
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 1713.28
+        "session": 1710.26
       },
       "volume_profile": {
-        "poc": 1749.78,
+        "poc": 1749.36,
         "vah": 1901.38,
         "val": 1339.97
       },
@@ -3029,14 +3056,14 @@
       "score": 1,
       "action": "\ud83d\udd35 WATCH",
       "direction": "LONG",
-      "entry": 6.76,
-      "stop_loss": 5.9488,
-      "target_1": 7.59,
-      "target_2": 8.14,
-      "rr_1": "1.0 / 1.7 / 2.7",
+      "entry": 6.74,
+      "stop_loss": 6.2008,
+      "target_1": 7.2792,
+      "target_2": 7.6566,
+      "rr_1": 1.0,
       "rr_2": 1.7,
-      "position_size_5k": 61,
-      "position_size_frac": 61.6371,
+      "position_size_5k": 92,
+      "position_size_frac": 92.73,
       "risk_amount": 50.0,
       "rsi": 28.9,
       "rsi_note": "Approaching oversold \u2014 potential long entry \u26a0\ufe0f LOW VOLUME",
@@ -3047,32 +3074,33 @@
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
       "plan_name": "Swing-A",
-      "recalibrated": false,
+      "recalibrated": true,
       "is_counter_trend": false,
       "direction_reason": "RSI oversold \u2014 bounce setup",
       "trade_table": [
         {
           "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$7",
-          "entry": 6.76,
-          "stop": 5.93,
-          "t1": 7.59,
-          "t2": 8.14,
-          "t3": 8.96,
-          "rr": "1.0 / 1.7 / 2.7",
+          "side": "long",
+          "trigger": "D close <$7",
+          "entry": 6.74,
+          "stop": 6.2008,
+          "t1": 7.2792,
+          "t2": 7.6566,
+          "t3": 8.1958,
+          "rr": 1.0,
           "size": "half",
-          "time_stop": "+5 sessions"
+          "time_stop": "+5 sessions",
+          "recalibrated": true
         }
       ],
       "bridge_source": true,
       "bridge_ts_stale": false,
       "bridge_ts_days": 0,
       "vwap_levels": {
-        "session": 8.99
+        "session": 8.97
       },
       "volume_profile": {
-        "poc": 9.19,
+        "poc": 9.18,
         "vah": 9.99,
         "val": 6.56
       }

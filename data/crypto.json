@@ -19,7 +19,40 @@
       ],
       "score": 5,
       "action": "\ud83d\udfe2 STRONG BUY",
-      "validated": true
+      "validated": true,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$2",
+          "entry": 2.4,
+          "stop": 1.85,
+          "t1": 2.95,
+          "t2": 3.32,
+          "t3": 3.87,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "vwap_levels": {
+        "session": 1.97
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "volume_profile": {
+        "poc": 1.41,
+        "vah": 2.92,
+        "val": 1.2
+      }
     },
     {
       "symbol": "CRV",
