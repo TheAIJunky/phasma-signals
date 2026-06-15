@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-06-15 07:01",
+  "timestamp": "2026-06-15 12:56",
   "total_scanned": 37,
   "buys": [
     {
       "symbol": "NEAR",
       "category": "l1s",
-      "price": 2.365,
-      "change_1d": 11.12,
-      "rsi": 57.0,
-      "volume_ratio": 0.4,
-      "atr_pct": 12.28,
-      "ema9": 2.1596,
-      "ema21": 2.1455,
-      "ema50": 1.952,
+      "price": 2.434,
+      "change_1d": 9.94,
+      "rsi": 58.7,
+      "volume_ratio": 0.43,
+      "atr_pct": 10.88,
+      "ema9": 2.1903,
+      "ema21": 2.1593,
+      "ema50": 1.9652,
       "signals": [
         "\u26a1 EMA9/21 Golden Cross",
         "\ud83d\udcc8 EMA Stack Bullish (9>21>50)"
@@ -55,16 +55,35 @@
       }
     },
     {
-      "symbol": "CRV",
-      "category": "defi",
-      "price": 0.2382,
-      "change_1d": 0.38,
-      "rsi": 57.8,
-      "volume_ratio": 0.95,
-      "atr_pct": 7.29,
-      "ema9": 0.2246,
-      "ema21": 0.22,
-      "ema50": 0.2242,
+      "symbol": "TAO",
+      "category": "ai",
+      "price": 272.52,
+      "change_1d": 0.84,
+      "rsi": 60.6,
+      "volume_ratio": 1.73,
+      "atr_pct": 8.0,
+      "ema9": 240.8053,
+      "ema21": 239.9862,
+      "ema50": 253.4394,
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross",
+        "\ud83d\udd0a Above-Avg Volume (1.7x)"
+      ],
+      "score": 4,
+      "action": "\ud83d\udfe2 BUY",
+      "validated": true
+    },
+    {
+      "symbol": "ATOM",
+      "category": "l1s",
+      "price": 1.987,
+      "change_1d": -0.89,
+      "rsi": 54.7,
+      "volume_ratio": 0.88,
+      "atr_pct": 5.74,
+      "ema9": 1.9202,
+      "ema21": 1.911,
+      "ema50": 1.9194,
       "signals": [
         "\u26a1 EMA9/21 Golden Cross"
       ],
@@ -75,87 +94,35 @@
     {
       "symbol": "OCEAN",
       "category": "ai",
-      "price": 0.1034,
-      "change_1d": 1.9,
-      "rsi": 34.3,
-      "volume_ratio": 0.32,
-      "atr_pct": 4.2,
-      "ema9": 0.1062,
-      "ema21": 0.1125,
-      "ema50": 0.1192,
+      "price": 0.1053,
+      "change_1d": 2.06,
+      "rsi": 37.7,
+      "volume_ratio": 0.34,
+      "atr_pct": 4.01,
+      "ema9": 0.106,
+      "ema21": 0.1118,
+      "ema50": 0.1186,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume",
+        "\ud83d\udd35 RSI Low Zone (35-45)",
         "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
       ],
       "score": 3,
       "action": "\ud83d\udfe2 BUY",
       "validated": true
-    },
-    {
-      "symbol": "RIO",
-      "category": "rwa",
-      "price": 0.037,
-      "change_1d": -5.18,
-      "rsi": 27.7,
-      "volume_ratio": 1.23,
-      "atr_pct": 15.09,
-      "ema9": 0.0429,
-      "ema21": 0.054,
-      "ema50": 0.0651,
-      "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udfe2 BUY",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$0",
-          "entry": 0.04,
-          "stop": 0.03,
-          "t1": 0.05,
-          "t2": 0.05,
-          "t3": 0.07,
-          "rr": "1.9 / 1.9 / 4.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "vwap_levels": {
-        "session": 0.07
-      },
-      "coverage_tiers": {
-        "position": "S",
-        "swing": "W",
-        "day": "B"
-      },
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "B"
-      },
-      "volume_profile": {
-        "poc": 0.06,
-        "vah": 0.16,
-        "val": 0.04
-      }
     }
   ],
   "watches": [
     {
       "symbol": "BTC",
       "category": "majors",
-      "price": 65595.8984,
-      "change_1d": 1.82,
-      "rsi": 41.2,
-      "volume_ratio": 0.64,
-      "atr_pct": 4.21,
-      "ema9": 64239.4278,
-      "ema21": 66952.9102,
-      "ema50": 70800.3398,
+      "price": 65867.1875,
+      "change_1d": 0.24,
+      "rsi": 42.3,
+      "volume_ratio": 0.65,
+      "atr_pct": 3.96,
+      "ema9": 64583.2997,
+      "ema21": 66863.671,
+      "ema50": 70611.1969,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -166,19 +133,19 @@
         {
           "plan": "Swing-A",
           "side": "SHORT",
-          "trigger": "D close <$66,727",
-          "entry": 65648.95,
-          "stop": 70897.94,
-          "t1": 60399.96,
-          "t2": 56900.64,
-          "t3": 51651.65,
+          "trigger": "D close <$66,637",
+          "entry": 65719.34,
+          "stop": 70837.06,
+          "t1": 60601.62,
+          "t2": 57189.81,
+          "t3": 52072.09,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
         }
       ],
       "vwap_levels": {
-        "session": 72737.95
+        "session": 72686.81
       },
       "coverage_tiers": {
         "position": "S",
@@ -191,7 +158,7 @@
         "Day": "W"
       },
       "volume_profile": {
-        "poc": 73889.41,
+        "poc": 73856.35,
         "vah": 78652.6,
         "val": 62064.36
       }
@@ -199,14 +166,14 @@
     {
       "symbol": "ETH",
       "category": "majors",
-      "price": 1715.6,
-      "change_1d": 2.11,
-      "rsi": 36.9,
-      "volume_ratio": 0.56,
-      "atr_pct": 5.52,
-      "ema9": 1697.5025,
-      "ema21": 1802.9019,
-      "ema50": 1973.819,
+      "price": 1738.5,
+      "change_1d": 0.81,
+      "rsi": 39.5,
+      "volume_ratio": 0.57,
+      "atr_pct": 5.37,
+      "ema9": 1707.1441,
+      "ema21": 1797.7921,
+      "ema50": 1964.9304,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -217,19 +184,19 @@
         {
           "plan": "Swing-A",
           "side": "SHORT",
-          "trigger": "D close <$1,794",
-          "entry": 1718.06,
-          "stop": 1894.43,
-          "t1": 1541.69,
-          "t2": 1424.11,
-          "t3": 1247.75,
+          "trigger": "D close <$1,789",
+          "entry": 1729.04,
+          "stop": 1908.84,
+          "t1": 1549.24,
+          "t2": 1429.37,
+          "t3": 1249.56,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
         }
       ],
       "vwap_levels": {
-        "session": 2138.65
+        "session": 2136.5
       },
       "coverage_tiers": {
         "position": "S",
@@ -242,124 +209,22 @@
         "Day": "W"
       },
       "volume_profile": {
-        "poc": 2153.93,
+        "poc": 2152.15,
         "vah": 2341.54,
         "val": 1581.83
       }
     },
     {
-      "symbol": "SOL",
-      "category": "majors",
-      "price": 70.86,
-      "change_1d": 2.89,
-      "rsi": 43.8,
-      "volume_ratio": 0.55,
-      "atr_pct": 6.07,
-      "ema9": 68.3649,
-      "ema21": 72.2609,
-      "ema50": 78.2954,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "SHORT",
-          "trigger": "D close <$72",
-          "entry": 70.99,
-          "stop": 79.35,
-          "t1": 62.63,
-          "t2": 57.05,
-          "t3": 48.68,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "vwap_levels": {
-        "session": 84.22
-      },
-      "coverage_tiers": {
-        "position": "S",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 84.82,
-        "vah": 93.35,
-        "val": 63.44
-      }
-    },
-    {
-      "symbol": "XRP",
-      "category": "majors",
-      "price": 1.183,
-      "change_1d": 2.87,
-      "rsi": 43.5,
-      "volume_ratio": 0.63,
-      "atr_pct": 4.96,
-      "ema9": 1.158,
-      "ema21": 1.2069,
-      "ema50": 1.2852,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "SHORT",
-          "trigger": "D close <$1",
-          "entry": 1.18,
-          "stop": 1.3,
-          "t1": 1.07,
-          "t2": 1.0,
-          "t3": 0.89,
-          "rr": "1.0 / 1.6 / 2.6",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "vwap_levels": {
-        "session": 1.36
-      },
-      "coverage_tiers": {
-        "position": "S",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 1.37,
-        "vah": 1.52,
-        "val": 1.11
-      }
-    },
-    {
       "symbol": "UNI",
       "category": "defi",
-      "price": 2.579,
-      "change_1d": 0.88,
-      "rsi": 36.2,
-      "volume_ratio": 0.58,
-      "atr_pct": 5.74,
-      "ema9": 2.5621,
-      "ema21": 2.7524,
-      "ema50": 3.0324,
+      "price": 2.657,
+      "change_1d": 2.69,
+      "rsi": 41.1,
+      "volume_ratio": 0.59,
+      "atr_pct": 5.53,
+      "ema9": 2.5825,
+      "ema21": 2.7444,
+      "ema50": 3.018,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -368,67 +233,16 @@
       "validated": true
     },
     {
-      "symbol": "AAVE",
-      "category": "defi",
-      "price": 68.88,
-      "change_1d": 2.75,
-      "rsi": 40.3,
-      "volume_ratio": 0.46,
-      "atr_pct": 6.65,
-      "ema9": 66.4696,
-      "ema21": 71.5735,
-      "ema50": 81.1627,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH",
-      "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "SHORT",
-          "trigger": "D close <$71",
-          "entry": 69.02,
-          "stop": 77.56,
-          "t1": 60.48,
-          "t2": 54.78,
-          "t3": 46.24,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
-      "vwap_levels": {
-        "session": 95.04
-      },
-      "coverage_tiers": {
-        "position": "S",
-        "swing": "W",
-        "day": "B"
-      },
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "B"
-      },
-      "volume_profile": {
-        "poc": 93.56,
-        "vah": 118.25,
-        "val": 60.95
-      }
-    },
-    {
       "symbol": "MKR",
       "category": "defi",
       "price": 1467.1714,
-      "change_1d": 3.1,
+      "change_1d": 0.11,
       "rsi": 44.1,
-      "volume_ratio": 0.5,
-      "atr_pct": 10.32,
-      "ema9": 1459.0065,
-      "ema21": 1514.6361,
-      "ema50": 1612.0672,
+      "volume_ratio": 0.49,
+      "atr_pct": 11.07,
+      "ema9": 1460.3827,
+      "ema21": 1510.1885,
+      "ema50": 1606.3246,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -439,19 +253,19 @@
         {
           "plan": "Swing-A",
           "side": "SHORT",
-          "trigger": "D close <$1,510",
+          "trigger": "D close <$1,506",
           "entry": 1467.17,
-          "stop": 1714.35,
-          "t1": 1220.0,
-          "t2": 1055.21,
-          "t3": 808.04,
+          "stop": 1734.85,
+          "t1": 1199.5,
+          "t2": 1021.04,
+          "t3": 753.37,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
         }
       ],
       "vwap_levels": {
-        "session": 1713.28
+        "session": 1710.26
       },
       "coverage_tiers": {
         "position": "S",
@@ -464,7 +278,7 @@
         "Day": "B"
       },
       "volume_profile": {
-        "poc": 1749.78,
+        "poc": 1749.36,
         "vah": 1901.38,
         "val": 1339.97
       }
@@ -472,14 +286,14 @@
     {
       "symbol": "LDO",
       "category": "defi",
-      "price": 0.271,
-      "change_1d": 2.9,
-      "rsi": 37.5,
-      "volume_ratio": 0.64,
-      "atr_pct": 6.57,
-      "ema9": 0.2694,
-      "ema21": 0.29,
-      "ema50": 0.3186,
+      "price": 0.275,
+      "change_1d": 2.38,
+      "rsi": 39.7,
+      "volume_ratio": 0.66,
+      "atr_pct": 6.31,
+      "ema9": 0.2701,
+      "ema21": 0.2885,
+      "ema50": 0.3168,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -490,14 +304,14 @@
     {
       "symbol": "ARB",
       "category": "defi",
-      "price": 0.0857,
-      "change_1d": 0.59,
-      "rsi": 36.1,
-      "volume_ratio": 0.6,
-      "atr_pct": 6.97,
-      "ema9": 0.0848,
-      "ema21": 0.0917,
-      "ema50": 0.1022,
+      "price": 0.0874,
+      "change_1d": 2.04,
+      "rsi": 39.2,
+      "volume_ratio": 0.61,
+      "atr_pct": 6.73,
+      "ema9": 0.0853,
+      "ema21": 0.0913,
+      "ema50": 0.1017,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -508,14 +322,14 @@
     {
       "symbol": "ADA",
       "category": "l1s",
-      "price": 0.1798,
-      "change_1d": 4.69,
-      "rsi": 37.2,
-      "volume_ratio": 0.89,
-      "atr_pct": 7.41,
-      "ema9": 0.1752,
-      "ema21": 0.1929,
-      "ema50": 0.2189,
+      "price": 0.1827,
+      "change_1d": -0.05,
+      "rsi": 39.2,
+      "volume_ratio": 0.9,
+      "atr_pct": 7.21,
+      "ema9": 0.1772,
+      "ema21": 0.1922,
+      "ema50": 0.2176,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -531,8 +345,8 @@
           "stop": 0.21,
           "t1": 0.15,
           "t2": 0.13,
-          "t3": 0.11,
-          "rr": "1.0 / 1.7 / 2.3",
+          "t3": 0.1,
+          "rr": "1.1 / 1.7 / 2.8",
           "size": "half",
           "time_stop": "+5 sessions"
         }
@@ -559,14 +373,14 @@
     {
       "symbol": "AVAX",
       "category": "l1s",
-      "price": 6.74,
-      "change_1d": 0.37,
-      "rsi": 28.9,
-      "volume_ratio": 0.8,
-      "atr_pct": 6.49,
-      "ema9": 6.8558,
-      "ema21": 7.5122,
-      "ema50": 8.3265,
+      "price": 6.84,
+      "change_1d": 0.95,
+      "rsi": 31.6,
+      "volume_ratio": 0.81,
+      "atr_pct": 6.41,
+      "ema9": 6.8584,
+      "ema21": 7.4541,
+      "ema50": 8.2696,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
@@ -576,20 +390,20 @@
       "trade_table": [
         {
           "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$7",
-          "entry": 6.76,
-          "stop": 5.93,
-          "t1": 7.59,
-          "t2": 8.14,
-          "t3": 8.96,
+          "side": "SHORT",
+          "trigger": "D close <$7",
+          "entry": 6.77,
+          "stop": 7.62,
+          "t1": 5.92,
+          "t2": 5.36,
+          "t3": 4.51,
           "rr": "1.0 / 1.7 / 2.7",
           "size": "half",
           "time_stop": "+5 sessions"
         }
       ],
       "vwap_levels": {
-        "session": 8.99
+        "session": 8.97
       },
       "coverage_tiers": {
         "position": "S",
@@ -602,7 +416,7 @@
         "Day": "B"
       },
       "volume_profile": {
-        "poc": 9.19,
+        "poc": 9.18,
         "vah": 9.99,
         "val": 6.56
       }
@@ -610,14 +424,14 @@
     {
       "symbol": "DOT",
       "category": "l1s",
-      "price": 1.0,
-      "change_1d": 2.05,
-      "rsi": 38.6,
-      "volume_ratio": 0.56,
-      "atr_pct": 6.28,
-      "ema9": 0.9854,
-      "ema21": 1.0524,
-      "ema50": 1.1553,
+      "price": 1.015,
+      "change_1d": 2.06,
+      "rsi": 41.2,
+      "volume_ratio": 0.58,
+      "atr_pct": 5.92,
+      "ema9": 0.9904,
+      "ema21": 1.0486,
+      "ema50": 1.1496,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -628,14 +442,14 @@
     {
       "symbol": "ALGO",
       "category": "l1s",
-      "price": 0.0922,
-      "change_1d": 2.82,
-      "rsi": 39.3,
-      "volume_ratio": 0.82,
-      "atr_pct": 7.15,
-      "ema9": 0.0925,
-      "ema21": 0.0995,
-      "ema50": 0.1052,
+      "price": 0.0948,
+      "change_1d": 2.52,
+      "rsi": 42.6,
+      "volume_ratio": 0.8,
+      "atr_pct": 6.31,
+      "ema9": 0.093,
+      "ema21": 0.0991,
+      "ema50": 0.1048,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -646,14 +460,14 @@
     {
       "symbol": "SUI",
       "category": "l1s",
-      "price": 0.794,
-      "change_1d": 3.41,
-      "rsi": 42.0,
-      "volume_ratio": 0.57,
-      "atr_pct": 6.26,
-      "ema9": 0.7713,
-      "ema21": 0.8264,
-      "ema50": 0.9019,
+      "price": 0.8052,
+      "change_1d": 0.67,
+      "rsi": 43.7,
+      "volume_ratio": 0.6,
+      "atr_pct": 6.12,
+      "ema9": 0.779,
+      "ema21": 0.825,
+      "ema50": 0.8983,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -664,14 +478,14 @@
     {
       "symbol": "APT",
       "category": "l1s",
-      "price": 0.6806,
-      "change_1d": 1.44,
-      "rsi": 32.7,
-      "volume_ratio": 0.59,
-      "atr_pct": 8.49,
+      "price": 0.6839,
+      "change_1d": 0.59,
+      "rsi": 33.4,
+      "volume_ratio": 0.6,
+      "atr_pct": 8.22,
       "ema9": 0.683,
-      "ema21": 0.7601,
-      "ema50": 0.8541,
+      "ema21": 0.7531,
+      "ema50": 0.8474,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
@@ -682,14 +496,14 @@
     {
       "symbol": "DOGE",
       "category": "meme",
-      "price": 0.0885,
-      "change_1d": 0.73,
-      "rsi": 41.2,
-      "volume_ratio": 0.67,
-      "atr_pct": 5.26,
-      "ema9": 0.0873,
-      "ema21": 0.0911,
-      "ema50": 0.096,
+      "price": 0.0892,
+      "change_1d": 0.46,
+      "rsi": 42.7,
+      "volume_ratio": 0.68,
+      "atr_pct": 5.15,
+      "ema9": 0.0877,
+      "ema21": 0.091,
+      "ema50": 0.0957,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
@@ -706,7 +520,7 @@
           "t1": 0.08,
           "t2": 0.07,
           "t3": 0.07,
-          "rr": "0.8 / 1.7 / 1.7",
+          "rr": "0.8 / 1.6 / 1.6",
           "size": "half",
           "time_stop": "+5 sessions"
         }
@@ -731,34 +545,16 @@
       }
     },
     {
-      "symbol": "TAO",
-      "category": "ai",
-      "price": 272.61,
-      "change_1d": 3.88,
-      "rsi": 60.6,
-      "volume_ratio": 1.77,
-      "atr_pct": 7.87,
-      "ema9": 233.3472,
-      "ema21": 236.9467,
-      "ema50": 252.7529,
-      "signals": [
-        "\ud83d\udd0a Above-Avg Volume (1.8x)"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH",
-      "validated": true
-    },
-    {
       "symbol": "POLYX",
       "category": "rwa",
       "price": 0.0406,
-      "change_1d": 1.24,
+      "change_1d": 0.26,
       "rsi": 38.9,
-      "volume_ratio": 0.51,
-      "atr_pct": 7.61,
-      "ema9": 0.04,
-      "ema21": 0.043,
-      "ema50": 0.0465,
+      "volume_ratio": 0.53,
+      "atr_pct": 7.07,
+      "ema9": 0.0401,
+      "ema21": 0.0428,
+      "ema50": 0.0463,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
