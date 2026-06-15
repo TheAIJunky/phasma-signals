@@ -1,7 +1,11 @@
+# === GH-PAGES BRANCH: built HTML only ===
+# Source code (belongs in main branch only)
 *.py
+!scripts/
 __pycache__/
 *.pyc
+
+# Data files with premium fields (never public)
 data/premium_latest.json
 data/stocks.json
 data/crypto.json
-scripts/
