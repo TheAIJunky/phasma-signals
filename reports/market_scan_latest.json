@@ -19,25 +19,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$15",
-          "entry": 14.68,
-          "stop": 14.59,
-          "t1": 14.77,
-          "t2": 14.83,
-          "t3": 14.92,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 14.29
       },
-      "scorecard_total": 5,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -73,25 +57,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$71",
-          "entry": 71.94,
-          "stop": 68.86,
-          "t1": 75.02,
-          "t2": 77.08,
-          "t3": 80.16,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 68.42
       },
-      "scorecard_total": 5,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -126,25 +94,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$80",
-          "entry": 80.24,
-          "stop": 76.02,
-          "t1": 84.46,
-          "t2": 87.27,
-          "t3": 91.49,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 74.37
       },
-      "scorecard_total": 4,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -179,25 +131,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$185",
-          "entry": 187.03,
-          "stop": 181.69,
-          "t1": 192.37,
-          "t2": 195.92,
-          "t3": 201.26,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 177.06
       },
-      "scorecard_total": 5,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -232,25 +168,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$91",
-          "entry": 92.16,
-          "stop": 88.32,
-          "t1": 96.0,
-          "t2": 98.56,
-          "t3": 102.4,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 87.88
       },
-      "scorecard_total": 4,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -285,25 +205,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$110",
-          "entry": 111.11,
-          "stop": 107.15,
-          "t1": 115.07,
-          "t2": 117.7,
-          "t3": 121.66,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 110.78
       },
-      "scorecard_total": 6,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -338,25 +242,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$15",
-          "entry": 14.84,
-          "stop": 13.28,
-          "t1": 16.4,
-          "t2": 17.45,
-          "t3": 19.01,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 13.36
       },
-      "scorecard_total": 3,
       "coverage_tiers": {
         "position": "S",
         "swing": "W",
@@ -391,25 +279,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$509",
-          "entry": 512.15,
-          "stop": 478.87,
-          "t1": 545.43,
-          "t2": 567.62,
-          "t3": 600.9,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 494.92
       },
-      "scorecard_total": 6,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -444,25 +316,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$1,568",
-          "entry": 1577.32,
-          "stop": 1397.57,
-          "t1": 1757.07,
-          "t2": 1876.91,
-          "t3": 2056.66,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 1442.35
       },
-      "scorecard_total": 4,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -497,25 +353,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$311",
-          "entry": 313.91,
-          "stop": 300.53,
-          "t1": 327.29,
-          "t2": 336.22,
-          "t3": 349.6,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 301.88
       },
-      "scorecard_total": 6,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -550,25 +390,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$303",
-          "entry": 304.86,
-          "stop": 275.39,
-          "t1": 334.33,
-          "t2": 353.98,
-          "t3": 383.45,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 263.79
       },
-      "scorecard_total": 5,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -603,25 +427,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$117",
-          "entry": 116.79,
-          "stop": 101.71,
-          "t1": 131.87,
-          "t2": 141.92,
-          "t3": 157.0,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 96.79
       },
-      "scorecard_total": 3,
       "coverage_tiers": {
         "position": "S",
         "swing": "W",
@@ -656,25 +464,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$179",
-          "entry": 179.45,
-          "stop": 170.37,
-          "t1": 188.53,
-          "t2": 194.58,
-          "t3": 203.66,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 172.9
       },
-      "scorecard_total": 6,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -709,25 +501,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$704",
-          "entry": 707.74,
-          "stop": 655.57,
-          "t1": 759.91,
-          "t2": 794.7,
-          "t3": 846.87,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 658.11
       },
-      "scorecard_total": 5,
       "coverage_tiers": {
         "position": "W",
         "swing": "W",
@@ -762,25 +538,9 @@
       ],
       "score": 6,
       "validated": true,
-      "trade_table": [
-        {
-          "plan": "Swing-A",
-          "side": "LONG",
-          "trigger": "D close >$150",
-          "entry": 150.65,
-          "stop": 136.63,
-          "t1": 164.67,
-          "t2": 174.02,
-          "t3": 188.04,
-          "rr": "1.0 / 1.7 / 2.7",
-          "size": "half",
-          "time_stop": "+5 sessions"
-        }
-      ],
       "vwap_levels": {
         "session": 138.32
       },
-      "scorecard_total": 3,
       "coverage_tiers": {
         "position": "S",
         "swing": "W",
