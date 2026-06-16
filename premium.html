@@ -3,507 +3,505 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phasma Signals — Premium</title>
-<meta name="description" content="Premium trading signals with precise entry, stop, targets, position sizing, and risk management. Delivered daily via encrypted Nostr DM.">
-<meta property="og:title" content="Phasma Signals — Premium Trading Research">
-<meta property="og:description" content="Daily stock & crypto signals with trade plans, scorecards, and risk management. Lightning payments.">
-<meta property="og:url" content="https://theaijunky.github.io/phasma-signals/premium.html">
-<meta property="og:image" content="https://theaijunky.github.io/phasma-signals/banner.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://theaijunky.github.io/phasma-signals/premium.html">
+<title>Phasma Signals - Premium Report 2026-06-16</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { background:#0a0a0f; color:#e0e0e0; font-family:'Segoe UI',system-ui,-apple-system,sans-serif; min-height:100vh; }
-
-/* Nav */
-.nav { display:flex; justify-content:center; gap:2rem; padding:1rem; background:#0a0a0f; border-bottom:1px solid #1a1a2e; position:sticky; top:0; z-index:10; }
-.nav a { color:#888; text-decoration:none; font-size:0.9rem; transition:color 0.2s; }
-.nav a:hover { color:#b388ff; }
-.nav a.active { color:#e040fb; font-weight:bold; }
-
-/* Hero */
-.hero { background:linear-gradient(135deg,#1a0030 0%,#2a0a3e 50%,#0a0a2e 100%); padding:4rem 1rem; text-align:center; position:relative; overflow:hidden; }
-.hero::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(ellipse,rgba(179,136,255,0.08) 0%,transparent 60%); animation:pulse 8s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{opacity:0.5;transform:scale(1)} 50%{opacity:1;transform:scale(1.1)} }
-.hero h1 { font-size:2.5rem; color:#e040fb; position:relative; }
-.hero .subtitle { color:#b388ff; font-size:1.2rem; margin-top:0.5rem; position:relative; }
-.hero .stats { display:flex; justify-content:center; gap:2rem; margin-top:2rem; position:relative; }
-.hero .stat { text-align:center; }
-.hero .stat .num { font-size:2rem; font-weight:bold; color:#e040fb; }
-.hero .stat .label { font-size:0.8rem; color:#888; }
-
-.container { max-width:800px; margin:0 auto; padding:1rem; }
-
-/* Problem / Hook */
-.hook { margin:3rem 0; padding:2rem; border-left:3px solid #e040fb; background:rgba(224,64,251,0.05); border-radius:0 12px 12px 0; }
-.hook h2 { color:#e040fb; margin-bottom:1rem; font-size:1.5rem; }
-.hook p { color:#ccc; line-height:1.8; margin-bottom:0.5rem; }
-.hook .pain { color:#f0883e; }
-
-/* Comparison Table */
-.compare { margin:3rem 0; }
-.compare h2 { color:#b388ff; text-align:center; margin-bottom:1.5rem; font-size:1.5rem; }
-.compare table { width:100%; border-collapse:collapse; background:#111; border-radius:12px; overflow:hidden; }
-.compare th { background:#1a1a2e; padding:1rem; text-align:left; color:#b388ff; }
-.compare th:last-child { color:#e040fb; }
-.compare td { padding:0.8rem 1rem; border-top:1px solid #1a1a2e; color:#888; }
-.compare td:first-child { color:#c9d1d9; font-weight:500; }
-.compare td:last-child { color:#3fb950; font-weight:500; }
-.compare td .check { color:#3fb950; }
-.compare td .cross { color:#f85149; }
-.compare tr:hover { background:rgba(179,136,255,0.03); }
-
-/* Features */
-.features { margin:3rem 0; }
-.features h2 { color:#b388ff; text-align:center; margin-bottom:1.5rem; font-size:1.5rem; }
-.feature-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
-.feature-card { background:#111; border:1px solid #222; border-radius:12px; padding:1.5rem; transition:border-color 0.3s,transform 0.3s; }
-.feature-card:hover { border-color:#b388ff; transform:translateY(-2px); }
-.feature-card .icon { font-size:2rem; margin-bottom:0.5rem; }
-.feature-card h3 { color:#e040fb; font-size:1rem; margin-bottom:0.3rem; }
-.feature-card p { color:#888; font-size:0.85rem; line-height:1.5; }
-
-/* ═══════════════ REPORT PREVIEW ═══════════════ */
-.preview { margin:3rem 0; }
-.preview h2 { color:#b388ff; text-align:center; margin-bottom:0.5rem; font-size:1.5rem; }
-.preview-sub { color:#888; text-align:center; font-size:0.9rem; margin-bottom:2rem; }
-.preview-macro { background:#111; border:1px solid #1a1a2e; border-radius:12px; padding:1.2rem; margin-bottom:1.5rem; }
-.preview-macro-title { color:#b388ff; font-size:1rem; font-weight:600; margin-bottom:0.8rem; }
-.preview-macro-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
-.preview-macro-item { text-align:center; }
-.preview-macro-label { display:block; color:#888; font-size:0.75rem; margin-bottom:0.2rem; text-transform:uppercase; letter-spacing:1px; }
-.preview-macro-val { font-size:1.2rem; font-weight:600; color:#e0e0e0; }
-
-.preview-section { margin-bottom:1.5rem; }
-.preview-section-title { color:#00cec9; font-size:1rem; font-weight:600; margin-bottom:0.8rem; padding-left:0.2rem; }
-
-.preview-card { background:#0d0d14; border:1px solid #1a1a2e; border-radius:12px; margin-bottom:0.8rem; overflow:hidden; transition:border-color 0.3s; }
-.preview-card:hover { border-color:#b388ff; }
-.preview-card.counter-trend { border-color:#ff980044; }
-.preview-card.counter-trend:hover { border-color:#ff9800; }
-
-.preview-card-header { display:flex; align-items:center; gap:0.8rem; padding:0.8rem 1rem; background:#111; border-bottom:1px solid #1a1a2e; flex-wrap:wrap; }
-.preview-ticker { font-size:1.3rem; font-weight:bold; color:#e040fb; }
-.preview-dir { font-size:0.8rem; font-weight:600; padding:0.15rem 0.6rem; border-radius:20px; }
-.preview-dir.long { background:#3fb95022; color:#3fb950; border:1px solid #3fb95044; }
-.preview-dir.short { background:#f8514922; color:#f85149; border:1px solid #f8514944; }
-.preview-price { font-size:1rem; color:#e0e0e0; font-weight:500; }
-.preview-score { font-size:0.8rem; font-weight:600; padding:0.15rem 0.5rem; border-radius:6px; margin-left:auto; }
-.preview-score.perfect { background:#3fb95022; color:#3fb950; }
-.preview-score.mid { background:#fdcb6e22; color:#fdcb6e; }
-.preview-score.low { background:#f8514922; color:#f85149; }
-.preview-trend { font-size:0.8rem; color:#888; }
-.preview-trend.warn { color:#f0883e; }
-
-.preview-card-body { padding:0.8rem 1rem; }
-
-.preview-table { width:100%; border-collapse:collapse; margin-bottom:0.8rem; font-size:0.85rem; }
-.preview-table th { color:#888; font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; padding:0.4rem 0.6rem; text-align:center; border-bottom:1px solid #1a1a2e; }
-.preview-table td { text-align:center; padding:0.5rem 0.6rem; color:#e0e0e0; }
-.preview-table .entry { color:#b388ff; font-weight:600; }
-.preview-table .stop { color:#f85149; }
-.preview-table .t1 { color:#3fb950; }
-.preview-table .t2 { color:#00cec9; }
-.preview-table .t3 { color:#888; }
-
-.preview-details { font-size:0.8rem; }
-.preview-detail-row { display:flex; gap:0.8rem; padding:0.25rem 0; border-bottom:1px solid #1a1a2e0a; }
-.preview-detail-row:last-child { border:none; }
-.preview-detail-label { color:#888; min-width:110px; flex-shrink:0; }
-
-.preview-ct-badge { background:#ff980015; border:1px solid #ff980044; border-radius:8px; padding:0.5rem 0.8rem; margin-bottom:0.8rem; font-size:0.8rem; color:#f0883e; line-height:1.5; }
-
-.preview-more { color:#888; font-size:0.85rem; text-align:center; padding:0.5rem; font-style:italic; }
-
-.preview-blur-note { background:#1a1a2e; border:1px solid #b388ff33; border-radius:12px; padding:1.2rem; margin-top:1.5rem; text-align:center; color:#aaa; font-size:0.9rem; line-height:1.6; }
-.preview-lock { font-size:1.5rem; display:block; margin-bottom:0.5rem; }
-
-/* Pricing */
-.pricing { margin:3rem 0; text-align:center; }
-.pricing h2 { color:#b388ff; margin-bottom:1.5rem; font-size:1.5rem; }
-.pricing-cards { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
-.price-card { background:#111; border:1px solid #222; border-radius:16px; padding:2rem; min-width:250px; flex:1; max-width:350px; transition:border-color 0.3s,transform 0.3s; }
-.price-card:hover { border-color:#b388ff; transform:translateY(-3px); }
-.price-card.featured { border-color:#e040fb; background:linear-gradient(135deg,#1a0030,#2a0a3e); position:relative; }
-.price-card.featured::before { content:'⭐ POPULAR'; position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:#e040fb; color:#0a0a0f; padding:0.2rem 1rem; border-radius:20px; font-size:0.75rem; font-weight:bold; }
-.price-card .tier { color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:2px; }
-.price-card .amount { font-size:2.5rem; font-weight:bold; color:#e040fb; margin:0.5rem 0; }
-.price-card .sats { color:#b388ff; font-size:0.9rem; }
-.price-card .period { color:#888; font-size:0.85rem; margin-bottom:1.5rem; }
-.price-card ul { list-style:none; text-align:left; margin:1rem 0; }
-.price-card li { color:#ccc; padding:0.4rem 0; font-size:0.9rem; border-bottom:1px solid #1a1a2e; }
-.price-card li:last-child { border:none; }
-.price-card li::before { content:'✓ '; color:#3fb950; font-weight:bold; }
-
-/* How it works */
-.howto { margin:3rem 0; }
-.howto h2 { color:#b388ff; text-align:center; margin-bottom:1.5rem; font-size:1.5rem; }
-.steps { max-width:500px; margin:0 auto; }
-.step { display:flex; gap:1rem; margin-bottom:1.5rem; align-items:flex-start; }
-.step .num { background:#e040fb; color:#0a0a0f; width:2rem; height:2rem; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0; }
-.step .text h3 { color:#c9d1d9; font-size:1rem; margin-bottom:0.2rem; }
-.step .text p { color:#888; font-size:0.85rem; line-height:1.5; }
-.step .text .code { background:#1a1a2e; color:#b388ff; padding:0.3rem 0.6rem; border-radius:6px; font-family:monospace; font-size:0.8rem; display:inline-block; margin-top:0.3rem; word-break:break-all; }
-
-/* CTA */
-.cta { background:linear-gradient(135deg,#2a0a3e,#1a0030); border:2px solid #e040fb; border-radius:16px; padding:3rem 2rem; text-align:center; margin:3rem 0; }
-.cta h2 { color:#e040fb; font-size:1.8rem; margin-bottom:0.5rem; }
-.cta p { color:#ccc; margin-bottom:1.5rem; }
-.cta .zap-btn { display:inline-block; background:#e040fb; color:#0a0a0f; padding:1rem 2rem; border-radius:12px; font-size:1.1rem; font-weight:bold; text-decoration:none; transition:transform 0.2s,box-shadow 0.2s; }
-.cta .zap-btn:hover { transform:scale(1.05); box-shadow:0 0 30px rgba(224,64,251,0.4); }
-.cta .alt { color:#888; font-size:0.85rem; margin-top:1rem; }
-
-/* Social proof / Testimonial placeholder */
-.social-proof { margin:3rem 0; text-align:center; }
-.social-proof h2 { color:#b388ff; margin-bottom:1rem; }
-.social-proof .proof-cards { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
-.proof-card { background:#111; border:1px solid #222; border-radius:12px; padding:1.5rem; max-width:350px; }
-.proof-card .quote { color:#ccc; font-style:italic; line-height:1.6; margin-bottom:0.5rem; }
-.proof-card .attr { color:#888; font-size:0.8rem; }
-
-/* FAQ */
-.faq { margin:3rem 0; }
-.faq h2 { color:#b388ff; text-align:center; margin-bottom:1.5rem; }
-.faq-item { background:#111; border:1px solid #222; border-radius:12px; margin-bottom:0.5rem; overflow:hidden; }
-.faq-q { padding:1rem; cursor:pointer; color:#c9d1d9; font-weight:500; display:flex; justify-content:space-between; align-items:center; }
-.faq-q:hover { color:#e040fb; }
-.faq-q .arrow { transition:transform 0.3s; color:#b388ff; }
-.faq-a { padding:0 1rem 1rem; color:#888; line-height:1.6; display:none; }
-.faq-item.open .faq-a { display:block; }
-.faq-item.open .arrow { transform:rotate(180deg); }
-
-.footer { text-align:center; padding:2rem; color:#444; font-size:0.8rem; border-top:1px solid #1a1a2e; }
-.footer a { color:#b388ff; text-decoration:none; }
-
-@media (max-width:600px) {
- .hero h1 { font-size:1.8rem; }
- .hero .stats { flex-direction:column; gap:1rem; }
- .pricing-cards { flex-direction:column; align-items:center; }
- .price-card { min-width:auto; width:100%; max-width:100%; }
- .feature-grid { grid-template-columns:1fr; }
- .preview-macro-grid { grid-template-columns:1fr 1fr; }
- .preview-card-header { flex-wrap:wrap; gap:0.3rem; }
- .preview-table th, .preview-table td { font-size:0.7rem; padding:0.3rem 0.4rem; }
-}
+:root { --bg: #0a0a0f; --card: #12121a; --accent: #6c5ce7; --green: #00b894; --red: #e74c3c; --text: #e0e0e0; --muted: #888; --border: #2a2a3a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; padding: 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+h1 { color: var(--accent); margin: 20px 0; font-size: 1.5em; }
+h2 { color: var(--green); margin: 15px 0 10px; font-size: 1.2em; }
+.header { background: var(--card); padding: 20px; border-radius: 10px; border: 1px solid var(--border); margin-bottom: 20px; }
+.btc { background: linear-gradient(135deg, #f7931a22, #f7931a11); border: 1px solid #f7931a44; padding: 12px; border-radius: 8px; margin: 10px 0; font-family: monospace; word-break: break-all; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0 20px; font-size: 0.85em; }
+th { background: var(--card); color: var(--accent); padding: 8px; text-align: left; border-bottom: 2px solid var(--border); white-space: nowrap; }
+td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+.stop { color: var(--red); }
+.target { color: var(--green); }
+.detail-row td { background: #0d0d15; color: var(--muted); font-size: 0.8em; padding: 8px; }
+.badge { display: inline-block; background: var(--accent); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; margin-left: 8px; }
+.timestamp { color: var(--muted); font-size: 0.85em; }
+.disclaimer { color: var(--muted); font-size: 0.75em; margin-top: 20px; border-top: 1px solid var(--border); padding-top: 10px; }
 </style>
 </head>
 <body>
-
-<div class="nav">
-<a href="/phasma-signals/">🔮 Signals</a>
-<a href="/phasma-signals/premium.html" class="active">💎 Premium</a>
-</div>
-
-<div class="hero">
-<h1>💎 Phasma Premium</h1>
-<p class="subtitle">Institutional-grade trade plans. Delivered daily to your Nostr DM.</p>
-<div class="stats">
-<div class="stat"><div class="num">21+</div><div class="label">Signals / Day</div></div>
-<div class="stat"><div class="num">6</div><div class="label">Scorecard Checks</div></div>
-<div class="stat"><div class="num">3</div><div class="label">Trade Plans / Ticker</div></div>
-<div class="stat"><div class="num">⚡</div><div class="label">Lightning Payments</div></div>
-</div>
-</div>
-
 <div class="container">
+<div class="header">
+    <h1> Phasma Signals - Premium Report <span class="badge">PAID</span></h1>
+    <p class="timestamp">Generated: 2026-06-16 13:39 UTC - Next scan: Pre-market next session</p>
+    <p>Full entry/exit analysis with risk management. Signals are valid until the next report replaces them. Not financial advice.</p>
+    <div class="btc">☕ Support: <strong>bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx</strong></div>
 
-<div class="hook">
-<h2>Trading without a plan is gambling.</h2>
-<p>You've seen the free signals. Entry, stop, target — enough to get interested.</p>
-<p>But <span class="pain">where exactly do you enter?</span> Which time stop applies? What's the position size for a $5K or $10K account? How does VWAP align with the trade? Is the signal fighting the trend?</p>
-<p>Premium gives you the <strong>full trade plan</strong> — every signal analyzed with multiple setups, precise stops, tiered targets, and risk sizing. No guessing.</p>
 </div>
 
-<div class="compare">
-<h2>Free vs Premium</h2>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:15px;margin:15px 0;">
+        <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;">
+        <div><strong style="font-size:1.3em;color:#fdcb6e;">Reflation</strong><br><small style="color:var(--muted);">R2 regime</small></div>
+        <div><strong>Confidence</strong><br><div style="background:#2a2a3a;border-radius:4px;height:8px;width:100px;display:inline-block;vertical-align:middle;"><div style="background:#fdcb6e;border-radius:4px;height:8px;width:60%;"></div></div> <small>6/10</small></div>
+        <div><strong>DXY</strong><br><span style="font-size:1.1em;">99.75</span></div>
+        <div><strong>10Y Yield</strong><br><span style="font-size:1.1em;">4.49%</span></div>
+        <div><strong>VIX</strong><br><span style="font-size:1.1em;">17.68</span></div>
+        </div>
+<div style="margin-top:10px;font-size:0.85em;"><strong>Regime tilts:</strong> <span style="color:#888">Scenario -> New regime (Probability)</span> | <span style="color:#888">**R2 → R1** -> Goldilocks (growth ↑, inflation ↓) (**35%** — rising (was 30%))</span> | <span style="color:#fdcb6e">**R2 stays** -> Reflation (**50%** — base case (was 55%))</span></div><div style="margin-top:10px;font-size:0.8em;"><strong>Sector ETFs:</strong> Sector <span style="color:#e74c3c>Δ vs May 6</span> | Tech <span style="color:#00b894>+11.6%</span> | Financials <span style="color:#00b894>+3.4%</span> | Energy <span style="color:#e74c3c>–3.2%</span> | Healthcare <span style="color:#00b894>+5.8%</span> | Utilities <span style="color:#e74c3c>–4.0%</span></div><div style="margin-top:10px;font-size:0.8em;color:var(--muted);"><strong>Next catalysts:</strong> Date Release | Jun 16-17 FOMC meeting + dot plot + SEP | Jun 17 FOMC press conference (2:30pm ET) | Jul 3 NFP (June)</div></div>
+
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin:15px 0;">
+        <h3 style="color:#f39c12;margin:0 0 10px;"> Signal Scoreboard</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:20px;font-size:0.85em;">
+        <div><strong>Stocks</strong><br>
+            Active: <strong>3</strong> / 3<br>
+            <span style="color:#00cec9;">New: 3</span> | <span style="color:#ff9800;">Carried: 0</span><br>
+            Conviction: <strong style="color:#00cec9;">100%</strong><br>
+            <span style="opacity:0.5;">Zombie: 0 (0%)</span>
+        </div>
+        <div><strong>Crypto</strong><br>
+            Active: <strong>15</strong> / 15<br>
+            <span style="opacity:0.5;">Zombie: 0</span>
+        </div>
+        <div><strong>Total signals</strong><br>
+            <strong style="font-size:1.3em;color:#00cec9;">18</strong> active
+        </div>
+        </div>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:15px;margin:15px 0;">
+<h3 style="color:#b388ff;margin:0 0 10px;">SPX Index Intelligence</h3>
+<div style="display:flex;flex-wrap:wrap;gap:15px;font-size:0.85em;">
+<div><strong>Call wall</strong><br><span style="color:#e74c3c;">SPX 565</span></div>
+<div><strong>Put wall</strong><br><span style="color:#00b894;">SPX 500</span></div>
+</div>
+<div style="margin-top:10px;font-size:0.85em;"><strong>VIX Structure:</strong> VIX9D 17.26 | VIX 16.17 | VIX3M 20.51 | VIX6M 22.59 | SKEW 142.6</div>
+<div style="margin-top:10px;font-size:0.85em;"><strong>Breadth:</strong> <span style="color:#00b894;">8% above 50d</span> | <span style="color:#e74c3c;">8% above 200d</span></div>
+<div style="margin-top:10px;font-size:0.85em;"><strong>Composite:</strong> <span style="color:#b388ff;">Trend-up grind</span></div>
+<div style="margin-top:10px;font-size:0.8em;"><strong>Catalyst watch:</strong> Jun 18: FOMC Meeting + Dot Plot (**High** — trajectory into 2026-27) | Jun 20: Quadruple Witching OPEX (Structural — gamma reset) | Jun 25: PCE Price Index (May) (**High** — Fed's preferred inflation gauge) | Jul 2: FOMC Minutes (Jun 17–18) (Medium — rate-cut clues)</div>
+</div>
+
+<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:15px;margin:15px 0;">
+<h3 style="color:#00cec9;margin:0 0 10px;">Screener - Regime-Aligned Candidates</h3>
+<div style="font-size:0.85em;color:var(--muted);margin-bottom:8px;">Regime: Reflation (R2) — cross-ref MACRO/current.md 2026-05-06 | Preset: r2 (Reflation — growth ↑, inflation ↑)</div>
+<table style="font-size:0.8em;"><tr><th>Ticker</th><th>Sector</th><th>Mkt Cap</th><th>Fwd P/E</th><th>4w%</th><th>Notes</th></tr>
+<tr><td><strong>#</strong></td><td>Ticker</td><td>Sector</td><td>Mkt Cap</td><td>Price</td><td style="color:var(--muted);font-size:0.85em;">Notes</td></tr>
+<tr><td><strong>MLI</strong></td><td>Industrials</td><td>$14.5B</td><td>17.85</td><td>+20.9%</td><td style="color:var(--muted);font-size:0.85em;">Copper/metal fitting play — R2 cyclicals</td></tr>
+<tr><td><strong>CF</strong></td><td>Basic Materials</td><td>$19.3B</td><td>14.24</td><td>+38.4%</td><td style="color:var(--muted);font-size:0.85em;">Nitrogen fertilizer — R2 commodity king</td></tr>
+<tr><td><strong>NEM</strong></td><td>Basic Materials</td><td>$116.4B</td><td>14.14</td><td>-6.9%</td><td style="color:var(--muted);font-size:0.85em;">Gold major — inflation hedge + R2</td></tr>
+<tr><td><strong>AEM</strong></td><td>Basic Materials</td><td>$89.3B</td><td>16.75</td><td>-1.8%</td><td style="color:var(--muted);font-size:0.85em;">Gold major — high-margin producer</td></tr>
+<tr><td><strong>B</strong></td><td>Basic Materials</td><td>$64.9B</td><td>13.13</td><td>-18.5%</td><td style="color:var(--muted);font-size:0.85em;">Barrick Gold — post-pullback entry</td></tr>
+<tr><td><strong>AU</strong></td><td>Basic Materials</td><td>$45.8B</td><td>17.62</td><td>-9.8%</td><td style="color:var(--muted);font-size:0.85em;">AngloGold — R2 gold play</td></tr>
+<tr><td><strong>AGI</strong></td><td>Basic Materials</td><td>$16.3B</td><td>15.46</td><td>-</td><td style="color:var(--muted);font-size:0.85em;">Alamos Gold — mid-tier producer</td></tr>
+<tr><td><strong>KGC</strong></td><td>Basic Materials</td><td>$34.5B</td><td>12.20</td><td>-13.5%</td><td style="color:var(--muted);font-size:0.85em;">Kinross — value gold</td></tr>
+<tr><td><strong>RRC</strong></td><td>Energy</td><td>$10.1B</td><td>11.37</td><td>+19.0%</td><td style="color:var(--muted);font-size:0.85em;">Range Resources — E&P natural gas</td></tr>
+</table>
+<div style="margin-top:8px;font-size:0.85em;"><strong>Conviction picks:</strong> <span style="color:#00b894;"><strong>CF</strong></span> - Fertilizer king, +38% 4w, Fwd P/E 14, D/E <1, ROI strong. Pu<br><span style="color:#00b894;"><strong>MLI</strong></span> - Copper fittings, +21% 4w, smallest-cap industrials play. Lev<br><span style="color:#00b894;"><strong>RRC</strong></span> - NatGas E&P, +19% 4w, Fwd P/E 11. Gas pricing power in reflat<br><span style="color:#00b894;"><strong>NEM</strong></span> - Gold major, +35% 13w. Inflation hedge with scale. Post-pullb</div>
+</div>
+
+
+<h2> New Signals - Fresh Setups</h2>
 <table>
-<tr><th>Feature</th><th>Free</th><th>Premium</th></tr>
-<tr><td>Daily signals</td><td><span class="check">✓</span> Top picks</td><td><span class="check">✓</span> Full universe</td></tr>
-<tr><td>Entry / Stop / Target</td><td><span class="check">✓</span> Basic</td><td><span class="check">✓</span> 3 trade plans per ticker</td></tr>
-<tr><td>Position sizing</td><td><span class="cross">✗</span></td><td><span class="check">✓</span> $5K & $10K sizing</td></tr>
-<tr><td>VWAP levels</td><td><span class="cross">✗</span></td><td><span class="check">✓</span> Session / Weekly / Monthly</td></tr>
-<tr><td>Volume profile (POC/VAH/VAL)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
-<tr><td>Scorecard (6-point check)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
-<tr><td>Max pain (options)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
-<tr><td>R:R ratios (multi-target)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span> 1x / 1.7x / 2.7x</td></tr>
-<tr><td>Counter-trend warnings</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
-<tr><td>Fractional sizing notes</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
-<tr><td>Delivery</td><td>Public site</td><td>Encrypted Nostr DM</td></tr>
-<tr><td>Macro regime context</td><td><span class="check">✓</span> Basic</td><td><span class="check">✓</span> Full DXY/10Y/VIX analysis</td></tr>
+<tr><th>Ticker</th><th>Dir</th><th>Price</th><th>Entry</th><th>Stop Loss</th><th>Target 1</th><th>Target 2</th><th>R:R 1</th><th>R:R 2</th><th>Position Size</th><th>RSI</th><th>Trend</th></tr>
+
+        <tr>
+        <td><strong>AMT</strong></td>
+        <td><strong style="color: #00b894;">LONG</strong></td>
+        <td>$185.76</td>
+        <td>$185.76</td>
+        <td class="stop">$177.51</td>
+        <td class="target">$194.01</td>
+        <td class="target">$199.51</td>
+        <td>1.0 / 1.7 / 2.7x</td>
+        <td>1.67x</td>
+        <td>12 shares<br><small>($10k, 1% risk)</small></td>
+        <td>53.4</td>
+        <td>STRONG UPTREND</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="12">
+        <strong>Setups:</strong> 📈 Golden Stack (EMA20>50>200, price above)<br>🎯 Pullback to EMA20 support<br>💪 Price above all EMAs<br>
+        <strong>EMA Status:</strong> Above EMA20 OK<br>Above EMA50 OK<br>Above EMA200 (bullish) OK<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 10.4% | <small style="color:#9e9e9e;">Uptrend continuation - RSI neutral</small><br><strong style="color:#b388ff;">! trade plan available</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $185.76 Stop $177.51 T1 $194.01 T2 $199.51 T3 $207.77 R:R 1.0 / 1.7 / 2.7<br><strong>VWAP:</strong> session: $186.57 | weekly: $187.65 | monthly: $184.96<br><strong>Vol Profile:</strong> POC: $177.17 | VAH: $184.51 | VAL: $170.00<br><strong>Scorecard:</strong> 6/6<br><strong>Max Pain:</strong> $185.00
+        </td>
+        </tr>
+        <tr>
+        <td><strong>FTV</strong></td>
+        <td><strong style="color: #00b894;">LONG</strong></td>
+        <td>$60.28</td>
+        <td>$60.28</td>
+        <td class="stop">$57.58</td>
+        <td class="target">$62.98</td>
+        <td class="target">$64.78</td>
+        <td>1.0 / 1.7 / 2.7x</td>
+        <td>1.67x</td>
+        <td>37 shares<br><small>($10k, 1% risk)</small></td>
+        <td>51.3</td>
+        <td>GENTLE UPTREND</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="12">
+        <strong>Setups:</strong> 📈 Golden Stack (EMA20>50>200, price above)<br>🎯 Pullback to EMA20 support<br>💪 Price above all EMAs<br>
+        <strong>EMA Status:</strong> Above EMA20 OK<br>Above EMA50 OK<br>Above EMA200 (bullish) OK<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 7.5% | <small style="color:#9e9e9e;">Uptrend continuation - RSI neutral</small><br><strong style="color:#b388ff;">! trade plan available</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $60.28 Stop $57.58 T1 $62.98 T2 $64.78 T3 $67.47 R:R 1.0 / 1.7 / 2.7<br><strong>VWAP:</strong> session: $60.62 | weekly: $60.40 | monthly: $59.92<br><strong>Vol Profile:</strong> POC: $59.68 | VAH: $60.23 | VAL: $56.15<br><strong>Scorecard:</strong> 5/6<br><strong>Max Pain:</strong> $40.00
+        </td>
+        </tr>
+        <tr>
+        <td><strong>XYZ</strong></td>
+        <td><strong style="color: #00b894;">LONG</strong></td>
+        <td>$74.35</td>
+        <td>$74.35</td>
+        <td class="stop">$68.40</td>
+        <td class="target">$80.61</td>
+        <td class="target">$84.79</td>
+        <td>1.0 / 1.7 / 2.7x</td>
+        <td>1.76x</td>
+        <td>16 shares<br><small>($10k, 1% risk)</small></td>
+        <td>58.0</td>
+        <td>STRONG UPTREND</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="12">
+        <strong>Setups:</strong> 📈 Golden Stack (EMA20>50>200, price above)<br>🔊 Volume Above Average (1.5x)<br>💪 Price above all EMAs<br>
+        <strong>EMA Status:</strong> Above EMA20 OK<br>Above EMA50 OK<br>Above EMA200 (bullish) OK<br>
+        <strong>RSI Note:</strong> Momentum supports long - good entry zone<br>
+        <strong>ATR:</strong> 14.7% | <small style="color:#9e9e9e;">Uptrend continuation - RSI neutral</small><br><strong style="color:#b388ff;">! trade plan available</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $74.35 Stop $68.09 T1 $80.61 T2 $84.79 T3 $91.05 R:R 1.0 / 1.7 / 2.7<br><strong>VWAP:</strong> session: $74.61 | weekly: $70.59 | monthly: $70.90<br><strong>Vol Profile:</strong> POC: $69.49 | VAH: $73.74 | VAL: $58.65<br><strong>Scorecard:</strong> 6/6<br><strong>Max Pain:</strong> $69.00
+        </td>
+        </tr>
 </table>
-</div>
 
-<div class="features">
-<h2>What's Inside Every Premium Report</h2>
-<div class="feature-grid">
-<div class="feature-card"><div class="icon">🎯</div><h3>3 Trade Plans</h3><p>Positional, Swing, and Day setups per ticker — each with entry, stop, and 3 targets.</p></div>
-<div class="feature-card"><div class="icon">📏</div><h3>Position Sizing</h3><p>Pre-calculated for $5K and $10K accounts. Fractional sizing noted for expensive assets.</p></div>
-<div class="feature-card"><div class="icon">📊</div><h3>VWAP + Volume Profile</h3><p>Session, weekly, monthly VWAP. POC, Value Area High/Low from volume analysis.</p></div>
-<div class="feature-card"><div class="icon">🏆</div><h3>6-Point Scorecard</h3><p>Trend, momentum, volume, breadth, setup, risk:reward — each scored pass/fail.</p></div>
-<div class="feature-card"><div class="icon">⚖️</div><h3>Risk:Reward Ratios</h3><p>Multi-target R:R (1x, 1.7x, 2.7x) so you know when to scale out.</p></div>
-<div class="feature-card"><div class="icon">🛡️</div><h3>Validation Layer</h3><p>Zero-price rejection, RSI sanity, direction checks, counter-trend flags, BTC freshness.</p></div>
-</div>
-</div>
+<h2 style="margin-top:20px; color:#ff9800;">📌 Carried Over - Active Positions</h2>
+<table>
+<tr><th>Ticker</th><th>Dir</th><th>Price</th><th>Entry</th><th>Stop Loss</th><th>Target 1</th><th>Target 2</th><th>R:R 1</th><th>R:R 2</th><th>Position Size</th><th>RSI</th><th>Trend</th></tr>
 
-<!-- ═══════════════ SAMPLE REPORT PREVIEW ═══════════════ -->
-<div class="preview">
-<h2>📖 Report Preview — See What You Get</h2>
-<p class="preview-sub">This is a <em>real</em> excerpt from the latest Premium report. Names are unblurred — subscribers see every ticker.</p>
-<div class="preview-macro">
-<div class="preview-macro-title">🌍 Macro Regime Dashboard</div>
-<div class="preview-macro-grid">
-<div class="preview-macro-item">
-<span class="preview-macro-label">Regime</span>
-<span class="preview-macro-val" style="color:#fdcb6e;">Reflation</span>
-</div>
-<div class="preview-macro-item">
-<span class="preview-macro-label">DXY</span>
-<span class="preview-macro-val">99.8</span>
-</div>
-<div class="preview-macro-item">
-<span class="preview-macro-label">10Y Yield</span>
-<span class="preview-macro-val">4.49%</span>
-</div>
-<div class="preview-macro-item">
-<span class="preview-macro-label">VIX</span>
-<span class="preview-macro-val" style="color:#00b894;">17.7</span>
-</div>
-</div>
-</div>
-<div class="preview-section">
-<div class="preview-section-title">📊 Stock Swing Setups — Sample (3 of 3)</div>
-<div class="preview-card">
-<div class="preview-card-header">
-<span class="preview-ticker">AMT</span>
-<span class="preview-dir long">LONG</span>
-<span class="preview-price">$185.76</span>
-<span class="preview-score perfect">6/6</span>
-<span class="preview-trend ">STRONG UPTREND</span>
-</div>
-<div class="preview-card-body">
-<table class="preview-table">
-<tr><th>Entry</th><th>Stop</th><th>T1</th><th>T2</th><th>T3</th><th>R:R</th></tr>
-<tr><td class="entry">$185.76</td><td class="stop">$177.51</td><td class="t1">$194.01</td><td class="t2">$199.51</td><td class="t3">$207.77</td><td>1.0 / 1.7 / 2.7</td></tr>
 </table>
-<div class="preview-details">
-<div class="preview-detail-row"><span class="preview-detail-label">Position Size</span><span>12 shares ($10K, 1% risk)</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">VWAP</span><span>Session: $185.82 | Weekly: $188.21 | Monthly: $184.88</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Vol Profile</span><span>POC: $177.17 | VAH: $184.51 | VAL: $170.00</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">EMA Status</span><span>Above EMA20 ✓ · Above EMA50 ✓ · Above EMA200 (bullish) ✓</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Trigger</span><span>D close >$185 | Time stop: +5 sessions</span></div>
-</div>
-</div>
-</div>
-<div class="preview-card">
-<div class="preview-card-header">
-<span class="preview-ticker">FTV</span>
-<span class="preview-dir long">LONG</span>
-<span class="preview-price">$60.28</span>
-<span class="preview-score perfect">5/6</span>
-<span class="preview-trend ">GENTLE UPTREND</span>
-</div>
-<div class="preview-card-body">
-<table class="preview-table">
-<tr><th>Entry</th><th>Stop</th><th>T1</th><th>T2</th><th>T3</th><th>R:R</th></tr>
-<tr><td class="entry">$60.28</td><td class="stop">$57.58</td><td class="t1">$62.98</td><td class="t2">$64.78</td><td class="t3">$67.47</td><td>1.0 / 1.7 / 2.7</td></tr>
+
+<h2>₿ New Crypto Signals - Fresh Setups</h2>
+<table>
+<tr><th>Symbol</th><th>Action</th><th>Price</th><th>Entry</th><th>Stop Loss</th><th>Target 1</th><th>Target 2</th><th>R:R 1</th><th>R:R 2</th><th>Position Size</th><th>RSI</th></tr>
+
+        <tr>
+        <td><strong>ATOM</strong><br><small>l1s</small></td>
+        <td>🟢 BUY<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$1.9510</td>
+        <td>$1.9510</td>
+        <td class="stop">$1.8369</td>
+        <td class="target">$2.1792</td>
+        <td class="target">$2.3504</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>438 units<br><small>($5k, 1% risk)</small></td>
+        <td>52.4</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> ⚡ EMA9/21 Golden Cross<br>
+<strong>Volume:</strong> Low volume - caution (0.9x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 5.8% | <small style="color:#9e9e9e;">Neutral RSI - following action (🟢 BUY)</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>BTC</strong><br><small>majors</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$65,914.5938</td>
+        <td>$65,914.5938</td>
+        <td class="stop">$63,304.3759</td>
+        <td class="target">$68,524.8117</td>
+        <td class="target">$70,351.9642</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td><span style='color:#ff9800;'> Fractional</span><br><small style='color:#9e9e9e;'>~=0.0192 units</small><br><small>($5k, 1% risk)</small></td>
+        <td>42.4</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.7x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 4.0% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $65,914.59 Stop $63,304.38 T1 $68,524.81 T2 $70351.9642 T3 $72962.1821 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $72,690.57<br><strong>Vol Profile:</strong> POC: $73,889.41 | VAH: $78,652.60 | VAL: $62,064.36
+        </td>
+        </tr>
+        <tr>
+        <td><strong>ETH</strong><br><small>majors</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$1,762.5000</td>
+        <td>$1,762.5000</td>
+        <td class="stop">$1,669.0875</td>
+        <td class="target">$1,855.9125</td>
+        <td class="target">$1,921.3012</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td><span style='color:#ff9800;'> Fractional</span><br><small style='color:#9e9e9e;'>~=0.5353 units</small><br><small>($5k, 1% risk)</small></td>
+        <td>42.1</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.6x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 5.3% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $1,762.50 Stop $1,669.09 T1 $1,855.91 T2 $1921.3012 T3 $2014.7137 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $2,136.38<br><strong>Vol Profile:</strong> POC: $2,149.32 | VAH: $2,341.54 | VAL: $1,581.83
+        </td>
+        </tr>
+        <tr>
+        <td><strong>MKR</strong><br><small>defi</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$1,465.5664</td>
+        <td>$1,465.5664</td>
+        <td class="stop">$1,348.3211</td>
+        <td class="target">$1,582.8117</td>
+        <td class="target">$1,664.8834</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td><span style='color:#ff9800;'> Fractional</span><br><small style='color:#9e9e9e;'>~=0.4265 units</small><br><small>($5k, 1% risk)</small></td>
+        <td>44.0</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (1.0x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 11.5% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $1,465.57 Stop $1,348.32 T1 $1,582.81 T2 $1664.8834 T3 $1782.1287 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $1,711.52<br><strong>Vol Profile:</strong> POC: $1,749.36 | VAH: $1,901.38 | VAL: $1,339.97
+        </td>
+        </tr>
+        <tr>
+        <td><strong>LDO</strong><br><small>defi</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.2710</td>
+        <td>$0.2710</td>
+        <td class="stop">$0.2537</td>
+        <td class="target">$0.3056</td>
+        <td class="target">$0.3316</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>2890 units<br><small>($5k, 1% risk)</small></td>
+        <td>37.6</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.7x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 6.4% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>ARB</strong><br><small>defi</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.0857</td>
+        <td>$0.0857</td>
+        <td class="stop">$0.0798</td>
+        <td class="target">$0.0975</td>
+        <td class="target">$0.1064</td>
+        <td>2.0x</td>
+        <td>3.51x</td>
+        <td>8474 units<br><small>($5k, 1% risk)</small></td>
+        <td>36.1</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.6x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 6.9% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>ADA</strong><br><small>l1s</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.1765</td>
+        <td>$0.1765</td>
+        <td class="stop">$0.1633</td>
+        <td class="target">$0.1897</td>
+        <td class="target">$0.1989</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td>3787 units<br><small>($5k, 1% risk)</small></td>
+        <td>36.5</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.9x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 7.5% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $0.18 Stop $0.16 T1 $0.19 T2 $0.1989 T3 $0.2121 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $0.24<br><strong>Vol Profile:</strong> POC: $0.25 | VAH: $0.28 | VAL: $0.16
+        </td>
+        </tr>
+        <tr>
+        <td><strong>AVAX</strong><br><small>l1s</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$6.7900</td>
+        <td>$6.7900</td>
+        <td class="stop">$6.3514</td>
+        <td class="target">$7.2286</td>
+        <td class="target">$7.5356</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td>113 units<br><small>($5k, 1% risk)</small></td>
+        <td>30.3</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Oversold (<35), low volume<br>
+<strong>Volume:</strong> Low volume - caution (0.8x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 6.5% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $6.79 Stop $6.35 T1 $7.23 T2 $7.5356 T3 $7.9742 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $8.96<br><strong>Vol Profile:</strong> POC: $9.18 | VAH: $9.99 | VAL: $6.56
+        </td>
+        </tr>
+        <tr>
+        <td><strong>DOT</strong><br><small>l1s</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$1.0050</td>
+        <td>$1.0050</td>
+        <td class="stop">$0.9449</td>
+        <td class="target">$1.1252</td>
+        <td class="target">$1.2153</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>831 units<br><small>($5k, 1% risk)</small></td>
+        <td>39.6</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.6x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 6.0% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>ALGO</strong><br><small>l1s</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.0949</td>
+        <td>$0.0949</td>
+        <td class="stop">$0.0889</td>
+        <td class="target">$0.1069</td>
+        <td class="target">$0.1159</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>8333 units<br><small>($5k, 1% risk)</small></td>
+        <td>42.7</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.8x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 6.3% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>SUI</strong><br><small>l1s</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.7844</td>
+        <td>$0.7844</td>
+        <td class="stop">$0.7351</td>
+        <td class="target">$0.8830</td>
+        <td class="target">$0.9569</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>1014 units<br><small>($5k, 1% risk)</small></td>
+        <td>41.1</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.6x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 6.3% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>APT</strong><br><small>l1s</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.6718</td>
+        <td>$0.6718</td>
+        <td class="stop">$0.6156</td>
+        <td class="target">$0.7842</td>
+        <td class="target">$0.8685</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>889 units<br><small>($5k, 1% risk)</small></td>
+        <td>31.8</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Oversold (<35), low volume<br>
+<strong>Volume:</strong> Low volume - caution (0.6x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 8.4% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>DOGE</strong><br><small>meme</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$0.0870</td>
+        <td>$0.0870</td>
+        <td class="stop">$0.0824</td>
+        <td class="target">$0.0916</td>
+        <td class="target">$0.0948</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td>10869 units<br><small>($5k, 1% risk)</small></td>
+        <td>39.0</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.7x)<br>
+        <strong>RSI Note:</strong> Approaching oversold - potential long entry  LOW VOLUME<br>
+        <strong>ATR:</strong> 5.3% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $0.09 Stop $0.08 T1 $0.09 T2 $0.0948 T3 $0.0994 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $0.10<br><strong>Vol Profile:</strong> POC: $0.10 | VAH: $0.11 | VAL: $0.08
+        </td>
+        </tr>
+        <tr>
+        <td><strong>TAO</strong><br><small>ai</small></td>
+        <td>🔵 WATCH<br><strong style="color: #e74c3c;">SHORT</strong></td>
+        <td>$261.0800</td>
+        <td>$261.0800</td>
+        <td class="stop">$282.9063</td>
+        <td class="target">$217.4274</td>
+        <td class="target">$184.6879</td>
+        <td>2.0x</td>
+        <td>3.5x</td>
+        <td>2 units<br><small>($5k, 1% risk)</small></td>
+        <td>56.5</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔊 Above-Avg Volume (1.7x)<br>
+<strong>Volume:</strong> Strong volume confirmation (1.7x)<br>
+        <strong>RSI Note:</strong> Momentum fading - short entry zone<br>
+        <strong>ATR:</strong> 8.4% | <small style="color:#9e9e9e;">RSI leaning high - short bias</small>
+        </td>
+        </tr>
+        <tr>
+        <td><strong>LINK</strong><br><small>rwa</small></td>
+        <td>🔵 WATCH<br><strong style="color: #00b894;">LONG</strong></td>
+        <td>$8.2050</td>
+        <td>$8.2050</td>
+        <td class="stop">$7.7677</td>
+        <td class="target">$8.6423</td>
+        <td class="target">$8.9484</td>
+        <td>1.0x</td>
+        <td>1.7x</td>
+        <td>114 units<br><small>($5k, 1% risk)</small></td>
+        <td>44.9</td>
+        </tr>
+        <tr class="detail-row">
+        <td colspan="11">
+<strong>Signals:</strong> 🔵 RSI Low Zone (35-45)<br>
+<strong>Volume:</strong> Low volume - caution (0.6x)<br>
+        <strong>RSI Note:</strong> Neutral RSI - wait for bounce confirmation<br>
+        <strong>ATR:</strong> 5.3% | <small style="color:#9e9e9e;">RSI leaning low - long bias</small><br><strong style="color:#b388ff;">! trade plan available</strong> <strong style="color:#ff9800;">[D] RECALIBRATED from live price</strong><br><strong>Plan 1 (Swing-A):</strong> LONG Entry $8.21 Stop $7.77 T1 $8.64 T2 $8.9484 T3 $9.3857 R:R 1.0 <em style="color:#ff9800;">(recalibrated)</em><br><strong>VWAP:</strong> session: $9.24<br><strong>Vol Profile:</strong> POC: $9.13 | VAH: $10.31 | VAL: $7.38
+        </td>
+        </tr>
 </table>
-<div class="preview-details">
-<div class="preview-detail-row"><span class="preview-detail-label">Position Size</span><span>37 shares ($10K, 1% risk)</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">VWAP</span><span>Session: $60.37 | Weekly: $60.73 | Monthly: $59.89</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Vol Profile</span><span>POC: $59.68 | VAH: $60.23 | VAL: $56.15</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">EMA Status</span><span>Above EMA20 ✓ · Above EMA50 ✓ · Above EMA200 (bullish) ✓</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Trigger</span><span>D close >$60 | Time stop: +5 sessions</span></div>
-</div>
-</div>
-</div>
-<div class="preview-card">
-<div class="preview-card-header">
-<span class="preview-ticker">XYZ</span>
-<span class="preview-dir long">LONG</span>
-<span class="preview-price">$74.35</span>
-<span class="preview-score perfect">6/6</span>
-<span class="preview-trend ">STRONG UPTREND</span>
-</div>
-<div class="preview-card-body">
-<table class="preview-table">
-<tr><th>Entry</th><th>Stop</th><th>T1</th><th>T2</th><th>T3</th><th>R:R</th></tr>
-<tr><td class="entry">$74.35</td><td class="stop">$68.40</td><td class="t1">$80.61</td><td class="t2">$84.79</td><td class="t3">$91.05</td><td>1.0 / 1.7 / 2.7</td></tr>
+
+<h2 style="margin-top:20px; color:#ff9800;">📌 Carried Over Crypto - Active Positions</h2>
+<table>
+<tr><th>Symbol</th><th>Action</th><th>Price</th><th>Entry</th><th>Stop Loss</th><th>Target 1</th><th>Target 2</th><th>R:R 1</th><th>R:R 2</th><th>Position Size</th><th>RSI</th></tr>
+
 </table>
-<div class="preview-details">
-<div class="preview-detail-row"><span class="preview-detail-label">Position Size</span><span>16 shares ($10K, 1% risk)</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">VWAP</span><span>Session: $73.68 | Weekly: $69.30 | Monthly: $70.72</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Vol Profile</span><span>POC: $69.49 | VAH: $73.74 | VAL: $58.65</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">EMA Status</span><span>Above EMA20 ✓ · Above EMA50 ✓ · Above EMA200 (bullish) ✓</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Trigger</span><span>D close >$71 | Time stop: +5 sessions</span></div>
-</div>
-</div>
-</div>
-</div>
-<div class="preview-section">
-<div class="preview-section-title">₿ Crypto Swing Setups — Sample</div>
-<div class="preview-card">
-<div class="preview-card-header">
-<span class="preview-ticker">NEAR</span>
-<span class="preview-dir long">BUY LONG</span>
-<span class="preview-price">$2.4110</span>
-<span class="preview-score perfect">5/6</span>
-<span class="preview-trend ">Bullish action overrides RSI 55-65 (normal momentum zone)</span>
-</div>
-<div class="preview-card-body">
-<table class="preview-table">
-<tr><th>Entry</th><th>Stop</th><th>T1</th><th>T2</th><th>T3</th><th>R:R</th></tr>
-<tr><td class="entry">$2.3700</td><td class="stop">$2.0856</td><td class="t1">$2.9200</td><td class="t2">$3.2800</td><td class="t3">$3.8300</td><td>1.0 / 1.7 / 2.7</td></tr>
-</table>
-<div class="preview-details">
-<div class="preview-detail-row"><span class="preview-detail-label">Position Size</span><span></span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">RSI</span><span style="color:#e0e0e0;">58.2 — 58</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">VWAP</span><span>Session: $1.9700</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">Vol Profile</span><span>POC: $1.4100 | VAH: $2.9200 | VAL: $1.2000</span></div>
-<div class="preview-detail-row"><span class="preview-detail-label">ATR</span><span>11.0% — Volatility squeeze, breakout imminent</span></div>
-</div>
-</div>
-</div>
-</div>
-<div class="preview-blur-note">
-<span class="preview-lock">🔒</span> The full report includes <strong>all</strong> tickers (unlocked), SPX gamma analysis, VIX structure, breadth indicators, sector ETF rankings, macro catalyst calendar, and the screener's regime-aligned conviction picks. This preview shows 3 of 3 stocks and 1 crypto.
-</div>
 
-</div>
-
-<div class="pricing">
-<h2>Simple Pricing. Lightning Fast.</h2>
-<div class="pricing-cards">
-<div class="price-card">
-<div class="tier">Single Report</div>
-<div class="amount">$15</div>
-<div class="sats">15,000 sats</div>
-<div class="period">One-time · Per report</div>
-<ul>
-<li>Full daily premium report</li>
-<li>All stock + crypto setups</li>
-<li>Trade plans + sizing</li>
-<li>Scorecards + VWAP</li>
-<li>Delivered via Nostr DM</li>
-</ul>
-</div>
-<div class="price-card featured">
-<div class="tier">Monthly</div>
-<div class="amount">$50</div>
-<div class="sats">50,000 sats/mo</div>
-<div class="period">Best value · ~20 reports</div>
-<ul>
-<li>Daily premium reports</li>
-<li>All trade plans + sizing</li>
-<li>Macro regime analysis</li>
-<li>Priority Nostr DM delivery</li>
-<li>Cancel anytime</li>
-</ul>
-</div>
-<div class="price-card">
-<div class="tier">Quarterly</div>
-<div class="amount">$120</div>
-<div class="sats">120,000 sats</div>
-<div class="period">3 months · Save 20%</div>
-<ul>
-<li>Everything in Monthly</li>
-<li>Best per-report price</li>
-<li>~60 reports for $2 each</li>
-<li>Early access to new features</li>
-<li>Cancel anytime</li>
-</ul>
+<div class="disclaimer">
+ <strong>Disclaimer:</strong> This is automated technical analysis, not financial advice. All trades involve risk of loss. Past performance does not guarantee future results. Always do your own research and never risk more than you can afford to lose. Position sizing assumes 1% portfolio risk per trade.
 </div>
 </div>
-</div>
-
-<div class="howto">
-<h2>How to Subscribe</h2>
-<div class="steps">
-<div class="step">
-<div class="num">1</div>
-<div class="text">
-<h3>Zap ⚡ to subscribe</h3>
-<p>Zap 50,000 sats for monthly or 120,000 sats for quarterly. Zaps are auto-detected — no extra steps needed.</p>
-<span class="code">⚡ antsyopen378@walletofsatoshi.com</span>
-</div>
-</div>
-<div class="step">
-<div class="num">2</div>
-<div class="text">
-<h3>Manual Lightning payment</h3>
-<p>No wallet with zap support? Send the exact amount (15k / 50k / 120k sats) to our Lightning address, then DM us the txid on Nostr.</p>
-<span class="code">📬 npub14a68c64d2hq6t5589pdcpwe9gqcxnefxw8v9waq3hm8n5gq5wnqsuu6ee5</span>
-</div>
-</div>
-<div class="step">
-<div class="num">3</div>
-<div class="text">
-<h3>Receive daily premium reports</h3>
-<p>Every market day, the full analysis lands in your Nostr DM — encrypted, private, instant.</p>
-</div>
-</div>
-</div>
-</div>
-
-<div class="cta">
-<h2>🔮 Ready to Trade with a Plan?</h2>
-<p>Stop guessing. Start getting institutional-grade analysis delivered to your Nostr DM every market day.</p>
-<a href="lightning:antsyopen378@walletofsatoshi.com" class="zap-btn">⚡ Subscribe Now — 50,000 sats/mo</a>
-<p class="alt">No zap support? Send exact amount (15k / 50k / 120k sats) to <strong style="color:#b388ff;">antsyopen378@walletofsatoshi.com</strong> then DM your txid on Nostr.</p>
-</div>
-
-<div class="social-proof">
-<h2>Why Traders Trust Phasma</h2>
-<div class="proof-cards">
-<div class="proof-card">
-<div class="quote">"Finally, signals that come with actual trade plans — not just 'buy this.' The position sizing alone is worth the sats."</div>
-<div class="attr">— Nostr user, early subscriber</div>
-</div>
-<div class="proof-card">
-<div class="quote">"The scorecard system filters out the noise. I only act on 5+/6 setups and it's been solid."</div>
-<div class="attr">— Crypto trader, monthly subscriber</div>
-</div>
-<div class="proof-card">
-<div class="quote">"Lightning payments + Nostr DM = no KYC, no email, no tracking. This is how signal services should work."</div>
-<div class="attr">— Privacy-focused trader</div>
-</div>
-</div>
-</div>
-
-<div class="faq">
-<h2>FAQ</h2>
-<div class="faq-item" onclick="this.classList.toggle('open')">
-<div class="faq-q">How are reports delivered? <span class="arrow">▼</span></div>
-<div class="faq-a">Via encrypted Nostr DM (NIP-04). You need a Nostr client like Damus (iOS), Amethyst (Android), or Primal (web). Your reports are private and encrypted — we can't even read them after sending.</div>
-</div>
-<div class="faq-item" onclick="this.classList.toggle('open')">
-<div class="faq-q">What time are reports sent? <span class="arrow">▼</span></div>
-<div class="faq-a">Stock reports: ~09:45 UTC (before US market open). Crypto reports: ~07:15 UTC daily. Macro regime updates are included in every report.</div>
-</div>
-<div class="faq-item" onclick="this.classList.toggle('open')">
-<div class="faq-q">Do you offer refunds? <span class="arrow">▼</span></div>
-<div class="faq-a">Since payments are in sats and non-reversible, we don't offer refunds. But you can cancel anytime — no auto-renewal. Your access runs until the period ends.</div>
-</div>
-<div class="faq-item" onclick="this.classList.toggle('open')">
-<div class="faq-q">Is this financial advice? <span class="arrow">▼</span></div>
-<div class="faq-a"><strong>No.</strong> Phasma Signals is independent trading research. All signals are for informational purposes. Always do your own research and manage your own risk. Past performance doesn't guarantee future results.</div>
-</div>
-<div class="faq-item" onclick="this.classList.toggle('open')">
-<div class="faq-q">Which markets are covered? <span class="arrow">▼</span></div>
-<div class="faq-a">Stocks: S&P 500 universe scanned daily for high-conviction setups. Crypto: Top 100 by market cap with momentum + volume filters. We focus on quality over quantity — typically 8-15 stock setups and 5-8 crypto picks per day.</div>
-</div>
-<div class="faq-item" onclick="this.classList.toggle('open')">
-<div class="faq-q">Why Lightning + Nostr? <span class="arrow">▼</span></div>
-<div class="faq-a">No KYC, no email, no credit card, no tracking. Lightning payments are instant and final. Nostr DMs are encrypted and decentralized. Your trading activity stays private.</div>
-</div>
-</div>
-
-</div>
-
-<div class="footer">
-Phasma Signals — Independent trading research<br>
-⚡ antsyopen378@walletofsatoshi.com · ☕ bc1qpls9y6lxmjwdtre5frn4vsvlrlvys6m8t20ygx<br>
-⚠️ Not financial advice. Do your own research.
-</div>
-
 </body>
 </html>

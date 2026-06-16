@@ -1,0 +1,1384 @@
+{
+  "timestamp": "2026-06-16 13:39 UTC",
+  "macro": {
+    "regime_quadrant": "Reflation",
+    "regime_code": "R2",
+    "regime_confidence": 6,
+    "regime_pillars": [],
+    "dxy": 99.75,
+    "ten_year": 4.49,
+    "vix": 17.68,
+    "sector_etfs": [
+      {
+        "sector": "Sector",
+        "etf": "ETF",
+        "price": "Price",
+        "change": "\u0394 vs May 6",
+        "regime_fit": "Regime fit"
+      },
+      {
+        "sector": "Tech",
+        "etf": "XLK",
+        "price": "$184.80",
+        "change": "+11.6%",
+        "regime_fit": "R1/R2 \u2014 leading"
+      },
+      {
+        "sector": "Financials",
+        "etf": "XLF",
+        "price": "$53.34",
+        "change": "+3.4%",
+        "regime_fit": "R2 \u2014 rates up helps"
+      },
+      {
+        "sector": "Energy",
+        "etf": "XLE",
+        "price": "$57.55",
+        "change": "\u20133.2%",
+        "regime_fit": "R2/R3 \u2014 oil crash hurting"
+      },
+      {
+        "sector": "Healthcare",
+        "etf": "XLV",
+        "price": "$153.81",
+        "change": "+5.8%",
+        "regime_fit": "Defensive \u2014 R4 play"
+      },
+      {
+        "sector": "Utilities",
+        "etf": "XLU",
+        "price": "$44.53",
+        "change": "\u20134.0%",
+        "regime_fit": "Defensive \u2014 rates up hurts"
+      },
+      {
+        "sector": "High Yield",
+        "etf": "HYG",
+        "price": "$79.94",
+        "change": "+0.02%",
+        "regime_fit": "Credit calm"
+      },
+      {
+        "sector": "IG Corp",
+        "etf": "LQD",
+        "price": "$109.01",
+        "change": "+0.3%",
+        "regime_fit": "Steady"
+      },
+      {
+        "sector": "Long Treasury",
+        "etf": "TLT",
+        "price": "$85.77",
+        "change": "+0.4%",
+        "regime_fit": "Modest bid"
+      }
+    ],
+    "regime_tilts": [
+      {
+        "scenario": "Scenario",
+        "trigger": "Trigger",
+        "new_regime": "New regime",
+        "probability": "Probability"
+      },
+      {
+        "scenario": "**R2 \u2192 R1**",
+        "trigger": "Oil stays <$85 + June CPI <3.5% + SPX holds >7,200",
+        "new_regime": "Goldilocks (growth \u2191, inflation \u2193)",
+        "probability": "**35%** \u2014 rising (was 30%)"
+      },
+      {
+        "scenario": "**R2 stays**",
+        "trigger": "Oil $82-90, CPI sticky 3.5-3.8%",
+        "new_regime": "Reflation",
+        "probability": "**50%** \u2014 base case (was 55%)"
+      },
+      {
+        "scenario": "**R2 \u2192 R3**",
+        "trigger": "Oil rebounds >$95 + GDPNow drops <2%",
+        "new_regime": "Stagflation",
+        "probability": "**10%**"
+      },
+      {
+        "scenario": "**R2 \u2192 R4**",
+        "trigger": "NFP negative + credit spreads blow out",
+        "new_regime": "Deflation / Risk-Off",
+        "probability": "**5%**"
+      }
+    ],
+    "macro_calendar": [
+      {
+        "date": "Date",
+        "release": "Release",
+        "expected": "Expected",
+        "impact": "Market impact"
+      },
+      {
+        "date": "Jun 16-17",
+        "release": "FOMC meeting + dot plot + SEP",
+        "expected": "Hawkish hold likely",
+        "impact": "**High** \u2014 rate path for H2"
+      },
+      {
+        "date": "Jun 17",
+        "release": "FOMC press conference (2:30pm ET)",
+        "expected": "\u2014",
+        "impact": "**High** \u2014 forward guidance"
+      },
+      {
+        "date": "Jul 3",
+        "release": "NFP (June)",
+        "expected": "\u2014",
+        "impact": "**High** \u2014 labor market health"
+      },
+      {
+        "date": "Jul 14",
+        "release": "CPI (June)",
+        "expected": "est. ~3.3-3.6% headline",
+        "impact": "**High** \u2014 regime-defining"
+      },
+      {
+        "date": "Jul 15",
+        "release": "PPI (June)",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 feeds PCE"
+      },
+      {
+        "date": "Jul 28-29",
+        "release": "FOMC meeting",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 no SEP"
+      },
+      {
+        "date": "Jul 30",
+        "release": "GDPNow Q2 advance",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 growth confirmation"
+      },
+      {
+        "date": "Aug 8",
+        "release": "CPI (July)",
+        "expected": "\u2014",
+        "impact": "**High** \u2014 next regime check"
+      }
+    ],
+    "actionable_takeaways": [
+      ""
+    ]
+  },
+  "spx": {
+    "source": "/data/data/com.termux/files/home/trading-ops/scanned/indices/SPX/current.md",
+    "timestamp": "2026-06-16",
+    "price": NaN,
+    "regime": "R2 \u2014 Reflation (growth up, inflation up); confidence 7/10",
+    "action_verdicts": {
+      "Pos": "B",
+      "Swing": "W"
+    },
+    "trade_table": [
+      {
+        "plan": "Swing-A",
+        "side": "LONG",
+        "trigger": "CPI <3.0% + gap above 7,370",
+        "entry": 7370.0,
+        "stop": 7200.0,
+        "t1": 7450.0,
+        "t2": 7500.0,
+        "t3": null,
+        "rr": "1.5 / 3.7",
+        "size": "half",
+        "time_stop": "2026-05-22"
+      },
+      {
+        "plan": "Swing-B",
+        "side": "SHORT",
+        "trigger": "FOMC hawkish + rejection at ATH",
+        "entry": 7360.0,
+        "stop": 7440.0,
+        "t1": 7100.0,
+        "t2": 7000.0,
+        "t3": null,
+        "rr": "1.3 / 2.0",
+        "size": "quarter",
+        "time_stop": "2026-05-22"
+      }
+    ],
+    "vwap_levels": {},
+    "volume_profile": {},
+    "scorecard": {},
+    "scorecard_total": 5,
+    "max_pain": null,
+    "gamma_exposure": null,
+    "gamma_data": {
+      "call_wall": 565.0,
+      "put_wall": 500.0
+    },
+    "vix_structure": {
+      "VIX9D": 17.26,
+      "VIX": 16.17,
+      "VIX3M": 20.51,
+      "VIX6M": 22.59,
+      "SKEW": 142.6
+    },
+    "breadth": {
+      "pct_above_50d": 8,
+      "pct_above_200d": 8
+    },
+    "squeeze_tier": "Trend-up grind",
+    "funding_rate": null,
+    "open_interest": null,
+    "regime_quadrant": "Reflation",
+    "coverage_tiers": {},
+    "pattern_slug": "trend-up-grind",
+    "catalyst": "FOMC Meeting + Dot Plot (Jun 18)",
+    "catalyst_watch": [
+      {
+        "date": "Jun 18",
+        "event": "FOMC Meeting + Dot Plot",
+        "expected": "Hold at 4.25\u20134.50%",
+        "impact": "**High** \u2014 trajectory into 2026-27"
+      },
+      {
+        "date": "Jun 20",
+        "event": "Quadruple Witching OPEX",
+        "expected": "\u2014",
+        "impact": "Structural \u2014 gamma reset"
+      },
+      {
+        "date": "Jun 25",
+        "event": "PCE Price Index (May)",
+        "expected": "+0.1% mom core",
+        "impact": "**High** \u2014 Fed's preferred inflation gauge"
+      },
+      {
+        "date": "Jul 2",
+        "event": "FOMC Minutes (Jun 17\u201318)",
+        "expected": "\u2014",
+        "impact": "Medium \u2014 rate-cut clues"
+      },
+      {
+        "date": "Jul 9",
+        "event": "CPI (June)",
+        "expected": "~2.8\u20133.1% headline",
+        "impact": "**High** \u2014 regime-defining"
+      },
+      {
+        "date": "Jul 16",
+        "event": "Retail Sales (June)",
+        "expected": "+0.3% mom",
+        "impact": "Medium \u2014 growth signal"
+      }
+    ],
+    "key_levels": [
+      {
+        "price": 7500.0,
+        "label": "[T2] R1.618 extension from April low"
+      },
+      {
+        "price": 7450.0,
+        "label": "[T1] round-number magnet"
+      },
+      {
+        "price": 7369.0,
+        "label": "^^ ATH (intraday 5/6)"
+      },
+      {
+        "price": 7093.0,
+        "label": "EMA 20d (pullback target)"
+      },
+      {
+        "price": 7060.0,
+        "label": "quarterly VWAP"
+      },
+      {
+        "price": 7257.0,
+        "label": "monthly VWAP"
+      },
+      {
+        "price": 6942.0,
+        "label": "EMA 50d (major support)"
+      },
+      {
+        "price": 6894.0,
+        "label": "POC (D volume profile)"
+      },
+      {
+        "price": 6696.0,
+        "label": "EMA 200d (trend anchor)"
+      },
+      {
+        "price": 6492.0,
+        "label": "VAL (4H volume profile)"
+      }
+    ],
+    "cross_confluence": null,
+    "ticker": "SPX",
+    "yf_ticker": "SPX"
+  },
+  "stocks": [
+    {
+      "ticker": "AMT",
+      "price": 185.76,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 185.76,
+      "stop_loss": 177.51,
+      "target_1": 194.01,
+      "target_2": 199.51,
+      "target_3": 207.77,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "rr_3": 2.67,
+      "position_size_10k": 12,
+      "position_size_5k": 6,
+      "position_size_frac": 12.1212,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "Uptrend continuation - RSI neutral",
+      "rsi": 53.4,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 10.38,
+      "ema_status": [
+        "Above EMA20 OK",
+        "Above EMA50 OK",
+        "Above EMA200 (bullish) OK"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 1.23,
+      "volume_note": "Average volume",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 185.76,
+          "stop": 177.51,
+          "t1": 194.01,
+          "t2": 199.51,
+          "t3": 207.77,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$185.76"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 185.76,
+          "stop": 170.9,
+          "t1": 215.48,
+          "t2": 237.77,
+          "t3": 260.06,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$185.76"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 185.76,
+          "stop": 176.84,
+          "t1": 190.22,
+          "t2": 192.89,
+          "t3": 196.46,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$185.76"
+        }
+      ],
+      "vwap_levels": {
+        "session": 186.57,
+        "weekly": 187.65,
+        "monthly": 184.96
+      },
+      "scorecard_total": 6,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 53"
+        },
+        "volume": {
+          "pass": true,
+          "note": "Vol ratio 1.2x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1.0 / 1.0x OK"
+        }
+      },
+      "max_pain": 185.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$185",
+          "entry": 185.76,
+          "stop": 177.51,
+          "t1": 194.01,
+          "t2": 199.51,
+          "t3": 207.77,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 177.17,
+        "vah": 184.51,
+        "val": 170.0
+      }
+    },
+    {
+      "ticker": "FTV",
+      "price": 60.28,
+      "score": 6,
+      "direction": "LONG",
+      "trend": "GENTLE UPTREND",
+      "entry": 60.28,
+      "stop_loss": 57.58,
+      "target_1": 62.98,
+      "target_2": 64.78,
+      "target_3": 67.47,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.67,
+      "rr_3": 2.66,
+      "position_size_10k": 37,
+      "position_size_5k": 18,
+      "position_size_frac": 37.037,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "Uptrend continuation - RSI neutral",
+      "rsi": 51.3,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 7.55,
+      "ema_status": [
+        "Above EMA20 OK",
+        "Above EMA50 OK",
+        "Above EMA200 (bullish) OK"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 0.93,
+      "volume_note": "Low volume - caution",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 60.28,
+          "stop": 57.58,
+          "t1": 62.98,
+          "t2": 64.78,
+          "t3": 67.47,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$60.28"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 60.28,
+          "stop": 55.46,
+          "t1": 69.92,
+          "t2": 77.16,
+          "t3": 84.39,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$60.28"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 60.28,
+          "stop": 57.39,
+          "t1": 61.73,
+          "t2": 62.59,
+          "t3": 63.75,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$60.28"
+        }
+      ],
+      "vwap_levels": {
+        "session": 60.62,
+        "weekly": 60.4,
+        "monthly": 59.92
+      },
+      "scorecard_total": 5,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "GENTLE UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 51"
+        },
+        "volume": {
+          "pass": false,
+          "note": "Vol ratio 0.9x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1.0 / 1.0x OK"
+        }
+      },
+      "max_pain": 40.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$60",
+          "entry": 60.28,
+          "stop": 57.58,
+          "t1": 62.98,
+          "t2": 64.78,
+          "t3": 67.47,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 59.68,
+        "vah": 60.23,
+        "val": 56.15
+      },
+      "scorecard_bridge_total": 4,
+      "scorecard_adjustments": 0
+    },
+    {
+      "ticker": "XYZ",
+      "price": 74.35,
+      "score": 5,
+      "direction": "LONG",
+      "trend": "STRONG UPTREND",
+      "entry": 74.35,
+      "stop_loss": 68.4,
+      "target_1": 80.61,
+      "target_2": 84.79,
+      "target_3": 91.05,
+      "rr_1": "1.0 / 1.7 / 2.7",
+      "rr_2": 1.76,
+      "rr_3": 2.81,
+      "position_size_10k": 16,
+      "position_size_5k": 8,
+      "position_size_frac": 16.8124,
+      "risk_amount": 100.0,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "Uptrend continuation - RSI neutral",
+      "rsi": 58.0,
+      "rsi_note": "Momentum supports long - good entry zone",
+      "atr_pct": 14.72,
+      "ema_status": [
+        "Above EMA20 OK",
+        "Above EMA50 OK",
+        "Above EMA200 (bullish) OK"
+      ],
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83d\udd0a Volume Above Average (1.5x)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "overbought": false,
+      "oversold": false,
+      "plan_name": "Swing-A",
+      "volume_ratio": 1.58,
+      "volume_note": "Strong volume confirmation",
+      "recalibrated": false,
+      "trade_plans": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "entry": 74.35,
+          "stop": 68.4,
+          "t1": 80.61,
+          "t2": 84.79,
+          "t3": 91.05,
+          "rr": "1.1 / 1.8 / 2.8",
+          "size": "full",
+          "time_stop": "+5 sessions",
+          "trigger": "D close >$74.35"
+        },
+        {
+          "plan": "Positional-B",
+          "side": "LONG",
+          "entry": 74.35,
+          "stop": 68.4,
+          "t1": 86.25,
+          "t2": 95.17,
+          "t3": 104.09,
+          "rr": "2.0 / 3.5 / 5.0",
+          "size": "half",
+          "time_stop": "+15 sessions",
+          "trigger": "W close >$74.35"
+        },
+        {
+          "plan": "Day-C",
+          "side": "LONG",
+          "entry": 74.35,
+          "stop": 70.78,
+          "t1": 76.13,
+          "t2": 77.21,
+          "t3": 78.63,
+          "rr": "0.5 / 0.8 / 1.2",
+          "size": "full",
+          "time_stop": "EOD",
+          "trigger": "15m cross >$74.35"
+        }
+      ],
+      "vwap_levels": {
+        "session": 74.61,
+        "weekly": 70.59,
+        "monthly": 70.9
+      },
+      "scorecard_total": 6,
+      "scorecard_checks": {
+        "trend": {
+          "pass": true,
+          "note": "STRONG UPTREND"
+        },
+        "momentum": {
+          "pass": true,
+          "note": "RSI 58"
+        },
+        "volume": {
+          "pass": true,
+          "note": "Vol ratio 1.6x"
+        },
+        "breadth": {
+          "pass": true,
+          "note": "Above EMA200"
+        },
+        "setup": {
+          "pass": true,
+          "note": "Above EMA20"
+        },
+        "risk_reward": {
+          "pass": true,
+          "note": "1.0 / 1.0x OK"
+        }
+      },
+      "max_pain": 69.0,
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "LONG",
+          "trigger": "D close >$71",
+          "entry": 74.35,
+          "stop": 68.09,
+          "t1": 80.61,
+          "t2": 84.79,
+          "t3": 91.05,
+          "rr": "1.0 / 1.7 / 2.7",
+          "size": "half",
+          "time_stop": "+5 sessions"
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "volume_profile": {
+        "poc": 69.49,
+        "vah": 73.74,
+        "val": 58.65
+      },
+      "scorecard_bridge_total": 3,
+      "scorecard_adjustments": 0
+    }
+  ],
+  "crypto": [
+    {
+      "symbol": "ATOM",
+      "category": "l1s",
+      "price": 1.951,
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "direction": "LONG",
+      "entry": 1.951,
+      "stop_loss": 1.8369,
+      "target_1": 2.1792,
+      "target_2": 2.3504,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 438,
+      "position_size_frac": 438.2121,
+      "risk_amount": 50.0,
+      "rsi": 52.4,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 5.85,
+      "volume_ratio": 0.88,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "Neutral RSI - following action (\ud83d\udfe2 BUY)"
+    },
+    {
+      "symbol": "BTC",
+      "category": "majors",
+      "price": 65914.5938,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 65914.5938,
+      "stop_loss": 63304.3759,
+      "target_1": 68524.8117,
+      "target_2": 70351.9642,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 0,
+      "position_size_frac": 0.0192,
+      "risk_amount": 50.0,
+      "rsi": 42.4,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 3.96,
+      "volume_ratio": 0.65,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$66,646",
+          "entry": 65914.5938,
+          "stop": 63304.3759,
+          "t1": 68524.8117,
+          "t2": 70351.9642,
+          "t3": 72962.1821,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 72690.57
+      },
+      "volume_profile": {
+        "poc": 73889.41,
+        "vah": 78652.6,
+        "val": 62064.36
+      },
+      "fractional_note": "Risk $2610.22/unit > $50 budget \u2014 use fractional sizing or reduce stop",
+      "zero_size": false
+    },
+    {
+      "symbol": "ETH",
+      "category": "majors",
+      "price": 1762.5,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 1762.5,
+      "stop_loss": 1669.0875,
+      "target_1": 1855.9125,
+      "target_2": 1921.3012,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 0,
+      "position_size_frac": 0.5353,
+      "risk_amount": 50.0,
+      "rsi": 42.1,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 5.3,
+      "volume_ratio": 0.57,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$1,792",
+          "entry": 1762.5,
+          "stop": 1669.0875,
+          "t1": 1855.9125,
+          "t2": 1921.3012,
+          "t3": 2014.7137,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 2136.38
+      },
+      "volume_profile": {
+        "poc": 2149.32,
+        "vah": 2341.54,
+        "val": 1581.83
+      },
+      "fractional_note": "Risk $93.41/unit > $50 budget \u2014 use fractional sizing or reduce stop",
+      "zero_size": false
+    },
+    {
+      "symbol": "MKR",
+      "category": "defi",
+      "price": 1465.5664,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 1465.5664,
+      "stop_loss": 1348.3211,
+      "target_1": 1582.8117,
+      "target_2": 1664.8834,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 0,
+      "position_size_frac": 0.4265,
+      "risk_amount": 50.0,
+      "rsi": 44.0,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 11.54,
+      "volume_ratio": 0.97,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$1,510",
+          "entry": 1465.5664,
+          "stop": 1348.3211,
+          "t1": 1582.8117,
+          "t2": 1664.8834,
+          "t3": 1782.1287,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 1711.52
+      },
+      "volume_profile": {
+        "poc": 1749.36,
+        "vah": 1901.38,
+        "val": 1339.97
+      },
+      "fractional_note": "Risk $117.25/unit > $50 budget \u2014 use fractional sizing or reduce stop",
+      "zero_size": false
+    },
+    {
+      "symbol": "LDO",
+      "category": "defi",
+      "price": 0.271,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.271,
+      "stop_loss": 0.2537,
+      "target_1": 0.3056,
+      "target_2": 0.3316,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 2890,
+      "position_size_frac": 2890.1734,
+      "risk_amount": 50.0,
+      "rsi": 37.6,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 6.4,
+      "volume_ratio": 0.66,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias"
+    },
+    {
+      "symbol": "ARB",
+      "category": "defi",
+      "price": 0.0857,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.0857,
+      "stop_loss": 0.0798,
+      "target_1": 0.0975,
+      "target_2": 0.1064,
+      "rr_1": 2.0,
+      "rr_2": 3.51,
+      "position_size_5k": 8474,
+      "position_size_frac": 8474.5763,
+      "risk_amount": 50.0,
+      "rsi": 36.1,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 6.87,
+      "volume_ratio": 0.61,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias"
+    },
+    {
+      "symbol": "ADA",
+      "category": "l1s",
+      "price": 0.1765,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.1765,
+      "stop_loss": 0.1633,
+      "target_1": 0.1897,
+      "target_2": 0.1989,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 3787,
+      "position_size_frac": 3787.8788,
+      "risk_amount": 50.0,
+      "rsi": 36.5,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 7.46,
+      "volume_ratio": 0.9,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$0",
+          "entry": 0.1765,
+          "stop": 0.1633,
+          "t1": 0.1897,
+          "t2": 0.1989,
+          "t3": 0.2121,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 0.24
+      },
+      "volume_profile": {
+        "poc": 0.25,
+        "vah": 0.28,
+        "val": 0.16
+      }
+    },
+    {
+      "symbol": "AVAX",
+      "category": "l1s",
+      "price": 6.79,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 6.79,
+      "stop_loss": 6.3514,
+      "target_1": 7.2286,
+      "target_2": 7.5356,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 113,
+      "position_size_frac": 113.9991,
+      "risk_amount": 50.0,
+      "rsi": 30.3,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 6.46,
+      "volume_ratio": 0.81,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$7",
+          "entry": 6.79,
+          "stop": 6.3514,
+          "t1": 7.2286,
+          "t2": 7.5356,
+          "t3": 7.9742,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 8.96
+      },
+      "volume_profile": {
+        "poc": 9.18,
+        "vah": 9.99,
+        "val": 6.56
+      }
+    },
+    {
+      "symbol": "DOT",
+      "category": "l1s",
+      "price": 1.005,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 1.005,
+      "stop_loss": 0.9449,
+      "target_1": 1.1252,
+      "target_2": 1.2153,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 831,
+      "position_size_frac": 831.9468,
+      "risk_amount": 50.0,
+      "rsi": 39.6,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 5.98,
+      "volume_ratio": 0.58,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias"
+    },
+    {
+      "symbol": "ALGO",
+      "category": "l1s",
+      "price": 0.0949,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.0949,
+      "stop_loss": 0.0889,
+      "target_1": 0.1069,
+      "target_2": 0.1159,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 8333,
+      "position_size_frac": 8333.3333,
+      "risk_amount": 50.0,
+      "rsi": 42.7,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 6.3,
+      "volume_ratio": 0.8,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias"
+    },
+    {
+      "symbol": "SUI",
+      "category": "l1s",
+      "price": 0.7844,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.7844,
+      "stop_loss": 0.7351,
+      "target_1": 0.883,
+      "target_2": 0.9569,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 1014,
+      "position_size_frac": 1014.1988,
+      "risk_amount": 50.0,
+      "rsi": 41.1,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 6.28,
+      "volume_ratio": 0.6,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias"
+    },
+    {
+      "symbol": "APT",
+      "category": "l1s",
+      "price": 0.6718,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.6718,
+      "stop_loss": 0.6156,
+      "target_1": 0.7842,
+      "target_2": 0.8685,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 889,
+      "position_size_frac": 889.6797,
+      "risk_amount": 50.0,
+      "rsi": 31.8,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 8.37,
+      "volume_ratio": 0.6,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias"
+    },
+    {
+      "symbol": "DOGE",
+      "category": "meme",
+      "price": 0.087,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 0.087,
+      "stop_loss": 0.0824,
+      "target_1": 0.0916,
+      "target_2": 0.0948,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 10869,
+      "position_size_frac": 10869.5652,
+      "risk_amount": 50.0,
+      "rsi": 39.0,
+      "rsi_note": "Approaching oversold - potential long entry  LOW VOLUME",
+      "atr_pct": 5.28,
+      "volume_ratio": 0.68,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$0",
+          "entry": 0.087,
+          "stop": 0.0824,
+          "t1": 0.0916,
+          "t2": 0.0948,
+          "t3": 0.0994,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 0.1
+      },
+      "volume_profile": {
+        "poc": 0.1,
+        "vah": 0.11,
+        "val": 0.08
+      }
+    },
+    {
+      "symbol": "TAO",
+      "category": "ai",
+      "price": 261.08,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "SHORT",
+      "entry": 261.08,
+      "stop_loss": 282.9063,
+      "target_1": 217.4274,
+      "target_2": 184.6879,
+      "rr_1": 2.0,
+      "rr_2": 3.5,
+      "position_size_5k": 2,
+      "position_size_frac": 2.2908,
+      "risk_amount": 50.0,
+      "rsi": 56.5,
+      "rsi_note": "Momentum fading - short entry zone",
+      "atr_pct": 8.36,
+      "volume_ratio": 1.73,
+      "volume_note": "Strong volume confirmation",
+      "signals": [
+        "\ud83d\udd0a Above-Avg Volume (1.7x)"
+      ],
+      "plan_name": "ATR-derived",
+      "recalibrated": false,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning high - short bias"
+    },
+    {
+      "symbol": "LINK",
+      "category": "rwa",
+      "price": 8.205,
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH",
+      "direction": "LONG",
+      "entry": 8.205,
+      "stop_loss": 7.7677,
+      "target_1": 8.6423,
+      "target_2": 8.9484,
+      "rr_1": 1.0,
+      "rr_2": 1.7,
+      "position_size_5k": 114,
+      "position_size_frac": 114.338,
+      "risk_amount": 50.0,
+      "rsi": 44.9,
+      "rsi_note": "Neutral RSI - wait for bounce confirmation",
+      "atr_pct": 5.33,
+      "volume_ratio": 0.61,
+      "volume_note": "Low volume - caution",
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "plan_name": "Swing-A",
+      "recalibrated": true,
+      "is_counter_trend": false,
+      "counter_trend_size_note": "",
+      "direction_reason": "RSI leaning low - long bias",
+      "trade_table": [
+        {
+          "plan": "Swing-A",
+          "side": "long",
+          "trigger": "D close <$8",
+          "entry": 8.205,
+          "stop": 7.7677,
+          "t1": 8.6423,
+          "t2": 8.9484,
+          "t3": 9.3857,
+          "rr": 1.0,
+          "size": "half",
+          "time_stop": "+5 sessions",
+          "recalibrated": true
+        }
+      ],
+      "bridge_source": true,
+      "bridge_ts_stale": false,
+      "bridge_ts_days": 0,
+      "vwap_levels": {
+        "session": 9.24
+      },
+      "volume_profile": {
+        "poc": 9.13,
+        "vah": 10.31,
+        "val": 7.38
+      }
+    }
+  ]
+}
