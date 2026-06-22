@@ -1,26 +1,27 @@
 {
-  "timestamp": "2026-06-19 09:30",
+  "timestamp": "2026-06-22 09:30",
   "total_scanned": 513,
   "bullish": [
     {
-      "ticker": "SLB",
-      "price": NaN,
-      "change_pct": NaN,
-      "volume_ratio": 2.67,
-      "rsi": 33.8,
-      "atr_pct": null,
-      "ema20": 54.9,
-      "ema50": 54.1,
-      "ema200": 47.46,
+      "ticker": "CL",
+      "price": 89.48,
+      "change_pct": -1.21,
+      "volume_ratio": 2.02,
+      "rsi": 52.8,
+      "atr_pct": 8.55,
+      "ema20": 89.0,
+      "ema50": 88.09,
+      "ema200": 84.98,
       "setups": [
-        "\ud83d\udcc9 EMA Stack weakening (price below EMA20)",
-        "\ud83d\udd25 RSI Oversold (<35) + Volume",
-        "\ud83d\udd0a Volume Surge (2x+ average)"
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
       ],
-      "score": 5,
+      "score": 8,
       "validated": true,
       "vwap_levels": {
-        "session": 53.01
+        "session": 86.56
       },
       "coverage_tiers": {
         "position": "W",
@@ -34,9 +35,539 @@
       },
       "regime_quadrant": "Reflation",
       "volume_profile": {
-        "poc": 54.46,
-        "vah": 55.59,
-        "val": 46.69
+        "poc": 85.59,
+        "vah": 87.68,
+        "val": 85.88
+      }
+    },
+    {
+      "ticker": "DD",
+      "price": 47.71,
+      "change_pct": -0.5,
+      "volume_ratio": 2.03,
+      "rsi": 50.2,
+      "atr_pct": 10.3,
+      "ema20": 47.69,
+      "ema50": 47.4,
+      "ema200": 44.98,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 46.98
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 46.96,
+        "vah": 48.86,
+        "val": 43.97
+      }
+    },
+    {
+      "ticker": "EIX",
+      "price": 71.89,
+      "change_pct": 1.4,
+      "volume_ratio": 2.1,
+      "rsi": 53.3,
+      "atr_pct": 8.33,
+      "ema20": 71.35,
+      "ema50": 70.67,
+      "ema200": 65.91,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 70.71
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 70.74,
+        "vah": 72.41,
+        "val": 68.27
+      }
+    },
+    {
+      "ticker": "EME",
+      "price": 836.59,
+      "change_pct": 1.1,
+      "volume_ratio": 2.88,
+      "rsi": 49.2,
+      "atr_pct": 12.01,
+      "ema20": 836.47,
+      "ema50": 833.64,
+      "ema200": 747.67,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 832.03
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 832.24,
+        "vah": 904.36,
+        "val": 729.96
+      }
+    },
+    {
+      "ticker": "EXR",
+      "price": 145.33,
+      "change_pct": 0.98,
+      "volume_ratio": 2.16,
+      "rsi": 54.3,
+      "atr_pct": 7.66,
+      "ema20": 144.38,
+      "ema50": 141.98,
+      "ema200": 136.29,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 139.38
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 140.61,
+        "vah": 142.61,
+        "val": 132.59
+      }
+    },
+    {
+      "ticker": "GD",
+      "price": 350.01,
+      "change_pct": -3.53,
+      "volume_ratio": 3.39,
+      "rsi": 51.7,
+      "atr_pct": 6.54,
+      "ema20": 349.58,
+      "ema50": 345.62,
+      "ema200": 344.05,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 342.49
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 343.57,
+        "vah": 348.65,
+        "val": 322.11
+      }
+    },
+    {
+      "ticker": "IVZ",
+      "price": 28.14,
+      "change_pct": -2.26,
+      "volume_ratio": 2.28,
+      "rsi": 53.6,
+      "atr_pct": 8.99,
+      "ema20": 27.98,
+      "ema50": 27.02,
+      "ema200": 26.32,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 25.82
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 26.24,
+        "vah": 28.33,
+        "val": 22.73
+      }
+    },
+    {
+      "ticker": "LIN",
+      "price": 512.15,
+      "change_pct": -0.72,
+      "volume_ratio": 2.01,
+      "rsi": 52.5,
+      "atr_pct": 6.83,
+      "ema20": 510.69,
+      "ema50": 503.7,
+      "ema200": 470.4,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 501.28
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 501.64,
+        "vah": 499.58,
+        "val": 495.54
+      }
+    },
+    {
+      "ticker": "MPWR",
+      "price": 1563.7,
+      "change_pct": 7.97,
+      "volume_ratio": 2.28,
+      "rsi": 50.7,
+      "atr_pct": 19.29,
+      "ema20": 1557.16,
+      "ema50": 1498.34,
+      "ema200": 1228.9,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 1446.22
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 1526.84,
+        "vah": 1628.39,
+        "val": 1043.72
+      }
+    },
+    {
+      "ticker": "TPR",
+      "price": 143.5,
+      "change_pct": -1.62,
+      "volume_ratio": 2.22,
+      "rsi": 51.5,
+      "atr_pct": 12.55,
+      "ema20": 143.07,
+      "ema50": 141.96,
+      "ema200": 138.45,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 8,
+      "validated": true,
+      "vwap_levels": {
+        "session": 141.49
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 142.36,
+        "vah": 150.2,
+        "val": 134.37
+      }
+    },
+    {
+      "ticker": "LNT",
+      "price": 73.0,
+      "change_pct": 0.25,
+      "volume_ratio": 1.71,
+      "rsi": 52.9,
+      "atr_pct": 6.9,
+      "ema20": 72.6,
+      "ema50": 72.07,
+      "ema200": 68.84,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Above Average (1.5x)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 7,
+      "validated": true,
+      "vwap_levels": {
+        "session": 72.0
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 72.09,
+        "vah": 71.97,
+        "val": 70.98
+      }
+    },
+    {
+      "ticker": "BIIB",
+      "price": 196.58,
+      "change_pct": -1.05,
+      "volume_ratio": 1.67,
+      "rsi": 52.4,
+      "atr_pct": 9.1,
+      "ema20": 195.64,
+      "ema50": 192.1,
+      "ema200": 184.73,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Above Average (1.5x)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 7,
+      "validated": true,
+      "vwap_levels": {
+        "session": 187.73
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 189.23,
+        "vah": 195.67,
+        "val": 177.07
+      }
+    },
+    {
+      "ticker": "CVX",
+      "price": 173.63,
+      "change_pct": -2.22,
+      "volume_ratio": 2.08,
+      "rsi": 33.2,
+      "atr_pct": 9.58,
+      "ema20": 184.22,
+      "ema50": 185.82,
+      "ema200": 173.23,
+      "setups": [
+        "\ud83d\udd25 RSI Oversold (<35) + Volume",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
+      ],
+      "score": 7,
+      "validated": true,
+      "vwap_levels": {
+        "session": 190.42
+      },
+      "coverage_tiers": {
+        "position": "S",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 187.43,
+        "vah": 202.12,
+        "val": 180.84
+      }
+    },
+    {
+      "ticker": "COP",
+      "price": 107.74,
+      "change_pct": -3.12,
+      "volume_ratio": 2.94,
+      "rsi": 34.1,
+      "atr_pct": 11.44,
+      "ema20": 115.56,
+      "ema50": 117.32,
+      "ema200": 108.03,
+      "setups": [
+        "\ud83d\udd25 RSI Oversold (<35) + Volume",
+        "\ud83d\udd0a Volume Surge (2x+ average)",
+        "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
+      ],
+      "score": 7,
+      "validated": true,
+      "vwap_levels": {
+        "session": 120.98
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 120.61,
+        "vah": 128.12,
+        "val": 112.34
+      }
+    },
+    {
+      "ticker": "DECK",
+      "price": 109.11,
+      "change_pct": 3.21,
+      "volume_ratio": 1.68,
+      "rsi": 51.7,
+      "atr_pct": 16.81,
+      "ema20": 108.9,
+      "ema50": 106.77,
+      "ema200": 105.3,
+      "setups": [
+        "\ud83d\udcc8 Golden Stack (EMA20>50>200, price above)",
+        "\ud83c\udfaf Pullback to EMA20 support",
+        "\ud83d\udd0a Volume Above Average (1.5x)",
+        "\ud83d\udcaa Price above all EMAs"
+      ],
+      "score": 7,
+      "validated": true,
+      "vwap_levels": {
+        "session": 104.11
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 105.95,
+        "vah": 110.67,
+        "val": 96.93
       }
     }
   ],
