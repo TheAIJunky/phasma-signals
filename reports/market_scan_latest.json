@@ -135,7 +135,26 @@
         "\ud83d\udcaa Price above all EMAs"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "vwap_levels": {
+        "session": 134.59
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 134.88,
+        "vah": 141.07,
+        "val": 119.54
+      }
     },
     {
       "ticker": "CPT",
@@ -192,7 +211,26 @@
         "\ud83d\udcaa Price above all EMAs"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "vwap_levels": {
+        "session": 104.46
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 96.57,
+        "vah": 123.85,
+        "val": 79.69
+      }
     },
     {
       "ticker": "KO",
@@ -249,7 +287,26 @@
         "\ud83d\udcaa Price above all EMAs"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "vwap_levels": {
+        "session": 545.72
+      },
+      "coverage_tiers": {
+        "position": "S",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 527.77,
+        "vah": 746.38,
+        "val": 379.9
+      }
     },
     {
       "ticker": "CSX",
@@ -420,7 +477,26 @@
         "\ud83d\udd04 Double Bottom (W pattern, vol confirmed)"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "vwap_levels": {
+        "session": 79.29
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 79.97,
+        "vah": 87.39,
+        "val": 69.26
+      }
     },
     {
       "ticker": "EXR",
@@ -477,7 +553,26 @@
         "\ud83d\udcaa Price above all EMAs"
       ],
       "score": 6,
-      "validated": true
+      "validated": true,
+      "vwap_levels": {
+        "session": 29.13
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "regime_quadrant": "Reflation",
+      "volume_profile": {
+        "poc": 30.79,
+        "vah": 32.7,
+        "val": 23.37
+      }
     }
   ],
   "watchlist": [],
