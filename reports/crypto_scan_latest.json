@@ -1,46 +1,20 @@
 {
-  "timestamp": "2026-06-26 01:31",
+  "timestamp": "2026-06-26 07:07",
   "total_scanned": 37,
   "buys": [
     {
-      "symbol": "OCEAN",
-      "category": "ai",
-      "price": 0.0875,
-      "change_1d": -5.22,
-      "rsi": 23.9,
-      "volume_ratio": 1.91,
-      "atr_pct": 4.51,
-      "ema9": 0.0971,
-      "ema21": 0.1032,
-      "ema50": 0.1119,
-      "signals": [
-        "\ud83d\udd25 RSI Deeply Oversold (<25) + Volume",
-        "\ud83d\udd0a Above-Avg Volume (1.9x)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 7,
-      "action": "\ud83d\udfe2 STRONG BUY",
-      "vwap_session": 0.127,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate advisory: overhead +45.2% \u2014 bounce may be early",
-      "vwap_overhead_pct": 45.2,
-      "counter_trend": true,
-      "validated": true
-    },
-    {
       "symbol": "SEI",
       "category": "l1s",
-      "price": 0.057,
-      "change_1d": 3.13,
-      "rsi": 53.7,
-      "volume_ratio": 2.06,
-      "atr_pct": 5.43,
-      "ema9": 0.0547,
-      "ema21": 0.055,
-      "ema50": 0.0568,
+      "price": 0.0545,
+      "change_1d": -1.45,
+      "rsi": 47.9,
+      "volume_ratio": 2.04,
+      "atr_pct": 5.53,
+      "ema9": 0.0542,
+      "ema21": 0.0547,
+      "ema50": 0.0567,
       "signals": [
-        "\ud83d\udd0a High Volume (2.1x)",
+        "\ud83d\udd0a High Volume (2.0x)",
         "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
       ],
       "score": 4,
@@ -48,323 +22,34 @@
       "vwap_session": 0.0602,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +5.6%)",
-      "vwap_overhead_pct": 5.6,
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +10.5%)",
+      "vwap_overhead_pct": 10.5,
       "counter_trend": true,
       "validated": true
-    },
-    {
-      "symbol": "BNB",
-      "category": "majors",
-      "price": 562.0,
-      "change_1d": -0.31,
-      "rsi": 35.1,
-      "volume_ratio": 1.22,
-      "atr_pct": 3.11,
-      "ema9": 579.8641,
-      "ema21": 595.3738,
-      "ema50": 613.2805,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udfe2 BUY",
-      "vwap_session": 628.9507,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +11.9%)",
-      "vwap_overhead_pct": 11.9,
-      "counter_trend": true,
-      "validated": true
-    },
-    {
-      "symbol": "NEAR",
-      "category": "l1s",
-      "price": 1.847,
-      "change_1d": -5.85,
-      "rsi": 40.2,
-      "volume_ratio": 0.81,
-      "atr_pct": 9.46,
-      "ema9": 2.0415,
-      "ema21": 2.1026,
-      "ema50": 2.0004,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udd35 WAIT LONG",
-      "vwap_session": 2.0364,
-      "direction": "LONG",
-      "trend": "UPTREND",
-      "gate_reason": "VWAP +10.3% + vol 0.81x \u2014 WAIT for better entry",
-      "vwap_overhead_pct": 10.3,
-      "validated": true,
-      "vwap_levels": {
-        "session": 2.03
-      },
-      "coverage_tiers": {
-        "position": "W",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 1.52,
-        "vah": 2.92,
-        "val": 1.2
-      }
-    },
-    {
-      "symbol": "ONDO",
-      "category": "rwa",
-      "price": 0.3143,
-      "change_1d": 0.22,
-      "rsi": 38.2,
-      "volume_ratio": 0.92,
-      "atr_pct": 6.94,
-      "ema9": 0.3314,
-      "ema21": 0.346,
-      "ema50": 0.3478,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udd35 WAIT LONG",
-      "vwap_session": 0.361,
-      "direction": "LONG",
-      "trend": "NEUTRAL",
-      "gate_reason": "VWAP +14.9% + vol 0.92x \u2014 WAIT for better entry",
-      "vwap_overhead_pct": 14.9,
-      "validated": true
-    },
-    {
-      "symbol": "POLYX",
-      "category": "rwa",
-      "price": 0.0339,
-      "change_1d": -3.9,
-      "rsi": 27.8,
-      "volume_ratio": 0.82,
-      "atr_pct": 6.61,
-      "ema9": 0.037,
-      "ema21": 0.0395,
-      "ema50": 0.0434,
-      "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udfe2 BUY",
-      "vwap_session": 0.0512,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "Low vol 0.82x \u2014 low conviction LONG bounce",
-      "vwap_overhead_pct": 51.1,
-      "counter_trend": true,
-      "validated": true
-    }
-  ],
-  "watches": [
-    {
-      "symbol": "FET",
-      "category": "ai",
-      "price": 0.1675,
-      "change_1d": -3.4,
-      "rsi": 35.0,
-      "volume_ratio": 0.91,
-      "atr_pct": 8.19,
-      "ema9": 0.1818,
-      "ema21": 0.1944,
-      "ema50": 0.2066,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udd35 WAIT SHORT",
-      "vwap_session": 0.2208,
-      "direction": "SHORT",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP +31.8% + vol 0.91x \u2014 WAIT for better entry",
-      "vwap_overhead_pct": 31.8,
-      "validated": true,
-      "vwap_levels": {
-        "session": 0.22
-      },
-      "coverage_tiers": {
-        "position": "S",
-        "swing": "W",
-        "day": "B"
-      },
-      "action_verdicts": {
-        "Pos": "S",
-        "Swing": "W",
-        "Day": "B"
-      },
-      "volume_profile": {
-        "poc": 0.21,
-        "vah": 0.27,
-        "val": 0.18
-      }
-    },
-    {
-      "symbol": "RENDER",
-      "category": "ai",
-      "price": 1.531,
-      "change_1d": -2.71,
-      "rsi": 37.1,
-      "volume_ratio": 0.94,
-      "atr_pct": 6.72,
-      "ema9": 1.6278,
-      "ema21": 1.6992,
-      "ema50": 1.7772,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)",
-        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
-      ],
-      "score": 3,
-      "action": "\ud83d\udd35 WAIT SHORT",
-      "vwap_session": 1.9048,
-      "direction": "SHORT",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP +24.4% + vol 0.94x \u2014 WAIT for better entry",
-      "vwap_overhead_pct": 24.4,
-      "validated": true
-    },
-    {
-      "symbol": "UNI",
-      "category": "defi",
-      "price": 2.894,
-      "change_1d": -0.86,
-      "rsi": 48.0,
-      "volume_ratio": 0.91,
-      "atr_pct": 8.17,
-      "ema9": 2.9392,
-      "ema21": 2.9173,
-      "ema50": 3.0212,
-      "signals": [
-        "\ud83c\udfaf Pullback to EMA21"
-      ],
-      "score": 2,
-      "action": "\ud83d\udd35 WATCH SHORT",
-      "vwap_session": 3.2596,
-      "direction": "SHORT",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP +12.6% + vol 0.91x \u2014 WAIT for better entry",
-      "vwap_overhead_pct": 12.6,
-      "validated": true
-    },
-    {
-      "symbol": "AAVE",
-      "category": "defi",
-      "price": 82.9,
-      "change_1d": 4.12,
-      "rsi": 61.9,
-      "volume_ratio": 2.73,
-      "atr_pct": 5.75,
-      "ema9": 76.0984,
-      "ema21": 74.5265,
-      "ema50": 78.7966,
-      "signals": [
-        "\u26a1 EMA9/21 Golden Cross",
-        "\ud83d\udd0a High Volume (2.7x)",
-        "\ud83d\udc80 EMA9/21 Death Cross"
-      ],
-      "score": 2,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 89.7826,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "",
-      "vwap_overhead_pct": 8.3,
-      "validated": true,
-      "vwap_levels": {
-        "session": 90.66
-      },
-      "coverage_tiers": {
-        "position": "W",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 91.96,
-        "vah": 112.79,
-        "val": 60.95
-      }
-    },
-    {
-      "symbol": "DOGE",
-      "category": "meme",
-      "price": 0.0752,
-      "change_1d": -1.09,
-      "rsi": 22.9,
-      "volume_ratio": 1.22,
-      "atr_pct": 4.71,
-      "ema9": 0.0804,
-      "ema21": 0.0847,
-      "ema50": 0.0909,
-      "signals": [
-        "\ud83d\udfe1 RSI Deeply Oversold (<25), avg volume"
-      ],
-      "score": 2,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.0988,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate advisory: overhead +31.5% \u2014 bounce may be early",
-      "vwap_overhead_pct": 31.5,
-      "validated": true,
-      "vwap_levels": {
-        "session": 0.1
-      },
-      "coverage_tiers": {
-        "position": "W",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 0.1,
-        "vah": 0.11,
-        "val": 0.08
-      }
     },
     {
       "symbol": "BTC",
       "category": "majors",
-      "price": 60085.3906,
-      "change_1d": -1.49,
-      "rsi": 31.2,
-      "volume_ratio": 1.41,
-      "atr_pct": 3.52,
-      "ema9": 62572.4973,
-      "ema21": 64381.2025,
-      "ema50": 67997.8399,
+      "price": 59789.5,
+      "change_1d": -1.98,
+      "rsi": 30.6,
+      "volume_ratio": 1.54,
+      "atr_pct": 3.41,
+      "ema9": 62513.3192,
+      "ema21": 64354.2278,
+      "ema50": 67975.8676,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume"
+        "\ud83d\udfe1 RSI Oversold (<35) + Volume",
+        "\ud83d\udd0a Above-Avg Volume (1.5x)"
       ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 72079.1073,
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "vwap_session": 72092.3096,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +20.0%)",
-      "vwap_overhead_pct": 20.0,
+      "gate_reason": "VWAP gate advisory: overhead +20.6% \u2014 bounce may be early",
+      "vwap_overhead_pct": 20.6,
+      "counter_trend": true,
       "validated": true,
       "vwap_levels": {
         "session": 72116.3
@@ -386,108 +71,53 @@
       }
     },
     {
-      "symbol": "ETH",
+      "symbol": "BNB",
       "category": "majors",
-      "price": 1577.14,
-      "change_1d": -2.64,
-      "rsi": 31.2,
-      "volume_ratio": 1.27,
-      "atr_pct": 4.91,
-      "ema9": 1670.8461,
-      "ema21": 1730.1081,
-      "ema50": 1871.85,
+      "price": 559.44,
+      "change_1d": -0.77,
+      "rsi": 34.5,
+      "volume_ratio": 1.31,
+      "atr_pct": 2.95,
+      "ema9": 579.3521,
+      "ema21": 595.14,
+      "ema50": 613.0373,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume"
+        "\ud83d\udd35 RSI Oversold (<35), low volume",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
       ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 2090.3392,
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "vwap_session": 628.9822,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +32.5%)",
-      "vwap_overhead_pct": 32.5,
-      "validated": true,
-      "vwap_levels": {
-        "session": 2095.74
-      },
-      "coverage_tiers": {
-        "position": "W",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 2121.47,
-        "vah": 2341.54,
-        "val": 1581.83
-      }
-    },
-    {
-      "symbol": "SOL",
-      "category": "majors",
-      "price": 68.65,
-      "change_1d": 0.98,
-      "rsi": 41.8,
-      "volume_ratio": 1.38,
-      "atr_pct": 5.36,
-      "ema9": 70.0394,
-      "ema21": 71.2654,
-      "ema50": 75.485,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 82.2839,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +19.9%)",
-      "vwap_overhead_pct": 19.9,
-      "validated": true,
-      "vwap_levels": {
-        "session": 82.62
-      },
-      "coverage_tiers": {
-        "position": "W",
-        "swing": "W",
-        "day": "W"
-      },
-      "action_verdicts": {
-        "Pos": "W",
-        "Swing": "W",
-        "Day": "W"
-      },
-      "volume_profile": {
-        "poc": 83.58,
-        "vah": 93.35,
-        "val": 63.44
-      }
+      "gate_reason": "VWAP gate advisory: overhead +12.4% \u2014 bounce may be early",
+      "vwap_overhead_pct": 12.4,
+      "counter_trend": true,
+      "validated": true
     },
     {
       "symbol": "XRP",
       "category": "majors",
-      "price": 1.0467,
-      "change_1d": -2.38,
-      "rsi": 31.0,
-      "volume_ratio": 1.36,
-      "atr_pct": 4.55,
-      "ema9": 1.112,
-      "ema21": 1.1543,
-      "ema50": 1.2286,
+      "price": 1.0268,
+      "change_1d": -4.24,
+      "rsi": 29.4,
+      "volume_ratio": 1.51,
+      "atr_pct": 4.58,
+      "ema9": 1.1081,
+      "ema21": 1.1524,
+      "ema50": 1.2277,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume"
+        "\ud83d\udfe1 RSI Oversold (<35) + Volume",
+        "\ud83d\udd0a Above-Avg Volume (1.5x)"
       ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 1.3277,
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "vwap_session": 1.3269,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +26.8%)",
-      "vwap_overhead_pct": 26.8,
+      "gate_reason": "VWAP gate advisory: overhead +29.2% \u2014 bounce may be early",
+      "vwap_overhead_pct": 29.2,
+      "counter_trend": true,
       "validated": true,
       "vwap_levels": {
         "session": 1.33
@@ -509,29 +139,214 @@
       }
     },
     {
-      "symbol": "MKR",
-      "category": "defi",
-      "price": 1312.4255,
-      "change_1d": -1.82,
-      "rsi": 38.7,
-      "volume_ratio": 1.22,
-      "atr_pct": 13.58,
-      "ema9": 1417.3398,
-      "ema21": 1459.7927,
-      "ema50": 1547.7623,
+      "symbol": "NEAR",
+      "category": "l1s",
+      "price": 1.8,
+      "change_1d": -8.25,
+      "rsi": 38.9,
+      "volume_ratio": 0.94,
+      "atr_pct": 9.77,
+      "ema9": 2.0321,
+      "ema21": 2.0984,
+      "ema50": 1.9983,
       "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)"
+        "\ud83d\udd35 RSI Low Zone (35-45)",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
       ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 1675.362,
+      "score": 3,
+      "action": "\ud83d\udd35 WAIT LONG",
+      "vwap_session": 2.0381,
       "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +27.7%)",
-      "vwap_overhead_pct": 27.7,
+      "trend": "UPTREND",
+      "gate_reason": "VWAP +13.2% + vol 0.94x \u2014 WAIT for better entry",
+      "vwap_overhead_pct": 13.2,
       "validated": true,
       "vwap_levels": {
-        "session": 1679.58
+        "session": 2.03
+      },
+      "coverage_tiers": {
+        "position": "S",
+        "swing": "W",
+        "day": "B"
+      },
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "B"
+      },
+      "volume_profile": {
+        "poc": 1.55,
+        "vah": 2.92,
+        "val": 1.2
+      }
+    },
+    {
+      "symbol": "FET",
+      "category": "ai",
+      "price": 0.1657,
+      "change_1d": -4.44,
+      "rsi": 34.4,
+      "volume_ratio": 0.94,
+      "atr_pct": 8.12,
+      "ema9": 0.1815,
+      "ema21": 0.1942,
+      "ema50": 0.2064,
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "vwap_session": 0.2206,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "Low vol 0.94x \u2014 low conviction LONG bounce",
+      "vwap_overhead_pct": 33.1,
+      "counter_trend": true,
+      "validated": true,
+      "vwap_levels": {
+        "session": 0.22
+      },
+      "coverage_tiers": {
+        "position": "S",
+        "swing": "W",
+        "day": "B"
+      },
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "B"
+      },
+      "volume_profile": {
+        "poc": 0.21,
+        "vah": 0.27,
+        "val": 0.18
+      }
+    },
+    {
+      "symbol": "OCEAN",
+      "category": "ai",
+      "price": 0.118,
+      "change_1d": 27.82,
+      "rsi": 59.5,
+      "volume_ratio": 8.59,
+      "atr_pct": 4.82,
+      "ema9": 0.1032,
+      "ema21": 0.1059,
+      "ema50": 0.1132,
+      "signals": [
+        "\ud83d\udd0a Massive Volume (8.6x)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "vwap_session": 0.126,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +6.8%)",
+      "vwap_overhead_pct": 6.8,
+      "counter_trend": true,
+      "validated": true
+    },
+    {
+      "symbol": "ONDO",
+      "category": "rwa",
+      "price": 0.3068,
+      "change_1d": -2.17,
+      "rsi": 36.4,
+      "volume_ratio": 0.89,
+      "atr_pct": 6.86,
+      "ema9": 0.3299,
+      "ema21": 0.3453,
+      "ema50": 0.3472,
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udd35 WAIT LONG",
+      "vwap_session": 0.3616,
+      "direction": "LONG",
+      "trend": "NEUTRAL",
+      "gate_reason": "VWAP +17.9% + vol 0.89x \u2014 WAIT for better entry",
+      "vwap_overhead_pct": 17.9,
+      "validated": true
+    },
+    {
+      "symbol": "POLYX",
+      "category": "rwa",
+      "price": 0.0334,
+      "change_1d": -5.32,
+      "rsi": 27.0,
+      "volume_ratio": 0.96,
+      "atr_pct": 6.62,
+      "ema9": 0.0369,
+      "ema21": 0.0394,
+      "ema50": 0.0434,
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udfe2 BUY",
+      "vwap_session": 0.0513,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "Low vol 0.96x \u2014 low conviction LONG bounce",
+      "vwap_overhead_pct": 53.4,
+      "counter_trend": true,
+      "validated": true
+    }
+  ],
+  "watches": [
+    {
+      "symbol": "RENDER",
+      "category": "ai",
+      "price": 1.493,
+      "change_1d": -5.12,
+      "rsi": 35.4,
+      "volume_ratio": 0.95,
+      "atr_pct": 6.86,
+      "ema9": 1.6202,
+      "ema21": 1.6958,
+      "ema50": 1.7756,
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)",
+        "\ud83d\udca8 Volatility Squeeze (breakout imminent)"
+      ],
+      "score": 3,
+      "action": "\ud83d\udd35 WAIT SHORT",
+      "vwap_session": 1.9063,
+      "direction": "SHORT",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP +27.7% + vol 0.95x \u2014 WAIT for better entry",
+      "vwap_overhead_pct": 27.7,
+      "validated": true
+    },
+    {
+      "symbol": "SOL",
+      "category": "majors",
+      "price": 67.98,
+      "change_1d": -0.0,
+      "rsi": 40.1,
+      "volume_ratio": 1.57,
+      "atr_pct": 5.12,
+      "ema9": 69.9054,
+      "ema21": 71.2044,
+      "ema50": 75.4419,
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)",
+        "\ud83d\udd0a Above-Avg Volume (1.6x)"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 82.2587,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +21.0%)",
+      "vwap_overhead_pct": 21.0,
+      "validated": true,
+      "vwap_levels": {
+        "session": 82.35
       },
       "coverage_tiers": {
         "position": "W",
@@ -544,78 +359,121 @@
         "Day": "W"
       },
       "volume_profile": {
-        "poc": 1726.5,
-        "vah": 1901.38,
-        "val": 1298.25
+        "poc": 83.44,
+        "vah": 93.35,
+        "val": 63.44
       }
     },
     {
-      "symbol": "LDO",
+      "symbol": "UNI",
       "category": "defi",
-      "price": 0.247,
-      "change_1d": -2.7,
-      "rsi": 28.5,
-      "volume_ratio": 1.18,
-      "atr_pct": 6.69,
-      "ema9": 0.2626,
-      "ema21": 0.2742,
-      "ema50": 0.3005,
+      "price": 2.841,
+      "change_1d": -2.68,
+      "rsi": 45.8,
+      "volume_ratio": 0.89,
+      "atr_pct": 8.09,
+      "ema9": 2.9286,
+      "ema21": 2.9125,
+      "ema50": 3.0183,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume"
+        "\ud83c\udfaf Pullback to EMA21"
       ],
-      "score": 1,
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH SHORT",
+      "vwap_session": 3.2585,
+      "direction": "SHORT",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP +14.7% + vol 0.89x \u2014 WAIT for better entry",
+      "vwap_overhead_pct": 14.7,
+      "validated": true
+    },
+    {
+      "symbol": "AAVE",
+      "category": "defi",
+      "price": 82.79,
+      "change_1d": 3.98,
+      "rsi": 61.8,
+      "volume_ratio": 2.68,
+      "atr_pct": 5.58,
+      "ema9": 76.0764,
+      "ema21": 74.5162,
+      "ema50": 78.7532,
+      "signals": [
+        "\u26a1 EMA9/21 Golden Cross",
+        "\ud83d\udd0a High Volume (2.7x)",
+        "\ud83d\udc80 EMA9/21 Death Cross"
+      ],
+      "score": 2,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.35,
+      "vwap_session": 89.7333,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate advisory: overhead +41.7% \u2014 bounce may be early",
-      "vwap_overhead_pct": 41.7,
-      "validated": true
+      "gate_reason": "",
+      "vwap_overhead_pct": 8.4,
+      "validated": true,
+      "vwap_levels": {
+        "session": 90.14
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "volume_profile": {
+        "poc": 91.9,
+        "vah": 112.79,
+        "val": 60.95
+      }
     },
     {
       "symbol": "ARB",
       "category": "defi",
-      "price": 0.0734,
-      "change_1d": -3.39,
-      "rsi": 25.2,
-      "volume_ratio": 0.96,
-      "atr_pct": 6.24,
-      "ema9": 0.08,
-      "ema21": 0.0848,
-      "ema50": 0.0946,
+      "price": 0.0723,
+      "change_1d": -4.83,
+      "rsi": 24.4,
+      "volume_ratio": 1.05,
+      "atr_pct": 6.25,
+      "ema9": 0.0798,
+      "ema21": 0.0847,
+      "ema50": 0.0945,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume"
+        "\ud83d\udfe1 RSI Deeply Oversold (<25), avg volume"
       ],
-      "score": 1,
+      "score": 2,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.1112,
+      "vwap_session": 0.1113,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "Low vol 0.96x \u2014 low conviction LONG bounce",
-      "vwap_overhead_pct": 51.5,
+      "gate_reason": "VWAP gate advisory: overhead +54.0% \u2014 bounce may be early",
+      "vwap_overhead_pct": 54.0,
       "validated": true
     },
     {
       "symbol": "ADA",
       "category": "l1s",
-      "price": 0.1441,
-      "change_1d": -2.31,
-      "rsi": 25.0,
-      "volume_ratio": 1.07,
-      "atr_pct": 6.27,
-      "ema9": 0.156,
-      "ema21": 0.17,
-      "ema50": 0.1971,
+      "price": 0.1417,
+      "change_1d": -3.94,
+      "rsi": 24.2,
+      "volume_ratio": 1.08,
+      "atr_pct": 6.29,
+      "ema9": 0.1556,
+      "ema21": 0.1698,
+      "ema50": 0.1968,
       "signals": [
-        "\ud83d\udd35 RSI Oversold (<35), low volume"
+        "\ud83d\udfe1 RSI Deeply Oversold (<25), avg volume"
       ],
-      "score": 1,
+      "score": 2,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.2276,
+      "vwap_session": 0.2274,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate advisory: overhead +57.9% \u2014 bounce may be early",
-      "vwap_overhead_pct": 57.9,
+      "gate_reason": "VWAP gate advisory: overhead +60.5% \u2014 bounce may be early",
+      "vwap_overhead_pct": 60.5,
       "validated": true,
       "vwap_levels": {
         "session": 0.23
@@ -637,26 +495,177 @@
       }
     },
     {
-      "symbol": "AVAX",
+      "symbol": "DOT",
       "category": "l1s",
-      "price": 6.25,
-      "change_1d": -3.02,
-      "rsi": 35.2,
-      "volume_ratio": 1.18,
-      "atr_pct": 6.28,
-      "ema9": 6.3797,
-      "ema21": 6.7669,
-      "ema50": 7.6135,
+      "price": 0.827,
+      "change_1d": -6.71,
+      "rsi": 22.6,
+      "volume_ratio": 1.15,
+      "atr_pct": 5.73,
+      "ema9": 0.9181,
+      "ema21": 0.9739,
+      "ema50": 1.0716,
+      "signals": [
+        "\ud83d\udfe1 RSI Deeply Oversold (<25), avg volume"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 1.2073,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate advisory: overhead +46.0% \u2014 bounce may be early",
+      "vwap_overhead_pct": 46.0,
+      "validated": true
+    },
+    {
+      "symbol": "DOGE",
+      "category": "meme",
+      "price": 0.0741,
+      "change_1d": -2.5,
+      "rsi": 21.9,
+      "volume_ratio": 1.31,
+      "atr_pct": 4.63,
+      "ema9": 0.0802,
+      "ema21": 0.0846,
+      "ema50": 0.0908,
+      "signals": [
+        "\ud83d\udfe1 RSI Deeply Oversold (<25), avg volume"
+      ],
+      "score": 2,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 0.0989,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate advisory: overhead +33.4% \u2014 bounce may be early",
+      "vwap_overhead_pct": 33.4,
+      "validated": true,
+      "vwap_levels": {
+        "session": 0.1
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "volume_profile": {
+        "poc": 0.1,
+        "vah": 0.11,
+        "val": 0.08
+      }
+    },
+    {
+      "symbol": "ETH",
+      "category": "majors",
+      "price": 1548.65,
+      "change_1d": -4.4,
+      "rsi": 29.6,
+      "volume_ratio": 1.39,
+      "atr_pct": 4.89,
+      "ema9": 1665.1481,
+      "ema21": 1727.516,
+      "ema50": 1870.4447,
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 2089.7026,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate advisory: overhead +34.9% \u2014 bounce may be early",
+      "vwap_overhead_pct": 34.9,
+      "validated": true,
+      "vwap_levels": {
+        "session": 2095.74
+      },
+      "coverage_tiers": {
+        "position": "W",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "W",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "volume_profile": {
+        "poc": 2121.47,
+        "vah": 2341.54,
+        "val": 1581.83
+      }
+    },
+    {
+      "symbol": "LDO",
+      "category": "defi",
+      "price": 0.242,
+      "change_1d": -4.67,
+      "rsi": 27.0,
+      "volume_ratio": 1.14,
+      "atr_pct": 6.64,
+      "ema9": 0.2616,
+      "ema21": 0.2738,
+      "ema50": 0.3002,
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 0.3506,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate advisory: overhead +44.9% \u2014 bounce may be early",
+      "vwap_overhead_pct": 44.9,
+      "validated": true
+    },
+    {
+      "symbol": "OP",
+      "category": "defi",
+      "price": 0.103,
+      "change_1d": -1.18,
+      "rsi": 44.2,
+      "volume_ratio": 1.46,
+      "atr_pct": 6.47,
+      "ema9": 0.1032,
+      "ema21": 0.1057,
+      "ema50": 0.1123,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
       "score": 1,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 8.4827,
+      "vwap_session": 0.1229,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +35.7%)",
-      "vwap_overhead_pct": 35.7,
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +19.3%)",
+      "vwap_overhead_pct": 19.3,
+      "validated": true
+    },
+    {
+      "symbol": "AVAX",
+      "category": "l1s",
+      "price": 6.08,
+      "change_1d": -5.66,
+      "rsi": 33.1,
+      "volume_ratio": 1.17,
+      "atr_pct": 6.3,
+      "ema9": 6.3457,
+      "ema21": 6.7514,
+      "ema50": 7.6024,
+      "signals": [
+        "\ud83d\udd35 RSI Oversold (<35), low volume"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 8.4786,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +39.5%)",
+      "vwap_overhead_pct": 39.5,
       "validated": true,
       "vwap_levels": {
         "session": 8.54
@@ -678,141 +687,141 @@
       }
     },
     {
-      "symbol": "DOT",
-      "category": "l1s",
-      "price": 0.848,
-      "change_1d": -4.34,
-      "rsi": 24.1,
-      "volume_ratio": 0.98,
-      "atr_pct": 5.49,
-      "ema9": 0.9223,
-      "ema21": 0.9758,
-      "ema50": 1.0724,
-      "signals": [
-        "\u26a0\ufe0f RSI Deeply Oversold (<25), LOW volume"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 1.2086,
-      "direction": "LONG",
-      "trend": "DOWNTREND",
-      "gate_reason": "Low vol 0.98x \u2014 low conviction LONG bounce",
-      "vwap_overhead_pct": 42.5,
-      "validated": true
-    },
-    {
       "symbol": "ATOM",
       "category": "l1s",
-      "price": 1.61,
-      "change_1d": -2.34,
+      "price": 1.611,
+      "change_1d": -2.28,
       "rsi": 34.0,
-      "volume_ratio": 1.05,
-      "atr_pct": 5.46,
-      "ema9": 1.7445,
-      "ema21": 1.8151,
-      "ema50": 1.8647,
+      "volume_ratio": 1.21,
+      "atr_pct": 5.26,
+      "ema9": 1.7447,
+      "ema21": 1.8152,
+      "ema50": 1.8641,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
       "score": 1,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 1.8925,
+      "vwap_session": 1.894,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +17.5%)",
-      "vwap_overhead_pct": 17.5,
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +17.6%)",
+      "vwap_overhead_pct": 17.6,
+      "validated": true
+    },
+    {
+      "symbol": "ALGO",
+      "category": "l1s",
+      "price": 0.0832,
+      "change_1d": -7.27,
+      "rsi": 35.1,
+      "volume_ratio": 1.01,
+      "atr_pct": 6.96,
+      "ema9": 0.0906,
+      "ema21": 0.0944,
+      "ema50": 0.1004,
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd35 WATCH LONG",
+      "vwap_session": 0.1104,
+      "direction": "LONG",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +32.6%)",
+      "vwap_overhead_pct": 32.6,
       "validated": true
     },
     {
       "symbol": "SUI",
       "category": "l1s",
-      "price": 0.6842,
-      "change_1d": -0.08,
-      "rsi": 32.7,
-      "volume_ratio": 1.02,
-      "atr_pct": 5.97,
-      "ema9": 0.7122,
-      "ema21": 0.7556,
-      "ema50": 0.8352,
+      "price": 0.6769,
+      "change_1d": -1.15,
+      "rsi": 31.9,
+      "volume_ratio": 1.1,
+      "atr_pct": 5.84,
+      "ema9": 0.7107,
+      "ema21": 0.755,
+      "ema50": 0.8346,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
       "score": 1,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.96,
+      "vwap_session": 0.9604,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +40.3%)",
-      "vwap_overhead_pct": 40.3,
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +41.9%)",
+      "vwap_overhead_pct": 41.9,
       "validated": true
     },
     {
       "symbol": "APT",
       "category": "l1s",
-      "price": 0.5968,
-      "change_1d": -5.18,
-      "rsi": 27.1,
-      "volume_ratio": 1.07,
-      "atr_pct": 6.73,
-      "ema9": 0.6394,
-      "ema21": 0.6832,
-      "ema50": 0.7777,
+      "price": 0.5842,
+      "change_1d": -7.18,
+      "rsi": 25.9,
+      "volume_ratio": 1.19,
+      "atr_pct": 6.91,
+      "ema9": 0.6369,
+      "ema21": 0.6821,
+      "ema50": 0.777,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
       "score": 1,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.8891,
+      "vwap_session": 0.888,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate advisory: overhead +49.0% \u2014 bounce may be early",
-      "vwap_overhead_pct": 49.0,
+      "gate_reason": "VWAP gate advisory: overhead +52.0% \u2014 bounce may be early",
+      "vwap_overhead_pct": 52.0,
       "validated": true
     },
     {
       "symbol": "WIF",
       "category": "meme",
-      "price": 0.144,
-      "change_1d": -3.55,
-      "rsi": 32.1,
-      "volume_ratio": 1.03,
-      "atr_pct": 6.93,
-      "ema9": 0.1563,
-      "ema21": 0.1625,
-      "ema50": 0.1732,
+      "price": 0.143,
+      "change_1d": -4.22,
+      "rsi": 31.6,
+      "volume_ratio": 1.08,
+      "atr_pct": 6.8,
+      "ema9": 0.1561,
+      "ema21": 0.1624,
+      "ema50": 0.1731,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
       "score": 1,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 0.1899,
+      "vwap_session": 0.19,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +31.9%)",
-      "vwap_overhead_pct": 31.9,
+      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +32.8%)",
+      "vwap_overhead_pct": 32.8,
       "validated": true
     },
     {
       "symbol": "LINK",
       "category": "rwa",
-      "price": 7.282,
-      "change_1d": -1.8,
-      "rsi": 31.0,
-      "volume_ratio": 1.07,
-      "atr_pct": 4.66,
-      "ema9": 7.6928,
-      "ema21": 7.97,
-      "ema50": 8.4432,
+      "price": 7.175,
+      "change_1d": -3.24,
+      "rsi": 29.6,
+      "volume_ratio": 1.16,
+      "atr_pct": 4.64,
+      "ema9": 7.6714,
+      "ema21": 7.9602,
+      "ema50": 8.4383,
       "signals": [
         "\ud83d\udd35 RSI Oversold (<35), low volume"
       ],
       "score": 1,
       "action": "\ud83d\udd35 WATCH LONG",
-      "vwap_session": 9.1527,
+      "vwap_session": 9.1546,
       "direction": "LONG",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP gate: SHORT\u2192LONG (overhead +25.7%)",
-      "vwap_overhead_pct": 25.7,
+      "gate_reason": "VWAP gate advisory: overhead +27.6% \u2014 bounce may be early",
+      "vwap_overhead_pct": 27.6,
       "validated": true,
       "vwap_levels": {
         "session": 9.16
@@ -836,72 +845,90 @@
   ],
   "avoids": [
     {
+      "symbol": "MKR",
+      "category": "defi",
+      "price": 1284.3351,
+      "change_1d": -3.92,
+      "rsi": 37.3,
+      "volume_ratio": 0.49,
+      "atr_pct": 13.83,
+      "ema9": 1411.7217,
+      "ema21": 1457.2386,
+      "ema50": 1546.609,
+      "signals": [
+        "\ud83d\udd35 RSI Low Zone (35-45)"
+      ],
+      "score": 1,
+      "action": "\ud83d\udd34 AVOID",
+      "vwap_session": 1678.1378,
+      "direction": "AVOID",
+      "trend": "DOWNTREND",
+      "gate_reason": "VWAP +30.7% + vol 0.49x \u2014 no clean entry",
+      "vwap_overhead_pct": 30.7,
+      "validated": true,
+      "vwap_levels": {
+        "session": 1678.49
+      },
+      "coverage_tiers": {
+        "position": "S",
+        "swing": "W",
+        "day": "W"
+      },
+      "action_verdicts": {
+        "Pos": "S",
+        "Swing": "W",
+        "Day": "W"
+      },
+      "volume_profile": {
+        "poc": 1720.38,
+        "vah": 1901.38,
+        "val": 1238.07
+      }
+    },
+    {
       "symbol": "CRV",
       "category": "defi",
-      "price": 0.1939,
-      "change_1d": -0.69,
-      "rsi": 37.1,
-      "volume_ratio": 0.81,
-      "atr_pct": 7.28,
-      "ema9": 0.2077,
-      "ema21": 0.2141,
+      "price": 0.1929,
+      "change_1d": -1.21,
+      "rsi": 36.6,
+      "volume_ratio": 0.82,
+      "atr_pct": 7.09,
+      "ema9": 0.2075,
+      "ema21": 0.214,
       "ema50": 0.2196,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
       "score": 1,
       "action": "\ud83d\udd34 AVOID",
-      "vwap_session": 0.2291,
+      "vwap_session": 0.2292,
       "direction": "AVOID",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP +18.1% + vol 0.81x \u2014 no clean entry",
-      "vwap_overhead_pct": 18.1,
-      "validated": true
-    },
-    {
-      "symbol": "ALGO",
-      "category": "l1s",
-      "price": 0.0852,
-      "change_1d": -5.04,
-      "rsi": 36.6,
-      "volume_ratio": 0.96,
-      "atr_pct": 6.71,
-      "ema9": 0.091,
-      "ema21": 0.0946,
-      "ema50": 0.1005,
-      "signals": [
-        "\ud83d\udd35 RSI Low Zone (35-45)"
-      ],
-      "score": 1,
-      "action": "\ud83d\udd34 AVOID",
-      "vwap_session": 0.1103,
-      "direction": "AVOID",
-      "trend": "DOWNTREND",
-      "gate_reason": "VWAP +29.4% + vol 0.96x \u2014 no clean entry",
-      "vwap_overhead_pct": 29.4,
+      "gate_reason": "VWAP +18.8% + vol 0.82x \u2014 no clean entry",
+      "vwap_overhead_pct": 18.8,
       "validated": true
     },
     {
       "symbol": "TAO",
       "category": "ai",
-      "price": 213.37,
-      "change_1d": -2.7,
-      "rsi": 39.3,
-      "volume_ratio": 0.59,
-      "atr_pct": 9.15,
-      "ema9": 225.9971,
-      "ema21": 232.3186,
-      "ema50": 246.3154,
+      "price": 210.61,
+      "change_1d": -3.96,
+      "rsi": 38.3,
+      "volume_ratio": 0.64,
+      "atr_pct": 9.17,
+      "ema9": 225.4451,
+      "ema21": 232.0677,
+      "ema50": 246.2042,
       "signals": [
         "\ud83d\udd35 RSI Low Zone (35-45)"
       ],
       "score": 1,
       "action": "\ud83d\udd34 AVOID",
-      "vwap_session": 269.944,
+      "vwap_session": 269.2599,
       "direction": "AVOID",
       "trend": "DOWNTREND",
-      "gate_reason": "VWAP +26.5% + vol 0.59x \u2014 no clean entry",
-      "vwap_overhead_pct": 26.5,
+      "gate_reason": "VWAP +27.8% + vol 0.64x \u2014 no clean entry",
+      "vwap_overhead_pct": 27.8,
       "validated": true
     }
   ],
