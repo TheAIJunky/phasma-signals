@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-03 11:01",
+  "timestamp": "2026-07-06 11:00",
   "total_scanned": 513,
   "bullish": [
     {
@@ -175,7 +175,7 @@
       "score": 6,
       "validated": true,
       "vwap_levels": {
-        "session": 115.81
+        "session": 116.06
       },
       "coverage_tiers": {
         "position": "W",
@@ -189,9 +189,9 @@
       },
       "regime_quadrant": "Reflation",
       "volume_profile": {
-        "poc": 114.62,
+        "poc": 114.81,
         "vah": 118.99,
-        "val": 109.72
+        "val": 110.09
       }
     },
     {
@@ -213,23 +213,23 @@
       "score": 6,
       "validated": true,
       "vwap_levels": {
-        "session": 328.74
+        "session": 330.88
       },
       "coverage_tiers": {
-        "position": "S",
+        "position": "W",
         "swing": "W",
         "day": "W"
       },
       "action_verdicts": {
-        "Pos": "S",
+        "Pos": "W",
         "Swing": "W",
         "Day": "W"
       },
       "regime_quadrant": "Reflation",
       "volume_profile": {
-        "poc": 327.66,
+        "poc": 331.3,
         "vah": 340.1,
-        "val": 306.85
+        "val": 313.87
       }
     },
     {
@@ -251,7 +251,7 @@
       "score": 6,
       "validated": true,
       "vwap_levels": {
-        "session": 259.31
+        "session": 260.23
       },
       "coverage_tiers": {
         "position": "W",
@@ -265,9 +265,9 @@
       },
       "regime_quadrant": "Reflation",
       "volume_profile": {
-        "poc": 256.17,
+        "poc": 256.77,
         "vah": 276.1,
-        "val": 242.41
+        "val": 242.6
       }
     },
     {
@@ -444,18 +444,18 @@
         "session": 47.38
       },
       "coverage_tiers": {
-        "position": "S",
+        "position": "W",
         "swing": "W",
         "day": "W"
       },
       "action_verdicts": {
-        "Pos": "S",
+        "Pos": "W",
         "Swing": "W",
         "Day": "W"
       },
       "regime_quadrant": "Reflation",
       "volume_profile": {
-        "poc": 47.31,
+        "poc": 47.39,
         "vah": 46.75,
         "val": 47.34,
         "inverted": true
@@ -480,7 +480,7 @@
       "score": 6,
       "validated": true,
       "vwap_levels": {
-        "session": 87.82
+        "session": 87.44
       },
       "coverage_tiers": {
         "position": "W",
@@ -494,7 +494,7 @@
       },
       "regime_quadrant": "Reflation",
       "volume_profile": {
-        "poc": 87.79,
+        "poc": 87.62,
         "vah": 91.27,
         "val": 84.3
       }
