@@ -9,3 +9,7 @@ __pycache__/
 data/premium_latest.json
 data/stocks.json
 data/crypto.json
+
+# Report JSONs contain entry/stop/targets — never public
+reports/*.json
+reports/*.txt
